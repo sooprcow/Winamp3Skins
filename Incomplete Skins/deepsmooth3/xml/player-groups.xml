@@ -1,0 +1,62 @@
+<groupdef id="group.table">
+ <grid
+  w="0" h="0"
+  relatw="1" relath="1"
+  topleft="table.top.left"
+  top="table.top.middle"
+  topright="table.top.right"
+  left="table.left"
+  middle="table.middle"
+  right="table.right"
+  bottomleft="table.bot.left"
+  bottom="table.bot.middle"
+  bottomright="table.bot.right"
+  move="1"
+  />
+</groupdef>
+
+<groupdef id="vis" background="vis.region.mask" drawbackground="0" >
+ <vis x="0" y="0" w="85" h="26" 
+  colorallbands="60,60,60" colorbandpeak="60,60,60"
+  sysregion="and"
+ />
+</groupdef>
+
+<groupdef id="group.vis">
+ <group id="group.table" x="0" y="0" w="88" h="41" />
+ <group id="vis" x="1" y="13" w="85" h="25" />
+ <layer image="vis.overlay.mask" x="1" y="13" w="85" h="25" />
+ <text x="35" y="4" w="47" h="6" display="time" font="main.font.timer" valign="top" align="right" timecolonwidth="8" timeroffstyle="1" />
+</groupdef>
+
+<groupdef id="group.cbuttons">
+ <button x="0" y="0" w="20" h="11" image="cbuttons.prev" downimage="cbuttons.prev.down" hoverimage="cbuttons.prev.hover" action="prev" tooltip="Previous" />
+ <button x="23" y="0" w="20" h="11" image="cbuttons.play" downimage="cbuttons.play.down" hoverimage="cbuttons.play.hover" action="play" tooltip="Play" />
+ <button x="46" y="0" w="20" h="11" image="cbuttons.pause" downimage="cbuttons.pause.down" hoverimage="cbuttons.pause.hover" action="pause" tooltip="Pause" />
+ <button x="69" y="0" w="20" h="11" image="cbuttons.stop" downimage="cbuttons.stop.down" hoverimage="cbuttons.stop.hover" action="stop" tooltip="Stop" />
+ <button x="92" y="0" w="20" h="11" image="cbuttons.next" downimage="cbuttons.next.down" hoverimage="cbuttons.next.hover" action="next" tooltip="Next" />
+</groupdef>
+
+<groupdef id="group.titlebuttons">
+ <button x="0" y="0" w="10" h="10" image="titlebar.min" downimage="titlebar.min.down" hoverimage="titlebar.min.hover" action="minimize" tooltip="Minimize Winamp" />
+ <button x="12" y="0" w="10" h="10" image="titlebar.max" downimage="titlebar.max.down" hoverimage="titlebar.max.hover" action="switch" param="shade" tooltip="Toggle Shade Mode" />
+ <button x="24" y="0" w="10" h="10" image="titlebar.close" downimage="titlebar.close.down" hoverimage="titlebar.close.hover" action="close" tooltip="Close Winamp" />
+</groupdef>
+
+<groupdef id="group.songinfo">
+ <group id="group.table" x="0" y="0" w="0" h="0" relatw="1" relath="1" />
+ <text id="song" x="2" y="5" w="141" h="6" display="songname" font="main.font.normal" valign="top" align="left" ticker="0" showlen="1" /> 
+</groupdef>
+
+<groupdef id="group.playopt">
+ <togglebutton id="shuf" x="0" y="0" w="20" h="11" image="playopt.shuf" downimage="playopt.shuf.down" activeimage="playopt.shuf.down" hoverimage="playopt.shuf.hover" cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Shuffle" tooltip="Toggle Shuffle" />
+ <togglebutton id="rep" x="23" y="0" w="20" h="11" image="playopt.rep" downimage="playopt.rep.down" activeimage="playopt.rep.down" hoverimage="playopt.rep.hover" cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Repeat" tooltip="Toggle Repeat" />
+ <togglebutton id="fade" x="46" y="0" w="20" h="11" image="playopt.fade" downimage="playopt.fade.down" activeimage="playopt.fade.down" hoverimage="playopt.fade.hover" cfgattrib="{FC3EAF78-C66E-4ED2-A0AA-1494DFCC13FF};Enable crossfading" tooltip="Toggle Crossfading" />
+ <script id="playopt" file="scripts/playopt.maki" />
+</groupdef>
+
+<groupdef id="group.seekbar">
+ <layer image="seek.bar" x="0" y="0" w="252" h="10" />
+ <layer id="seekfill" image="seek.bar.fill" x="0" y="0" w="0" h="10" tile="1" />
+ <slider id="seek" x="0" y="0" w="252" h="10" action="seek" thumb="slider.thumb" downthumb="slider.thumb" tooltip="Seek To Position" />
+</groupdef>

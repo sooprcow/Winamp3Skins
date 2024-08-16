@@ -1,0 +1,19 @@
+
+ <!-- Gamma sets -->
+ <gammaset id="Default">
+  <gammagroup id="background" value="0,0,0" />
+  <gammagroup id="border" value="0,0,0" />
+  <gammagroup id="titlebar" value="0,0,0" />
+  <gammagroup id="table" value="0,0,0" />
+  <gammagroup id="buttons" value="0,0,0" />
+  <gammagroup id="slider" value="0,0,0" />
+ </gammaset>
+ 
+ <gammaset id="Gold">
+  <gammagroup id="background" value="555,555,-555" gray="1" />
+  <gammagroup id="border" value="555,555,-555" gray="1" />
+  <gammagroup id="titlebar" value="555,555,-555" gray="1" />
+  <gammagroup id="table" value="555,555,-555" gray="1" />
+  <gammagroup id="buttons" value="333,333,-333" gray="2" />
+  <gammagroup id="slider" value="333,333,-333" gray="2" />
+ </gammaset>

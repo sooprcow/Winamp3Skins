@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<WinampAbstractionLayer version="0.8">
+
+  <skininfo>
+    <version>3.0</version>
+    <name>Deep Smooth</name>
+    <comment></comment>
+    <author>David Serrano</author>
+    <email>sooprcow@deskmod.com</email>
+    <homepage>http://sooprcow.deskmod.com</homepage>
+    <screenshot>preview.png</screenshot>
+  </skininfo>
+  
+  <include file="xml/color-presets.xml" />
+  <include file="xml/player.xml" />
+  <!--<include file="xml/components-groups.xml" />-->
+  <include file="../default/xml/pledit.xml" />
+
+  <scripts>
+   <script id="player" file="scripts/player.maki"/>
+  </scripts>   
+</WinampAbstractionLayer>

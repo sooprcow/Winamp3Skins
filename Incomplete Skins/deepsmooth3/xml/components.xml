@@ -1,0 +1,24 @@
+<groupdef id="wasabi.standardframe.statusbar" background="frame.middle" sysregion="1" xuitag="Wasabi:StandardFrame:Status">
+ <group id="win.frame" x="0" y="0" w="0" h="0" relatw="1" relath="1"/>
+ <LayoutStatus id="standardframe.layoutstatus" x="21" y="-24" w="-44" h="15" relaty="1" relatw="1" exclude="{system}" />
+ <layer x="0" y="0" w="13" h="13" resize="topleft" />
+ <layer x="3" y="0" w="-6" h="3" relatw="1" resize="top" />
+ <layer x="-3" y="0" w="13" h="13" relatx="1" resize="topright" />
+ <layer x="0" y="3" w="3" h="-6" relath="1" resize="left" />
+ <layer x="-3" y="3" w="3" h="-6" relatx="1" relath="1" resize="right" />
+ <layer x="0" y="-13" w="13" h="13" relaty="1" resize="bottomleft" />
+ <layer x="3" y="-3" w="-6" h="3" relatw="1" relaty="1" resize="bottom" />
+ <layer x="-13" y="-13" w="13" h="13" relatx="1" relaty="1" resize="bottomright" />
+ <button x="-26" y="7" w="12" h="12" relatx="1" image="win.button.close" downimage="win.button.close.down" action="close" tooltip="Close Window" />
+ <text ghost="1" id="song.info" font="player.font.normal" color="0,0,0"  fontsize="12" default=":componentname" x="14" y="8" w="-28" h="11" relatw="1" align="center" valign="top" antialias="1" />
+ <script id="standardframe.script" file="scripts/standardframe.maki" param="13,24,-26,-54,0,0,1,1" />
+</groupdef>
+
+<groupdef id="wasabi.standardframe.nostatusbar" background="win.center" sysregion="1" xuitag="Wasabi:StandardFrame:NoStatus">
+ <group id="win.frame" x="0" y="0" w="0" h="0" relatw="1" relath="1"/>
+ <button x="-26" y="7" w="12" h="12" relatx="1" image="win.button.close" downimage="win.button.close.down" action="close" tooltip="Close Window" />
+ <text ghost="1" id="song.info" font="player.font.normal" color="0,0,0"  fontsize="12" default=":componentname" x="14" y="8" w="-28" h="11" relatw="1" align="center" valign="top" antialias="1" />
+ <script id="standardframe.script" file="scripts/standardframe.maki" param="13,24,-26,-54,0,0,1,1" />
+</groupdef>
+
+<include file="playlist.xml" />

@@ -1,0 +1,18 @@
+<elements>
+ <include file="player-elements.xml" />
+</elements>
+
+<container id="main" name="Main window">
+ <include file="player-groups.xml" />
+ 
+ <layout id="normal" background="main.background" desktopalpha="0" w="275" h="116" droptarget="pldr" >
+  <layer ghost="1" x="0" y="0" w="275" h="116" image="main.background.border" />
+  <layer ghost="1" x="4" y="4" w="-8" h="13" relatw="1" image="main.titlebar.background" />
+  <group id="group.titlebuttons" x="235" y="6" h="10" w="34" />
+  <group id="group.vis" x="13" y="26" w="88" h="41" />
+  <group id="group.cbuttons" x="9" y="91" w="120" h="11" />
+  <group id="group.playopt" x="191" y="91" w="66" h="11" />
+  <group id="group.songinfo" x="106" y="26" w="148" h="19" />
+  <group id="group.seekbar" x="13" y="73" w="252" h="10" />
+ </layout>
+</container>

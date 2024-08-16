@@ -1,0 +1,81 @@
+<!-- Start Fonts 
+<truetypefont id="player.font.digits" file="fonts/Digirtu_.ttf"/>
+<bitmapfont id="player.font.normal" file="images/main/font.png" charwidth="7" charheight="11" hspacing="0" vspacing="0" /> -->
+<bitmapfont id="main.font.timer" file="images/main/font-timer.png" charwidth="8" charheight="6" hspacing="0" vspacing="0" />
+<bitmapfont id="main.font.normal" file="images/main/font-normal.png" charwidth="5" charheight="6" hspacing="0" vspacing="0" />
+
+<!-- Start Background/Other Images-->
+<bitmap id="main.background" file="images/main/background.png" gammagroup="background" />
+<bitmap id="main.background.border" file="images/main/background-border.png" gammagroup="border" />
+<bitmap id="main.titlebar.background" file="images/main/titlebar-background.png" gammagroup="titlebar" />
+
+<!-- Start Table Frame Images -->
+<bitmap id="table.top.left" file="images/main/table-frame.png" x="0" y="0" w="2" h="2" gammagroup="table" />
+<bitmap id="table.top.middle" file="images/main/table-frame.png" x="2" y="0" w="6" h="2" gammagroup="table" />
+<bitmap id="table.top.right" file="images/main/table-frame.png" x="8" y="0" w="3" h="2" gammagroup="table" />
+
+<bitmap id="table.left" file="images/main/table-frame.png" x="0" y="2" w="2" h="5" gammagroup="table" />
+<bitmap id="table.middle" file="images/main/table-frame.png" x="2" y="2" w="6" h="5" gammagroup="table" />
+<bitmap id="table.right" file="images/main/table-frame.png" x="8" y="2" w="6" h="5" gammagroup="table" />
+
+<bitmap id="table.bot.left" file="images/main/table-frame.png" x="0" y="7" w="2" h="3" gammagroup="table" />
+<bitmap id="table.bot.middle" file="images/main/table-frame.png" x="2" y="7" w="6" h="3" gammagroup="table" />
+<bitmap id="table.bot.right" file="images/main/table-frame.png" x="8" y="7" w="3" h="3" gammagroup="table" />
+
+<!-- Start Vis Images -->
+<bitmap id="vis.region.mask" file="images/main/vis-region-mask.png" />
+<bitmap id="vis.overlay.mask" file="images/main/vis-overlay-mask.png" gammagroup="table" />
+
+<!-- Start Control Button Images -->
+<bitmap id="cbuttons.prev" file="images/main/cbuttons.png" x="0" y="0" w="20" h="11" gammagroup="buttons" />
+<bitmap id="cbuttons.play" file="images/main/cbuttons.png" x="20" y="0" w="20" h="11" gammagroup="buttons" />
+<bitmap id="cbuttons.pause" file="images/main/cbuttons.png" x="40" y="0" w="20" h="11" gammagroup="buttons" />
+<bitmap id="cbuttons.stop" file="images/main/cbuttons.png" x="60" y="0" w="20" h="11" gammagroup="buttons" />
+<bitmap id="cbuttons.next" file="images/main/cbuttons.png" x="80" y="0" w="20" h="11" gammagroup="buttons" />
+
+<bitmap id="cbuttons.prev.down" file="images/main/cbuttons.png" x="0" y="11" w="20" h="11" gammagroup="buttons" />
+<bitmap id="cbuttons.play.down" file="images/main/cbuttons.png" x="20" y="11" w="20" h="11" gammagroup="buttons" />
+<bitmap id="cbuttons.pause.down" file="images/main/cbuttons.png" x="40" y="11" w="20" h="11" gammagroup="buttons" />
+<bitmap id="cbuttons.stop.down" file="images/main/cbuttons.png" x="60" y="11" w="20" h="11" gammagroup="buttons" />
+<bitmap id="cbuttons.next.down" file="images/main/cbuttons.png" x="80" y="11" w="20" h="11" gammagroup="buttons" />
+
+<bitmap id="cbuttons.prev.hover" file="images/main/cbuttons.png" x="0" y="22" w="20" h="11" gammagroup="buttons" />
+<bitmap id="cbuttons.play.hover" file="images/main/cbuttons.png" x="20" y="22" w="20" h="11" gammagroup="buttons" />
+<bitmap id="cbuttons.pause.hover" file="images/main/cbuttons.png" x="40" y="22" w="20" h="11" gammagroup="buttons" />
+<bitmap id="cbuttons.stop.hover" file="images/main/cbuttons.png" x="60" y="22" w="20" h="11" gammagroup="buttons" />
+<bitmap id="cbuttons.next.hover" file="images/main/cbuttons.png" x="80" y="22" w="20" h="11" gammagroup="buttons" />
+
+<!-- Start Title Bar Controls -->
+<bitmap id="titlebar.min" file="images/main/titlebar-controls.png" x="0" y="0" w="10" h="10" gammagroup="buttons" />
+<bitmap id="titlebar.max" file="images/main/titlebar-controls.png" x="10" y="0" w="10" h="10" gammagroup="buttons" />
+<bitmap id="titlebar.close" file="images/main/titlebar-controls.png" x="20" y="0" w="10" h="10" gammagroup="buttons" />
+
+<bitmap id="titlebar.min.down" file="images/main/titlebar-controls.png" x="0" y="10" w="10" h="10" gammagroup="buttons" />
+<bitmap id="titlebar.max.down" file="images/main/titlebar-controls.png" x="10" y="10" w="10" h="10" gammagroup="buttons" />
+<bitmap id="titlebar.close.down" file="images/main/titlebar-controls.png" x="20" y="10" w="10" h="10" gammagroup="buttons" />
+
+<bitmap id="titlebar.min.hover" file="images/main/titlebar-controls.png" x="0" y="20" w="10" h="10" gammagroup="buttons" />
+<bitmap id="titlebar.max.hover" file="images/main/titlebar-controls.png" x="10" y="20" w="10" h="10" gammagroup="buttons" />
+<bitmap id="titlebar.close.hover" file="images/main/titlebar-controls.png" x="20" y="20" w="10" h="10" gammagroup="buttons" />
+
+<!-- Start Playback Option Button Images -->
+<bitmap id="playopt.shuf" file="images/main/playback-option-buttons.png" x="0" y="0" w="20" h="11" gammagroup="buttons" />
+<bitmap id="playopt.rep" file="images/main/playback-option-buttons.png" x="20" y="0" w="20" h="11" gammagroup="buttons" />
+<bitmap id="playopt.fade" file="images/main/playback-option-buttons.png" x="40" y="0" w="20" h="11" gammagroup="buttons" />
+
+<bitmap id="playopt.shuf.down" file="images/main/playback-option-buttons.png" x="0" y="11" w="20" h="11" gammagroup="buttons" />
+<bitmap id="playopt.rep.down" file="images/main/playback-option-buttons.png" x="20" y="11" w="20" h="11" gammagroup="buttons" />
+<bitmap id="playopt.fade.down" file="images/main/playback-option-buttons.png" x="40" y="11" w="20" h="11" gammagroup="buttons" />
+
+<bitmap id="playopt.shuf.hover" file="images/main/playback-option-buttons.png" x="0" y="22" w="20" h="11" gammagroup="buttons" />
+<bitmap id="playopt.rep.hover" file="images/main/playback-option-buttons.png" x="20" y="22" w="20" h="11" gammagroup="buttons" />
+<bitmap id="playopt.fade.hover" file="images/main/playback-option-buttons.png" x="40" y="22" w="20" h="11" gammagroup="buttons" />
+
+<bitmap id="playopt.shuf.down.hover" file="images/main/playback-option-buttons.png" x="0" y="33" w="20" h="11" gammagroup="buttons" />
+<bitmap id="playopt.rep.down.hover" file="images/main/playback-option-buttons.png" x="20" y="33" w="20" h="11" gammagroup="buttons" />
+<bitmap id="playopt.fade.down.hover" file="images/main/playback-option-buttons.png" x="40" y="33" w="20" h="11" gammagroup="buttons" />
+
+<!-- Start Seek Bar Images -->
+<bitmap id="slider.thumb" file="images/main/seekbar.png" x="0" y="0" w="1" h="1" />
+<bitmap id="seek.bar" file="images/main/seekbar.png" x="0" y="0" w="252" h="10" gammagroup="slider" />
+<bitmap id="seek.bar.fill" file="images/main/seekbar.png" x="0" y="10" w="252" h="10" gammagroup="slider" />

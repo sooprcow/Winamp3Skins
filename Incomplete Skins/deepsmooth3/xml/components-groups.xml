@@ -1,0 +1,48 @@
+<include file="system-elements.xml" />
+<include file="system-colors.xml" />
+
+<elements>
+ <bitmap id="frame.top.left" file="images/components/frame.png" x="0" y="0" w="13" h="24" />
+ <bitmap id="frame.top.middle" file="images/components/frame.png" x="13" y="0" w="44" h="24" />
+ <bitmap id="frame.top.right" file="images/components/frame.png" x="57" y="0" w="27" h="24" />
+ <bitmap id="frame.left" file="images/components/frame.png" x="0" y="24" w="13" h="9" />
+ <bitmap id="frame.middle" file="images/components/frame.png" x="13" y="24" w="44" h="9" />
+ <bitmap id="frame.right" file="images/components/frame.png" x="57" y="24" w="27" h="9" />
+ <bitmap id="frame.bot.left" file="images/components/frame.png" x="0" y="33" w="13" h="30" />
+ <bitmap id="frame.bot.middle" file="images/components/frame.png" x="13" y="33" w="44" h="30" />
+ <bitmap id="frame.bot.right" file="images/components/frame.png" x="57" y="33" w="27" h="30" />
+ 
+ <bitmap id="frame.top.left.cut" file="images/components/frame-cut.png" x="0" y="0" w="13" h="13" />
+ <bitmap id="frame.top.right.cut" file="images/components/frame-cut.png" x="13" y="0" w="13" h="13" />
+ <bitmap id="frame.bot.left.cut" file="images/components/frame-cut.png" x="0" y="13" w="13" h="13" />
+ <bitmap id="frame.bot.right.cut" file="images/components/frame-cut.png" x="13" y="13" w="13" h="13" />
+ 
+ <bitmap id="win.button.close" file="images/components/close-button.png" />
+ <bitmap id="win.button.close.down" file="images/components/close-button-down.png" />
+
+</elements>
+
+<groupdef id="win.frame">
+  <grid
+    id="frame.grid"
+    x="0" y="0"
+    w="0" h="0"
+    relatw="1" relath="1"
+    topleft="frame.top.left"
+    top="frame.top.middle"
+    topright="frame.top.right"
+    left="frame.left"
+    middle="frame.middle"
+    right="frame.right"
+    bottomleft="frame.bot.left"
+    bottom="frame.bot.middle"
+    bottomright="frame.bot.right"
+    move="1"
+  />
+  <layer image="frame.top.left.cut" x="0" y="0" w="13" h="13" sysregion="-2" />
+  <layer image="frame.top.right.cut" x="-13" y="0" w="13" h="13" relatx="1" sysregion="-2" />
+  <layer image="frame.bot.left.cut" x="0" y="-13" w="13" h="13" relaty="1" sysregion="-2" />
+  <layer image="frame.bot.right.cut" x="-13" y="-13" w="13" h="13" relatx="1" relaty="1" sysregion="-2" />
+</groupdef>
+
+<include file="components.xml" />

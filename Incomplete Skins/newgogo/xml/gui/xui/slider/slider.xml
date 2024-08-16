@@ -1,0 +1,37 @@
+<groupdef id="custom.hslider.fill">
+ <rect x="1" y="1" w="-3" h="-2" relatw="1" relath="1" color="custom.slider.border.out" filled="1" alpha="128" />
+ <rect x="0" y="1" w="-2" h="-2" relatw="1" relath="1" color="custom.slider.border.out" filled="0" edges="left;right" />
+ <rect x="0" y="0" w="-1" h="0" relatw="1" relath="1" color="custom.slider.border.in" filled="0" edges="right" />
+ <rect fitparent="1" color="custom.slider.border.out" filled="0" edges="right" />
+</groupdef>
+
+<groupdef id="custom.hslider" xuitag="custom:seek">
+ <rect fitparent="1" color="custom.slider.border.out" filled="1" />
+ <rect x="1" y="1" w="-2" h="-2" relatw="1" relath="1" color="custom.slider.border.in" />
+ <rect x="3" y="2" w="-6" h="-5" relatw="1" relath="1" color="custom.slider.background" filled="1" />
+ <group id="custom.hslider.fill" x="2" y="1" w="0" h="-2" relath="1" />
+ <slider id="objslider" x="1" y="1" w="-2" h="-2" action="seek" relatw="1" relath="1" thumb="custom.slider.thumb" downthumb="custom.slider.thumb" />
+ <scripts>
+  <script file="xml/gui/scripts/slider.maki" />
+ </scripts>
+</groupdef>
+
+<elements>
+ <bitmap id="custom.slider.dot" file="$gradient" w="3" h="1" gradient_x1="0" gradient_y1="0" gradient_x2="1" gradient_y2="1" points="0.0=78,85,114,255;0.25=78,85,114,0;1.0=78,85,114,0" />
+</elements>
+
+<groupdef id="custom.hvolume" xuitag="custom:volume">
+ <rect fitparent="1" color="custom.slider.border.out" filled="1" alpha="64" />
+ <rect x="1" y="1" w="-2" h="-2" relatw="1" relath="1" color="custom.slider.border.out" filled="1" />
+ <rect x="2" y="2" w="-4" h="-4" relatw="1" relath="1" color="custom.slider.border.in" filled="0" />
+ <rect x="4" y="4" w="-8" h="-8" relatw="1" relath="1" color="custom.slider.background" filled="1" />
+ <rect id="fill" x="6" y="5" w="0" h="-10" relath="1" color="custom.slider.volume.fill" filled="1" />
+ <layer x="5" y="50" w="-10" h="1" relaty="2" relatw="1" image="custom.slider.dot" tile="1"/>
+ <rect x="5" y="4" w="1" h="-8" relath="1" color="custom.slider.volume.grid" edges="left" />
+ <rect x="50" y="5" w="1" h="-10" relatx="2" relath="1" color="custom.slider.volume.grid" edges="left" />
+ <rect x="-6" y="4" w="1" h="-8" relatx="1" relath="1" color="custom.slider.volume.grid" edges="left" />
+ <slider id="objvolume" x="5" y="4" w="-10" h="-8" relatw="1" relath="1" thumb="custom.slider.thumb" downthumb="custom.slider.thumb" action="volume" tooltip="Volume" />
+ <scripts>
+  <script file="xml/gui/scripts/volume.maki" />
+ </scripts>
+</groupdef>

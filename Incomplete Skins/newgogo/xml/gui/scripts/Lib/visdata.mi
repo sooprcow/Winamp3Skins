@@ -1,0 +1,63 @@
+extern class @{6B4631E1-A734-4a9e-ABAC-B860815758C1}@ Object &VisData;
+
+/**
+ VisData Class.
+
+ Note that the data returned by this isn't the same as you see in 
+ the spectrum analyser, it's raw, no smoothing or falloff is done.
+ It's pulled out of the winamp3 core at a rate of 50fps by default, 
+ if you need more there's a config attribute you can use, but I 
+ doubt maki will be able to handle much more.
+
+ Feel free to contact me at the address below with any suggestions.
+
+ @short    Provides visualisation data.
+ @author   Russ Garrett (russ-wa3@garrett.co.uk)
+ @ver  	   1.0
+*/
+
+/**
+ getSpectrumData(Int channel, Int band)
+
+ 255|                  
+    |        
+    | 
+   0|------------------------> 576
+		 band		     
+
+ Bands greater than 200 or so don't show much at all. The
+ vis components I've written only use bands < 160.
+
+ Channel selects the channel. 0 is left, 1 is right, god 
+ knows what 2 is.
+ 
+ @param channel	The channel to retrieve data for.
+ @param band	The frequency band to retrieve data for.
+ @ret 	The value of the spectrum analyser at that point.
+*/
+
+extern Int VisData.getSpectrumData(Int channel, Int band);
+
+/**
+ getWaveformData(Int channel, Int band)
+
+  128|  --                  --
+     | /  \        __      /  \
+     |/    \      /  \    /    \
+    0|--------------------------> 576
+     |       \  /      \/        
+     |        --
+ -128|
+		 band
+
+ Channel selects the channel. 0 is left, 1 is right, god 
+ knows what 2 is.
+ 
+ @param channel	The channel to retrieve data for.
+ @param band	The position along the waveform to retrieve data for.
+ @ret 	The position of the waveform graph at that point.
+*/
+
+extern Int VisData.getWaveformData(Int channel, Int band);
+
+

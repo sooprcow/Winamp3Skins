@@ -1,0 +1,37 @@
+<groupdef id="custom.button" xuitag="custom:button" embed_xui="objbutton">
+ <rect fitparent="1" color="custom.button.border.out" filled="1" />
+ <rect x="1" y="1" w="-2" h="-2" relatw="1" relath="1" color="custom.button.border.in" filled="1" />
+ <rect x="2" y="2" w="-4" h="-4" relatw="1" relath="1" color="custom.button.background" filled="1" />
+ <layer id="grid" x="2" y="2" w="-4" h="-4" relatw="1" relath="1" image="custom.grid.3" tile="1" alpha="32" />
+ <layer x="2" y="2" w="-4" h="-4" relatw="1" relath="1" image="winframe.bot.gradient" alpha="96" />
+ <rect id="downrect" x="2" y="2" w="-4" h="-4" relatw="1" relath="1" color="custom.button.down.shadow" edges="left;top;right" alpha="64" />
+ <button x="0" y="1" w="0" h="0" relatw="1" relath="1" id="objbutton" center_image="1" rectrgn="1" />
+ <rect id="disabled" x="1" y="1" w="-2" h="-2" relatw="1" relath="1" color="custom.button.disabled.shadow" filled="1" alpha="96" />
+ <hideobject target="downrect;disabled" />
+ <scripts>
+  <script id="button" file="xml/gui/scripts/button.maki" />
+ </scripts>
+</groupdef>
+
+<groupdef id="wasabi.button.group" xuitag="Wasabi:Button" embed_xui="wasabi.button" h="21" autowidthsource="wasabi.button">
+ <custom:button id="wasabi.button" fitparent="1" borders="0" />
+</groupdef>
+
+<groupdef id="custom.toggle.button" xuitag="custom:togglebutton" embed_xui="objbutton">
+ <rect fitparent="1" color="custom.button.border.out" filled="1" />
+ <rect x="1" y="1" w="-2" h="-2" relatw="1" relath="1" color="custom.button.border.in" filled="1" />
+ <rect x="2" y="2" w="-4" h="-4" relatw="1" relath="1" color="custom.button.background" filled="1" />
+ <layer id="grid" x="2" y="2" w="-4" h="-4" relatw="1" relath="1" image="custom.grid.3" tile="1" alpha="32" />
+ <layer x="2" y="2" w="-4" h="-4" relatw="1" relath="1" image="winframe.bot.gradient" alpha="96" />
+ <rect id="downrect" x="2" y="2" w="-4" h="-4" relatw="1" relath="1" color="custom.button.down.shadow" edges="left;top;right" alpha="64" />
+ <togglebutton x="0" y="1" w="0" h="0" relatw="1" relath="1" id="objbutton" center_image="1" rectrgn="1" />
+ <rect id="disabled" x="1" y="1" w="-2" h="-2" relatw="1" relath="1" color="custom.button.disabled.shadow" filled="1" alpha="96" />
+ <hideobject target="downrect;disabled" />
+ <scripts>
+  <script id="button" file="xml/gui/scripts/button.maki" />
+ </scripts>
+</groupdef>
+
+<groupdef id="wasabi.togglebutton.group" xuitag="Wasabi:ToggleButton" embed_xui="wasabi.button" h="21" autowidthsource="wasabi.button">
+ <custom:togglebutton id="wasabi.button" fitparent="1" borders="0" />
+</groupdef>

@@ -1,0 +1,36 @@
+// First we declare the script class, using the GUID from our ScriptObject,
+// it descends from the maki root object ("Object"), and "&" tells the compiler to let
+// people instantiate and delete our class.
+//
+// If we wanted to create a static class (like System, for which you don't need to create
+// a new instance), we would simply use :
+// extern class @{9476ADAE-9F8C-4a5b-BA95-C7F8FA76A2F1}@ Object _predecl ExampleObject;
+
+// But in our case we'll let them new and delete at will:
+extern class @{30D2213F-E849-42a6-A6B1-96CF1B6BC275}@ Object &metaWac;
+
+
+// Then we declare functions and events available
+
+#define MT_ARTIST	 "Artist"
+#define MT_ALBUM	 "Album"
+#define MT_TITLE	 "Title"
+#define MT_GENRE	 "Genre"
+#define MT_YEAR		 "Year"
+#define MT_COMMENT	 "Comment"
+#define MT_LENGTH	 "Length"
+#define MT_SIZE		 "Size"
+#define MT_TRACK	 "Track"
+#define MT_BITRATE	 "Bitrate"
+#define MT_SAMPLERATE	 "Srate"
+#define MT_NUMCHANNELS	 "Nch"
+#define MT_BITSPERSAMPLE "Bps"
+#define MT_MODIFIED	 "Modified"
+#define MT_PLAYSTRING	 "Playstring"
+#define MT_INFO		 "Info"
+#define MT_NAME		 "Name"
+#define MT_ADDEDON	 "AddedOn"
+#define MT_LASTPLAYED	 "Last played"
+#define MT_NAME2	 "Name2" // secondary name // TODO: kill this
+
+extern String metaWac.getPlayingMetaData(string);

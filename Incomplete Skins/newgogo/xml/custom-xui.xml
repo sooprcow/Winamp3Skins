@@ -1,0 +1,5 @@
+<include file="gui/custom-elements.xml" />
+<include file="gui/xui/winframe/winframe.xml" />
+<include file="gui/xui/panel/panel.xml" />
+<include file="gui/xui/buttons/buttons.xml" />
+<include file="gui/xui/slider/slider.xml" />

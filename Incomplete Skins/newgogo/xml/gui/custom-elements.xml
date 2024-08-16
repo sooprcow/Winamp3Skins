@@ -1,0 +1,57 @@
+<!-- Image Elements -->
+<elements>
+ <truetypefont id="custom.font.hooge553" file="xml/gui/fonts/HOOG0553.ttf" />
+
+ <bitmap id="winframe.top.gradient" file="$gradient" w="1" h="5" gradient_x1="0" gradient_y1="0" gradient_x2="1" gradient_y2="1" points="0.0=255,255,255,255;1.0=255,255,255,0" />
+ <bitmap id="winframe.bot.gradient" file="$gradient" w="1" h="25" gradient_x1="0" gradient_y1="0" gradient_x2="1" gradient_y2="1" points="0.0=255,255,255,0;1.0=255,255,255,255" />
+
+ <bitmap id="winframe.titlebar.top.gradient" file="$gradient" w="1" h="10" gradient_x1="0" gradient_y1="0" gradient_x2="1" gradient_y2="1" points="0.0=55,90,225,255;1.0=55,90,225,0" gammagroup="Frame Titlebar Background" />
+ <bitmap id="winframe.titlebar.bot.gradient" file="$gradient" w="1" h="4" gradient_x1="0" gradient_y1="0" gradient_x2="1" gradient_y2="1" points="0.0=55,90,225,0;1.0=55,90,225,255" gammagroup="Frame Titlebar Background" />
+
+ <bitmap id="custom.grid.3" file="$polygon" points="0,0;1,0;1,3;0,3;0,0=0,0,0|0,0;01;3,1;3,0;0,0=0,0,0" w="3" h="3" gammagroup="Panel" />
+ <bitmap id="panel.border.gradient" file="$gradient" w="1" h="50" gradient_x1="0" gradient_y1="0" gradient_x2="1" gradient_y2="1" points="0.0=18,28,70,255;1.0=18,28,70,0" gammagroup="Panel Dark" />
+
+ <!-- Title Bar Icons -->
+ <bitmap id="winframe.icon.minimize" file="xml/gui/images/window-minimize.png" gammagroup="Button Icons" />
+ <bitmap id="winframe.icon.state" file="xml/gui/images/window-state.png" gammagroup="Button Icons" />
+ <bitmap id="winframe.icon.close" file="xml/gui/images/window-close.png" gammagroup="Button Icons" />
+ 
+ <!-- Slider Images -->
+ <bitmap id="custom.slider.thumb" image="$solid" w="1" h="1" alpha="0" />
+</elements>
+
+<!-- Color Elements -->
+<elements> 
+ <!-- Button Colors -->
+ <color id="custom.button.border.out" value="18,28,70" gammagroup="Button Dark" />
+ <color id="custom.button.border.in" value="255,255,255" gammagroup="Button Light" />
+ <color id="custom.button.background" value="218,218,218" gammagroup="Button" />
+ <color id="custom.button.down.shadow" value="0,0,0" gammagroup="Button Dark" />
+ <color id="custom.button.disabled.shadow" value="218,218,218" gammagroup="Button Disabled" />
+ 
+ <!-- Panel Colors -->
+ <color id="custom.panel.border.out" value="18,28,70" gammagroup="Panel Dark" />
+ <color id="custom.panel.border.in" value="255,255,255" gammagroup="Panel Light" />
+ <color id="custom.panel.background" value="218,218,218" gammagroup="Panel" />
+ 
+ <!-- Caption Bar Colors -->
+ <color id="custom.captionbar.border.out" value="18,28,70" gammagroup="Caption Bar Dark" />
+ <color id="custom.captionbar.border.in" value="218,218,218" gammagroup="Caption Bar Light" />
+ <color id="custom.captionbar.title.in" value="255,255,255" gammagroup="Caption Bar Light" />
+ <color id="custom.captionbar.text" value="0,0,0" gammagroup="Caption Bar Text" />
+ <color id="custom.captionbar.text.shadow" value="255,255,255" gammagroup="Caption Bar Text Shadow" />
+ 
+ <!-- Window Frame Colors -->
+ <color id="custom.winframe.background" value="218,218,218" gammagroup="Frame Background" />
+ <color id="custom.winframe.border.out" value="18,28,70" gammagroup="Frame Dark" />
+ <color id="custom.winframe.border.in" value="255,255,255" gammagroup="Frame Light" />
+ <color id="custom.winframe.titlebar.background" value="18,25,70" gammagroup="Frame Titlebar Background" />
+ <color id="custom.winframe.titlebar.background.light" value="55,90,225" gammagroup="Frame Titlebar Background" />
+ 
+ <!-- Slider Colors -->
+ <color id="custom.slider.border.out" value="255,255,255" gammagroup="Slider Border Out" />
+ <color id="custom.slider.border.in" value="18,28,70" gammagroup="Slider Border In" />
+ <color id="custom.slider.background" value="211,211,211" gammagroup="Slider" />
+ <color id="custom.slider.volume.grid" value="78,85,114" gammagroup="Slider Volume Grid" />
+ <color id="custom.slider.volume.fill" value="237,237,237" gammagroup="Slider Volume Fill" />
+</elements>

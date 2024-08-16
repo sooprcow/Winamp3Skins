@@ -1,0 +1,55 @@
+<include file="custom-xui.xml" />
+<include file="system-colors.xml" />
+<include file="color-themes.xml" />
+<include file="playlist.xml" />
+
+<elements>
+ <bitmap id="icon.prev" file="images/icons/prev.png" gammagroup="Button Icons" />
+ <bitmap id="icon.play" file="images/icons/play.png" gammagroup="Button Icons" />
+ <bitmap id="icon.pause" file="images/icons/pause.png" gammagroup="Button Icons" />
+ <bitmap id="icon.stop" file="images/icons/stop.png" gammagroup="Button Icons" />
+ <bitmap id="icon.next" file="images/icons/next.png" gammagroup="Button Icons" />
+ <bitmap id="icon.eject" file="images/icons/eject.png" gammagroup="Button Icons" />
+ 
+ <bitmap id="icon.repeat" file="images/icons/repeat.png" gammagroup="Button Icons" />
+ <bitmap id="icon.shuffle" file="images/icons/shuffle.png" gammagroup="Button Icons" />
+ <bitmap id="icon.crossfade" file="images/icons/crossfade.png" gammagroup="Button Icons" />
+ <bitmap id="icon.repeat.on" file="images/icons/repeat-on.png" gammagroup="Button Icons" />
+ <bitmap id="icon.shuffle.on" file="images/icons/shuffle-on.png" gammagroup="Button Icons" />
+ <bitmap id="icon.crossfade.on" file="images/icons/crossfade-on.png" gammagroup="Button Icons" />
+ 
+ <color id="custom.ticker.text" value="18,28,70" gammagroup="Ticker Text" />
+ <color id="custom.ticker.text.shadow" value="255,255,255" gammagroup="Ticker Text Shadow" />
+</elements>
+
+<container id="main" name="Main window">
+ <layout id="normal" name="Normal Mode" w="275" h="116" droptarget="pldr" >
+  <custom:winframe fitparent="1" caption="Main Window" nostate="1" />
+  <!-- Vis Area -->
+  <custom:vis x="10" y="25" w="93" h="47" />
+  <text x="14" y="29" w="85" h="10" font="custom.font.hooge553" color="custom.ticker.text" shadowcolor="custom.ticker.text.shadow" shadowx="-1" shadowy="-1" fontsize="11" display="time" valign="top" align="right" timeroffstyle="1" />
+  
+  <!-- Control Buttons -->
+  <custom:panel x="7" y="86" w="124" h="26" />
+  <custom:button id="prev" x="9" y="88" w="25" h="18" image="icon.prev" action="prev" />
+  <custom:button x="33" y="88" w="25" h="18" image="icon.play" action="play" />
+  <custom:button x="57" y="88" w="25" h="18" image="icon.pause" action="pause" />
+  <custom:button x="81" y="88" w="25" h="18" image="icon.stop" action="stop" />
+  <custom:button x="105" y="88" w="25" h="18" image="icon.next" action="next" />
+  <custom:button x="255" y="28" w="12" h="13" image="icon.eject" action="eject" />
+  
+  <custom:panel x="173" y="86" w="83" h="26" />
+  <custom:togglebutton x="175" y="88" w="25" h="18" image="icon.repeat" downimage="icon.repeat.on" activeimage="icon.repeat.on" cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Repeat" tooltip="Toggle Playlist Repeating" />
+  <custom:togglebutton x="199" y="88" w="31" h="18" image="icon.shuffle" downimage="icon.shuffle.on" activeimage="icon.shuffle.on" cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Shuffle" tooltip="Toggle Playlist Shuffling" />
+  <custom:togglebutton x="229" y="88" w="25" h="18" image="icon.crossfade" downimage="icon.crossfade.on" activeimage="icon.crossfade.on" cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Repeat" tooltip="Toggle Playlist Repeating" />
+  
+  <!-- Songname Ticker -->
+  <custom:panel x="109" y="25" w="142" h="23" />
+  <text id="song.tick" x="115" y="29" w="130" h="10" display="songname" font="custom.font.hooge553" fontsize="11" color="custom.ticker.text" shadowcolor="custom.ticker.text.shadow" shadowx="1" shadowy="1" valign="top" ticker="1" showlen="1" />
+ 
+  <custom:seek x="7" y="73" w="261" h="8" />
+  
+  <custom:volume x="109" y="51" w="78" h="13" />
+ </layout>
+</container>
+

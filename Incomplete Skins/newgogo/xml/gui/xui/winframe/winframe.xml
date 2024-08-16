@@ -1,0 +1,38 @@
+<groupdef id="custom.captionbar" xuitag="custom:captionbar">
+ <rect fitparent="1" color="custom.captionbar.border.out" filled="1" move="1" />
+ <rect x="2" y="1" w="-4" h="17" relatw="1" color="custom.captionbar.border.in" filled="1" move="1" />
+ <rect x="0" y="1" w="1" h="18" color="custom.captionbar.border.in" move="1" />
+ <rect x="-1" y="1" w="1" h="18" relatx="1" color="custom.captionbar.border.in" move="1" />
+ <rect x="2" y="1" w="-4" h="17" relatw="1" color="custom.captionbar.title.in" edges="left;top;right" move="1"/>
+ <layer x="4" y="2" w="-8" h="5" relatw="1" image="winframe.top.gradient" />
+ <text id="caption" move="1" x="7" y="5" w="-14" h="8" relatw="1" default="default" color="custom.captionbar.text" shadowcolor="custom.captionbar.text.shadow" shadowx="1" shadowy="1" font="custom.font.hooge553" fontsize="10" valgin="top" align="left"  />
+ <script id="captionbar" file="xml/gui/scripts/captionbar.maki" />
+</groupdef>
+
+<groupdef id="custom.winframe" xuitag="custom:winframe" embed_xui="caption.bar">
+ <rect fitparent="1" color="custom.winframe.background" filled="1" regionop="1" move="1" />
+
+ <rect x="1" y="19" w="-2" h="-20" relatw="1" relath="1" color="custom.winframe.border.in" filled="0" move="1" />
+ 
+ <layer x="2" y="20" w="-55" h="5" relatw="1" tile="1" image="winframe.top.gradient" alpha="128" />
+ <layer x="3" y="-28" w="-6" h="25" relaty="1" relatw="1" tile="1" image="winframe.bot.gradient" alpha="128" />
+ 
+ <rect x="2" y="2" w="-4" h="17" relatw="1" color="custom.winframe.titlebar.background" filled="1" move="1" />
+ <rect x="2" y="3" w="-4" h="15" relatw="1" color="custom.winframe.titlebar.background.light" edges="top;bottom" />
+ 
+ <layer x="2" y="4" w="-4" h="10" relatw="1" image="winframe.titlebar.top.gradient" tile="1" alpha="160" />
+ <layer x="2" y="13" w="-4" h="4" relatw="1" image="winframe.titlebar.bot.gradient" tile="1" alpha="160" />
+ 
+ <custom:captionbar id="caption.bar" x="20" y="0" h="19" /> 
+ <rect x="-55" y="2" w="54" h="18" relatx="1" color="custom.winframe.background" filled="1" />
+ <rect x="-54" y="2" w="53" h="19" relatx="1" color="custom.winframe.border.in" edges="left;top;right" />
+ 
+ <rect fitparent="1" color="custom.winframe.border.out" filled="0" move="1" />
+ 
+ <custom:button id="min" x="-50" y="5" w="12" h="12" relatx="1" nogrid="1" image="winframe.icon.minimize" action="minimize" tooltip="Minimize" disabled="0" />
+ <custom:button id="state" x="-34" y="5" w="12" h="12" relatx="1" nogrid="1" image="winframe.icon.state" tooltip="Toggle State" disabled="0"/>
+ <custom:button id="close" x="-18" y="5" w="12" h="12" relatx="1" nogrid="1" image="winframe.icon.close" action="close" tooltip="Close"  disabled="0" />
+ 
+ <layer id="mousetrap" x="0" y="0" w="-55" h="18" relatw="1" rectrgn="1" move="1" />
+ <script id="winframe" file="xml/gui/scripts/winframe.maki" />
+</groupdef>

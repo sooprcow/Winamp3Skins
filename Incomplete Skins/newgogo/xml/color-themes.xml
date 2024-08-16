@@ -1,0 +1,39 @@
+<gammaset id="Default">
+ <gammagroup id="Button Dark" value="0,0,0"/>
+ <gammagroup id="Button Light" value="0,0,0" />
+ <gammagroup id="Button Disabled" value="0,0,0" />
+ <gammagroup id="Button" value="0,0,0" />
+ <gammagroup id="Button Text" value="0,0,0" />
+ <gammagroup id="Button Icons" value="0,0,0" />
+ 
+ <gammagroup id="Panel Dark" value="0,0,0" />
+ <gammagroup id="Panel Light" value="0,0,0" />
+ <gammagroup id="Panel" value="0,0,0" />
+ <gammagroup id="Panel Vis Bars" value="0,0,0" />
+ 
+ <gammagroup id="Caption Bar Dark" value="0,0,0" />
+ <gammagroup id="Caption Bar Light" value="0,0,0" />
+ <gammagroup id="Caption Bar Text" value="0,0,0" />
+ <gammagroup id="Caption Bar Text Shadow" value="0,0,0" />
+ 
+ <gammagroup id="Frame Background" value="0,0,0" />
+ <gammagroup id="Frame Dark" value="0,0,0" />
+ <gammagroup id="Frame Light" value="0,0,0" />
+ <gammagroup id="Frame Titlebar Background" value="0,0,0" />
+ 
+ <gammagroup id="Ticker Text" gammagroup="0,0,0" />
+ <gammagroup id="Ticker Text Shadow" gammagroup="0,0,0" />
+ 
+ <gammagroup id="Slider Border Out" gammagroup="0,0,0" />
+ <gammagroup id="Slider Border In" gammagroup="0,0,0" />
+ <gammagroup id="Slider" gammagroup="0,0,0" />
+ <gammagroup id="Slider Volume Grid" gammagroup="0,0,0" />
+ <gammagroup id="Slider Volume Fill" gammagroup="0,0,0" />
+ 
+ <gammagroup id="List Text" gammagroup="0,0,0" />
+ <gammagroup id="List Background" gammagroup="0,0,0" />
+ <gammagroup id="List Text Selected" gammagroup="0,0,0" />
+ <gammagroup id="List Sel Background" gammagroup="0,0,0" />
+ <gammagroup id="List Column Text" gammagroup="0,0,0" />
+ <gammagroup id="List Text Current" gammagroup="0,0,0" />
+</gammaset>

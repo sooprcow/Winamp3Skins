@@ -1,0 +1,13 @@
+<groupdef id="custom.panel" xuitag="custom:panel">
+ <layer x="0" y="0" w="0" h="-5" relatw="1" relath="1" image="panel.border.gradient" alpha="100" />
+ <rect x="1" y="1" w="-2" h="-6" relatw="1" relath="1" color="custom.panel.border.in" filled="1" />
+ <rect x="2" y="2" w="-4" h="-8" relatw="1" relath="1" color="custom.panel.border.out" />
+ <rect x="4" y="4" w="-8" h="-12" relatw="1" relath="1" color="custom.panel.background" filled="1" />
+ <layer x="4" y="4" w="-8" h="-12" relatw="1" relath="1" image="custom.grid.3" tile="1" alpha="32" />
+ <layer x="1" y="-5" w="-2" h="5" relaty="1" relatw="1" image="winframe.top.gradient" alpha="96" />
+ <layer x="4" y="4" h="8" w="-8" relatw="1" image="winframe.top.gradient" alpha="48" />
+</groupdef>
+
+<groupdef id="custom.panel.vis" xuitag="custom:vis" inherit_group="custom.panel">
+ <vis x="5" y="5" w="-10" h="-12" relatw="1" relath="1" colorallbands="230,230,230" colorbandpeak="230,230,230" colorallosc="230,230,230" gammagroup="Panel Vis Bars" />
+</groupdef>

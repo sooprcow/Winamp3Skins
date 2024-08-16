@@ -1,0 +1,83 @@
+<groupdef id="vis" background="player.vis.mask" drawbackground="0">
+ <vis id="vis" x="0" y="0" w="83" h="32"
+  colorband1="157,205,152" 
+  colorband2="157,205,152" 
+  colorband3="157,205,152" 
+  colorband4="157,205,152" 
+  colorband5="157,205,152"
+  colorband6="157,205,152"
+  colorband7="157,205,152"
+  colorband8="157,205,152"
+  colorband9="157,205,152"
+  colorband10="157,205,152"
+  colorband11="157,205,152"
+  colorband12="157,205,152"
+  colorband13="157,205,152"
+  colorband14="157,205,152"
+  colorband15="157,205,152"
+  colorband16="157,205,152"
+  colorbandpeak="157,205,152"
+  ghost="1" sysregion="and"
+ />
+</groupdef>
+
+<groupdef id="group.vis">
+ <layer image="player.vis" x="0" y="0" />
+ <group id="vis" x="6" y="8" w="83" h="32" />
+ <!-- Stupid Winamp3 makes me use 4 extra text objects to add a border to a truetype font :) -->
+ <text id="time5" x="0" y="1" w="90" h="19" display="TIME" font="player.font.normal" color="150,180,150" nograb="0" timeroffstyle="2" shadowcolor="150,180,150" shadowx="1" shadowy="1" fontsize="10" bold="1" align="right" />
+ <text id="time4" x="0" y="1" w="90" h="19" display="TIME" font="player.font.normal" color="150,180,150" nograb="0" timeroffstyle="2" shadowcolor="150,180,150" shadowx="-1" shadowy="-1" fontsize="10" bold="1" align="right" />
+ <text id="time3" x="0" y="1" w="90" h="19" display="TIME" font="player.font.normal" color="150,180,150" nograb="0" timeroffstyle="2" shadowcolor="150,180,150" shadowx="-1" shadowy="1" fontsize="10" bold="1" align="right" />
+ <text id="time2" x="0" y="1" w="90" h="19" display="TIME" font="player.font.normal" color="150,180,150" nograb="0" timeroffstyle="2" shadowcolor="150,180,150" shadowx="1" shadowy="-1" fontsize="10" bold="1" align="right" />
+ <text id="time1" x="0" y="1" w="90" h="19" display="TIME" font="player.font.normal" color="255,255,255" nograb="0" timeroffstyle="2" fontsize="10" bold="1" align="right" />
+</groupdef>
+
+<groupdef id="group.cbuttons" background="cbuttons.background">
+ <button x="9" y="6" w="17" h="17" image="cbuttons.prev" downimage="cbuttons.prev.down" hoverimage="cbuttons.prev.down" action="PREV" tooltip="Previous" />
+ <button x="33" y="6" w="17" h="17" image="cbuttons.play" downimage="cbuttons.play.down" hoverimage="cbuttons.play.down" action="PLAY" tooltip="Play" />
+ <button x="57" y="6" w="17" h="17" image="cbuttons.pause" downimage="cbuttons.pause.down" hoverimage="cbuttons.pause.down" action="PAUSE" tooltip="Pause" />
+ <button x="81" y="6" w="17" h="17" image="cbuttons.stop" downimage="cbuttons.stop.down" hoverimage="cbuttons.stop.down" action="STOP" tooltip="Stop" />
+ <button x="105" y="6" w="17" h="17" image="cbuttons.next" downimage="cbuttons.next.down" hoverimage="cbuttons.next.down" action="NEXT" tooltip="Next" />
+ <button x="146" y="5" w="17" h="17" image="cbuttons.open" downimage="cbuttons.open.down" hoverimage="cbuttons.open.down" action="EJECT" tooltip="Eject" />
+</groupdef>
+
+<groupdef id="group.info" background="info.background">
+ <text id="info5" x="3" y="1" w="149" h="19" valign="top" ticker="1" display="SONGNAME" showlen="1" font="player.font.normal" color="150,180,150" nograb="1" shadowcolor="150,180,150" shadowx="1" shadowy="1" fontsize="10" bold="1" align="left" />
+ <text id="info4" x="3" y="1" w="149" h="19" valign="top" ticker="1" display="SONGNAME" showlen="1" font="player.font.normal" color="150,180,150" nograb="1" shadowcolor="150,180,150" shadowx="-1" shadowy="-1" fontsize="10" bold="1" align="left" />
+ <text id="info3" x="3" y="1" w="149" h="19" valign="top" ticker="1" display="SONGNAME" showlen="1" font="player.font.normal" color="150,180,150" nograb="1" shadowcolor="150,180,150" shadowx="-1" shadowy="1" fontsize="10" bold="1" align="left" />
+ <text id="info2" x="3" y="1" w="149" h="19" valign="top" ticker="1" display="SONGNAME" showlen="1" font="player.font.normal" color="150,180,150" nograb="1" shadowcolor="150,180,150" shadowx="1" shadowy="-1" fontsize="10" bold="1" align="left" />
+ <text id="info1" x="3" y="1" w="149" h="19" valign="top" ticker="1" display="SONGNAME" showlen="1" font="player.font.normal" color="255,255,255" nograb="1" fontsize="10" bold="1" align="left" />
+ <!-- If <mouseredir /> could target more then one object then you would beable to move the song ticker arround :) -->
+</groupdef>
+
+<groupdef id="group.volume" background="volume.background">
+ <layer id="brick" image="volume.brick" x="3" y="3" w="71" h="7" tile="1" ghost="1" />
+ <slider id="volume" action="volume" x="3" y="3" w="71" h="7" thumb="volume.thumb" downthumb="volume.thumb" />
+</groupdef>
+
+<groupdef id="group.titlebar">
+ <layer id="background" image="titlebar.background" x="0" y="0" w="0" h="0" relatw="1" relath="1" dblClickAction="SWITCH;shade1"/>
+ <layer id="logo" image="titlebar.logo" x="6" y="4" w="73" h="14" tooltip="Double Click To Launch DeskMod.com!!!"/>
+ <button id="min" x="220" y="7" w="10" h="10" image="titlebar.min" downimage="titlebar.min.down" hoverimage="titlebar.min.down" action="Minimize" tooltip="Minimize Winamp" />
+ <button id="shade" x="237" y="7" w="10" h="10" image="titlebar.shade" downimage="titlebar.shade.down" hoverimage="titlebar.shade.down" action="SWITCH" param="shade1" tooltip="Switch To Shademode" />
+ <button id="close" x="254" y="7" w="10" h="10" image="titlebar.close" downimage="titlebar.close.down" hoverimage="titlebar.close.down" action="close" tooltip="Close Winamp" />
+</groupdef>
+
+<groupdef id="group.seek" background="seek.background">
+ <layer id="brick" image="seek.brick" x="2" y="2" w="0" h="5" tile="1" /> <!-- Max Width = 78 -->
+ <slider id="seek" action="seek" x="2" y="2" w="78" h="5" thumb="volume.thumb" downthumb="volume.thumb" />
+</groupdef>
+
+<groupdef id="group.system">
+ <togglebutton id="shuf" x="0" y="0" w="28" h="14" image="system.shuf" downimage="system.shuf.down" activeimage="system.shuf.active" cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Shuffle" />
+ <togglebutton id="rep" x="28" y="0" w="28" h="14" image="system.rep" downimage="system.rep.down" activeimage="system.rep.active" cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Repeat" />
+ <togglebutton id="fade" x="56" y="0" w="27" h="14" image="system.fade" downimage="system.fade.down" activeimage="system.fade.active" cfgattrib="{FC3EAF78-C66E-4ED2-A0AA-1494DFCC13FF};Enable crossfading" />
+</groupdef>  
+
+<groupdef id="group.components">
+ <button id="pl" x="15" y="0" h="12" w="22" image="component.button" downimage="component.button.down" activeimage="component.button.down" action="TOGGLE" param="guid:pl" tooltip="Toggle Playlist" />
+ <button id="ml" x="39" y="0" h="12" w="22" image="component.button" downimage="component.button.down" activeimage="component.button.down" action="TOGGLE" param="guid:ml" tooltip="Toggle Media Library" />
+ <button id="eq" x="63" y="0" h="12" w="22" image="component.button" downimage="component.button.down" activeimage="component.button.down" action="TOGGLE" param="eq" tooltip="Toggle Equalizer"/>
+ <layer id="label" image="component.label.pl" x="0" y="14" w="87" h="11" alpha="0" />
+ <script id="components" file="scripts/componentlabel.maki" />
+</groupdef>

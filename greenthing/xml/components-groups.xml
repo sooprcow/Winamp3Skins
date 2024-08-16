@@ -1,0 +1,40 @@
+<include file="system-elements.xml" />
+<include file="system-colors.xml" />
+<elements>
+ <bitmap id="win.background" file="images/components/background.png" gammagroup="overall"/>
+ <bitmap id="frame.top.left" file="images/components/frame.png" x="0" y="0" w="2" h="22" gammagroup="overall"/>
+ <bitmap id="frame.top.middle" file="images/components/frame.png" x="2" y="0" w="188" h="22" gammagroup="overall"/>
+ <bitmap id="frame.top.right" file="images/components/frame.png" x="190" y="0" w="2" h="22" gammagroup="overall"/>
+ <bitmap id="frame.left" file="images/components/frame.png" x="0" y="22" w="2" h="149" gammagroup="overall"/>
+ <bitmap id="frame.middle" file="images/components/frame.png" x="2" y="22" w="188" h="149" gammagroup="overall"/>
+ <bitmap id="frame.right" file="images/components/frame.png" x="190" y="22" w="2" h="149" gammagroup="overall"/>
+ <bitmap id="frame.bot.left" file="images/components/frame.png" x="0" y="171" w="2" h="2" gammagroup="overall"/>
+ <bitmap id="frame.bot.middle" file="images/components/frame.png" x="2" y="171" w="188" h="2" gammagroup="overall" />
+ <bitmap id="frame.bot.right" file="images/components/frame.png" x="190" y="171" w="2" h="2" gammagroup="overall"/>
+ 
+ <bitmap id="close.background" file="images/components/button-close-background.png" gammagroup="overall"/>
+  
+ </elements>
+
+<groupdef id="win.frame">
+  <grid
+    id="frame.grid"
+    x="0" y="0"
+    w="0" h="0"
+    relatw="1" relath="1"
+    topleft="frame.top.left"
+    top="frame.top.middle"
+    topright="frame.top.right"
+    left="frame.left"
+    middle="frame.middle"
+    right="frame.right"
+    bottomleft="frame.bot.left"
+    bottom="frame.bot.middle"
+    bottomright="frame.bot.right"
+    move="1"
+  />
+  
+  <!--text id="title" x="0" y="6" w="0" h="19" relatw="1" font="player.font.normal" fontsize="8" antialias="1" color="255,255,255" shadowcolor="0,0,0" shadowx="1" shadowy="1" align="center" default=":componentname" ghost="1" /-->
+</groupdef>
+
+<include file="components.xml" />

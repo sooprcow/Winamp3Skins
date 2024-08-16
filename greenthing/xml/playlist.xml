@@ -1,0 +1,66 @@
+<elements>
+ <bitmap id="pl.button.back" file="images/playlist/button-back.png" gammagroup="overall" />
+ 
+ <bitmap id="pl.shade.left" file="images/playlist/shade-frame.png" x="0" y="0" w="3" h="21" gammagroup="overall" />
+ <bitmap id="pl.shade.middle" file="images/playlist/shade-frame.png" x="3" y="0" w="259" h="21" gammagroup="overall" />
+ <bitmap id="pl.shade.right" file="images/playlist/shade-frame.png" x="262" y="0" w="2" h="21" gammagroup="overall" />
+ <bitmap id="pl.shade.controls" file="images/playlist/shade-frame.png" x="264" y="0" w="48" h="21" gammagroup="overall" />
+</elements>
+
+<container id="playlist" name="Playlist Editor" default_w="275" default_h="300" component="guid:pl" default_visible="0">
+ <layout id="normal" background="win.background" minimum_h="116" minimum_w="275" linkwidth="shade">
+  <snappoint id="mainbot" x="0" y="0" />
+  <snappoint id="mainright" x="0" y="0" />
+  <group id="win.frame" x="0" y="0" w="0" h="0" relatw="1" relath="1"/>
+  <LayoutStatus id="standardframe.layoutstatus" x="6" y="-19" w="-10" h="15" relaty="1" relatw="1" exclude="{system}" />
+
+  <layer x="0" y="0" w="3" h="3" resize="topleft" />
+  <layer x="3" y="0" w="-6" h="3" relatw="1" resize="top" />
+  <layer x="-3" y="0" w="3" h="3" relatx="1" resize="topright" />
+  <layer x="0" y="3" w="3" h="-6" relath="1" resize="left" />
+  <layer x="-3" y="3" w="3" h="-6" relatx="1" relath="1" resize="right" />
+  <layer x="0" y="-3" w="3" h="3" relaty="1" resize="bottomleft" />
+  <layer x="3" y="-3" w="-6" h="3" relatw="1" relaty="1" resize="bottom" />
+  <layer x="-6" y="-6" w="6" h="6" relatx="1" relaty="1" resize="bottomright" />
+  <component id="pledit" x="4" y="23" w="-10" h="-44" relatw="1" relath="1" noshowcmdbar="0" autoopen="1" autoclose="1" param="guid:pl" />
+  <layer image="frame.top.middle" x="2" y="0" w="-4" h="22" relatw="1" dblClickAction="SWITCH;shade" />
+  <text x="4" y="5" w="0" h="19" relatw="1" valign="top" ticker="1" text=":componentname" showlen="1" font="player.font.normal" color="150,180,150" nograb="0" ghost="1" shadowcolor="150,180,150" shadowx="1" shadowy="1" fontsize="10" bold="1" align="left" />
+  <text x="4" y="5" w="0" h="19" relatw="1" valign="top" ticker="1" text=":componentname" showlen="1" font="player.font.normal" color="150,180,150" nograb="0" ghost="1" shadowcolor="150,180,150" shadowx="-1" shadowy="-1" fontsize="10" bold="1" align="left" />
+  <text x="4" y="5" w="0" h="19" relatw="1" valign="top" ticker="1" text=":componentname" showlen="1" font="player.font.normal" color="150,180,150" nograb="0" ghost="1" shadowcolor="150,180,150" shadowx="-1" shadowy="1" fontsize="10" bold="1" align="left" />
+  <text x="4" y="5" w="0" h="19" relatw="1" valign="top" ticker="1" text=":componentname" showlen="1" font="player.font.normal" color="150,180,150" nograb="0" ghost="1" shadowcolor="150,180,150" shadowx="1" shadowy="-1" fontsize="10" bold="1" align="left" />
+  <text x="4" y="5" w="0" h="19" relatw="1" valign="top" ticker="1" text=":componentname" showlen="1" font="player.font.normal" color="255,255,255" nograb="0" ghost="1" fontsize="10" bold="1" align="left" />
+
+  <layer image="pl.button.back" x="-48" y="5" w="45" h="14" relatx="1" />
+  <button x="-22" y="7" w="10" h="10" relatx="1" image="titlebar.close" downimage="titlebar.close.down" hoverimage="titlebar.close.down" action="close" tooltip="Close Playlist" />
+  <button x="-39" y="7" w="10" h="10" relatx="1" image="titlebar.shade" downimage="titlebar.shade.down" hoverimage="titlebar.shade.down" action="SWITCH" param="shade" tooltip="Switch To Shademode" />
+ </layout>
+ 
+ <layout id="shade" background="win.background" minimum_h="21" default_h="21" maximum_h="21" minimum_w="275" linkwidth="normal">
+  <snappoint id="mainbot" x="0" y="0" />
+  <snappoint id="mainright" x="0" y="0" />
+  <layer id="left" image="pl.shade.left" x="0" y="0" w="3" h="21" />
+  <layer id="middle" image="pl.shade.middle" x="3" y="0" w="-50" h="21" relatw="1" dblClickAction="SWITCH;normal" />
+  <layer id="right" image="pl.shade.right" x="-50" y="0" w="2" h="21" relatx="1" />
+  <layer id="control" image="pl.shade.controls" x="-48" y="0" w="48" h="21" relatx="1" />
+  <layer x="-3" y="3" w="3" h="-6" relatx="1" relath="1" resize="right" />
+  
+  <layer image="pl.button.back" x="-48" y="5" w="45" h="14" relatx="1" />
+  <button x="-22" y="7" w="10" h="10" relatx="1" image="titlebar.close" downimage="titlebar.close.down" hoverimage="titlebar.close.down" action="close" tooltip="Close Playlist" />
+  <button x="-39" y="7" w="10" h="10" relatx="1" image="titlebar.shade" downimage="titlebar.shade.down" hoverimage="titlebar.shade.down" action="SWITCH" param="normal" tooltip="Switch To Normal Mode" />
+  <!-- Song Name -->
+  <text x="4" y="5" w="-90" h="19" relatw="1" valign="top" ticker="0" display="SONGNAME" font="player.font.normal" color="150,180,150" nograb="0" ghost="1" shadowcolor="150,180,150" shadowx="1" shadowy="1" fontsize="10" bold="1" align="left" />
+  <text x="4" y="5" w="-90" h="19" relatw="1" valign="top" ticker="0" display="SONGNAME" font="player.font.normal" color="150,180,150" nograb="0" ghost="1" shadowcolor="150,180,150" shadowx="-1" shadowy="-1" fontsize="10" bold="1" align="left" />
+  <text x="4" y="5" w="-90" h="19" relatw="1" valign="top" ticker="0" display="SONGNAME" font="player.font.normal" color="150,180,150" nograb="0" ghost="1" shadowcolor="150,180,150" shadowx="-1" shadowy="1" fontsize="10" bold="1" align="left" />
+  <text x="4" y="5" w="-90" h="19" relatw="1" valign="top" ticker="0" display="SONGNAME" font="player.font.normal" color="150,180,150" nograb="0" ghost="1" shadowcolor="150,180,150" shadowx="1" shadowy="-1" fontsize="10" bold="1" align="left" />
+  <text x="4" y="5" w="-90" h="19" relatw="1" valign="top" ticker="0" display="SONGNAME" font="player.font.normal" color="255,255,255" nograb="0" ghost="1" fontsize="10" bold="1" align="left" />
+  <!-- Song Lenght -->
+  <text x="-85" y="5" w="32" h="19" relatx="1" valign="top" ticker="0" display="SONGLENGTH" font="player.font.normal" color="150,180,150" nograb="0" ghost="1" shadowcolor="150,180,150" shadowx="1" shadowy="1" fontsize="10" bold="1" align="right" />
+  <text x="-85" y="5" w="32" h="19" relatx="1" valign="top" ticker="0" display="SONGLENGTH" font="player.font.normal" color="150,180,150" nograb="0" ghost="1" shadowcolor="150,180,150" shadowx="-1" shadowy="-1" fontsize="10" bold="1" align="right" />
+  <text x="-85" y="5" w="32" h="19" relatx="1" valign="top" ticker="0" display="SONGLENGTH" font="player.font.normal" color="150,180,150" nograb="0" ghost="1" shadowcolor="150,180,150" shadowx="-1" shadowy="1" fontsize="10" bold="1" align="right" />
+  <text x="-85" y="5" w="32" h="19" relatx="1" valign="top" ticker="0" display="SONGLENGTH" font="player.font.normal" color="150,180,150" nograb="0" ghost="1" shadowcolor="150,180,150" shadowx="1" shadowy="-1" fontsize="10" bold="1" align="right" />
+  <text x="-85" y="5" w="32" h="19" relatx="1" valign="top" ticker="0" display="SONGLENGTH" font="player.font.normal" color="255,255,255" nograb="0" ghost="1" fontsize="10" bold="1" align="right" /> 
+ </layout>
+</container>
+
+<include file="thinger.xml" />
+<include file="equalizer.xml" />

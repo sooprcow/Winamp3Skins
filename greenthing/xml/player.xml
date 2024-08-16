@@ -1,0 +1,36 @@
+<elements>
+ <include file="player-elements.xml" />
+ <include file="player-shade-elements.xml" />
+</elements>
+
+<container id="main" name="Main window">
+ <include file="player-groups.xml" />
+ <include file="player-shade-groups.xml"/>
+ 
+ <layout id="normal" background="player.background" w="275" h="115" droptarget="pldr" >
+  <group id="group.vis" x="13" y="33" />
+  <group id="group.cbuttons" x="4" y="87" w="168" h="26" />
+  <group id="group.info" x="118" y="33" w="153" h="20" />
+  <group id="group.volume" x="118" y="56" w="77" h="12" />
+  <group id="group.seek" x="19" y="26" w="81" h="7" />
+  <group id="group.system" x="188" y="97" w="83" h="14" />
+  <group id="group.components" x="184" y="56" w="87" h="25" />
+  <group id="group.titlebar" x="0" y="0" w="275" h="21" />
+ </layout>
+ 
+ <layout id="shade1" background="player.shade.background" w="275" h="46" droptarget="pldr" >
+  <group id="group.shade1.titlebar" x="0" y="0" w="275" h="21" />
+  <group id="group.shade.info" x="109" y="21" w="123" h="19" />
+  <group id="group.shade.cbuttons" x="117" y="35" />
+  <group id="group.shade.vis" x="18" y="23" w="83" h="20" />
+  <group id="group.shade.timer" x="12" y="18" w="90" h="19" />
+ </layout>
+ 
+ <layout id="shade2" background="player.shade2.background" w="275" h="36" droptarget="pldr" >
+  <group id="group.shade2.titlebar" x="0" y="0" w="275" h="21" />
+  <group id="group.shade.cbuttons" x="117" y="25" />
+  <group id="group.shade.vis" x="18" y="23" w="83" h="12" />
+  <group id="group.shade.timer" x="12" y="18" w="90" h="19" />
+ </layout>
+ 
+</container>

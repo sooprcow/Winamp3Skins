@@ -1,0 +1,21 @@
+<!-- Start Shade Background Images-->
+<bitmap id="player.shade.background" file="images/main/shade/background.png" gammagroup="overall" />
+<bitmap id="shade.vis.mask" file="images/main/shade/vis-mask.png" gammagroup="overall" />
+
+<!-- Start Shade Control Button Images -->
+<bitmap id="shade.cbuttons.prev" file="images/main/shade/cbuttons.png" x="0" y="0" w="18" h="8" gammagroup="overall" />
+<bitmap id="shade.cbuttons.play" file="images/main/shade/cbuttons.png" x="18" y="0" w="25" h="8" gammagroup="overall" />
+<bitmap id="shade.cbuttons.pause" file="images/main/shade/cbuttons.png" x="43" y="0" w="22" h="8" gammagroup="overall" />
+<bitmap id="shade.cbuttons.stop" file="images/main/shade/cbuttons.png" x="65" y="0" w="22" h="8" gammagroup="overall" />
+<bitmap id="shade.cbuttons.next" file="images/main/shade/cbuttons.png" x="87" y="0" w="30" h="8" gammagroup="overall" />
+<bitmap id="shade.cbuttons.open" file="images/main/shade/cbuttons.png" x="117" y="0" w="23" h="8" gammagroup="overall" />
+<bitmap id="shade.cbuttons.prev.down" file="images/main/shade/cbuttons.png" x="0" y="8" w="18" h="8" gammagroup="overall" />
+<bitmap id="shade.cbuttons.play.down" file="images/main/shade/cbuttons.png" x="18" y="8" w="25" h="8" gammagroup="overall" />
+<bitmap id="shade.cbuttons.pause.down" file="images/main/shade/cbuttons.png" x="43" y="8" w="22" h="8" gammagroup="overall" />
+<bitmap id="shade.cbuttons.stop.down" file="images/main/shade/cbuttons.png" x="65" y="8" w="22" h="8" gammagroup="overall" />
+<bitmap id="shade.cbuttons.next.down" file="images/main/shade/cbuttons.png" x="87" y="8" w="30" h="8" gammagroup="overall" />
+<bitmap id="shade.cbuttons.open.down" file="images/main/shade/cbuttons.png" x="117" y="8" w="23" h="8" gammagroup="overall" />
+
+<!-- Start Shade Background Images-->
+<bitmap id="player.shade2.background" file="images/main/shade2/background.png" gammagroup="overall" />
+<bitmap id="shade2.vis.mask" file="images/main/shade/vis-mask.png" gammagroup="overall" />

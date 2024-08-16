@@ -1,0 +1,38 @@
+<elements>
+ <bitmap id="eq.background" file="images/eq/background.png" gammagroup="overall" />
+ 
+ <bitmap id="eq.button.on" file="images/eq/eq-buttons.png" x="0" y="0" w="36" h="15" gammagroup="overall" />
+ <bitmap id="eq.button.auto" file="images/eq/eq-buttons.png" x="0" y="15" w="36" h="15" gammagroup="overall" />
+ <bitmap id="eq.button.pre" file="images/eq/eq-buttons.png" x="0" y="30" w="36" h="15" gammagroup="overall" />
+ <bitmap id="eq.button.on.hover" file="images/eq/eq-buttons.png" x="36" y="0" w="36" h="15" gammagroup="overall" />
+ <bitmap id="eq.button.auto.hover" file="images/eq/eq-buttons.png" x="36" y="15" w="36" h="15" gammagroup="overall" />
+ <bitmap id="eq.button.pre.hover" file="images/eq/eq-buttons.png" x="36" y="30" w="36" h="15" gammagroup="overall" />
+ <bitmap id="eq.button.on.down" file="images/eq/eq-buttons.png" x="72" y="0" w="36" h="15" gammagroup="overall" />
+ <bitmap id="eq.button.auto.down" file="images/eq/eq-buttons.png" x="72" y="15" w="36" h="15" gammagroup="overall" />
+ <bitmap id="eq.button.pre.down" file="images/eq/eq-buttons.png" x="72" y="30" w="36" h="15" gammagroup="overall" />
+ 
+ <bitmap id="eq.slider.thumb" file="images/eq/eq-thumb.png" gammagroup="overall" />
+</elements>
+
+<container id="eq" name="Equalizer" default_w="275" default_h="115" default_visible="0">
+ <layout id="normal" background="eq.background" w="275" h="115">
+ <snappoint id="mainbot" x="0" y="0" />
+ <snappoint id="mainright" x="0" y="0" />
+ <button id="close" x="254" y="7" w="10" h="10" image="titlebar.close" downimage="titlebar.close.down" hoverimage="titlebar.close.down" action="close" tooltip="Close Equalizer" />
+ <button x="13" y="33" w="36" h="15" action="EQ_TOGGLE" image="eq.button.on" downimage="eq.button.on.hover" activeimage="eq.button.on.down" tooltip="Toggle Equalizer On/Off" />
+ <button x="13" y="52" w="36" h="15" action="EQ_AUTO" image="eq.button.auto" downimage="eq.button.auto.hover" activeimage="eq.button.auto.down" tooltip="Toggle Equalizer Automatic Processing" />
+ <button x="13" y="71" w="36" h="15" action="MENU" param="presets" image="eq.button.pre" downimage="eq.button.pre.hover" activeimage="eq.button.pre.down" tooltip="Manage Equalizer Presets" />
+ 
+ <slider action="EQ_PREAMP" orientation="V" x="56" y="33" w="11" h="67" thumb="eq.slider.thumb" downthumb="eq.slider.thumb" />
+ <slider action="EQ_BAND" param="1" orientation="V" x="87" y="33" w="11" h="67" thumb="eq.slider.thumb" downthumb="eq.slider.thumb" />
+ <slider action="EQ_BAND" param="2" orientation="V" x="105" y="33" w="11" h="67" thumb="eq.slider.thumb" downthumb="eq.slider.thumb" />
+ <slider action="EQ_BAND" param="3" orientation="V" x="123" y="33" w="11" h="67" thumb="eq.slider.thumb" downthumb="eq.slider.thumb" />
+ <slider action="EQ_BAND" param="4" orientation="V" x="141" y="33" w="11" h="67" thumb="eq.slider.thumb" downthumb="eq.slider.thumb" />
+ <slider action="EQ_BAND" param="5" orientation="V" x="159" y="33" w="11" h="67" thumb="eq.slider.thumb" downthumb="eq.slider.thumb" />
+ <slider action="EQ_BAND" param="6" orientation="V" x="177" y="33" w="11" h="67" thumb="eq.slider.thumb" downthumb="eq.slider.thumb" />
+ <slider action="EQ_BAND" param="7" orientation="V" x="195" y="33" w="11" h="67" thumb="eq.slider.thumb" downthumb="eq.slider.thumb" />
+ <slider action="EQ_BAND" param="8" orientation="V" x="213" y="33" w="11" h="67" thumb="eq.slider.thumb" downthumb="eq.slider.thumb" />
+ <slider action="EQ_BAND" param="9" orientation="V" x="231" y="33" w="11" h="67" thumb="eq.slider.thumb" downthumb="eq.slider.thumb" />
+ <slider action="EQ_BAND" param="10" orientation="V" x="249" y="33" w="11" h="67" thumb="eq.slider.thumb" downthumb="eq.slider.thumb" />
+ </layout>
+</container>

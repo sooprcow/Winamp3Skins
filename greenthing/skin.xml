@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<WinampAbstractionLayer version="0.8">
+
+  <skininfo>
+    <version>1.0</version>
+    <name>Green Dream</name>
+    <comment>Made for the DesMod Love Contest - Special Thanks to Jeff, Bizzy, Petrol Designs, and all the other testers who loved the skin :)</comment>
+    <author>David Serrano</author>
+    <email>sooprcow@deskmod.com</email>
+    <homepage>http://sooprcow.deskmod.com</homepage>
+    <screenshot>images/preview.png</screenshot>
+  </skininfo>
+  
+  <include file="xml/color-presets.xml" />
+  <include file="xml/player.xml" />
+  <include file="xml/components-groups.xml" />
+  
+  <scripts>
+   <script id="player" file="scripts/player.maki" />
+  </scripts>   
+</WinampAbstractionLayer>

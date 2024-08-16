@@ -1,0 +1,19 @@
+ <!-- Gamma sets -->
+ <!--
+  Since this skin uses true type fonts I can not currently build a good set of color sets without 
+  the font colors to look messed up. Same with the VIS. Sorry :(
+ -->
+ <gammaset id="Default">
+  <gammagroup id="overall" value="0,0,0"/>
+  <gammagroup id="Thinger icons" value="1504, 3104, 1344"/> 
+ </gammaset>
+ 
+ <gammaset id="Darker">
+  <gammagroup id="overall" value="-256,0,-256"/>
+  <gammagroup id="Thinger icons" value="1504, 3104, 1344"/> 
+ </gammaset>
+ 
+ <gammaset id="Much Darker">
+  <gammagroup id="overall" value="-512,-256,-512" />
+  <gammagroup id="Thinger icons" value="1504, 3104, 1344"/> 
+ </gammaset>

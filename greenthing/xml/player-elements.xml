@@ -1,0 +1,67 @@
+<!-- Start Fonts 
+<bitmapfont id="player.font.normal" file="images/main/player-font-normal.png" charwidth="14" charheight="14" hspacing="-5" vspacing="0" gammagroup="overall" />
+<bitmapfont id="player.font.big" file="images/main/player-font-big.png" charwidth="20" charheight="28" hspacing="-5" vspacing="0" gammagroup="overall" />
+-->
+
+<truetypefont id="player.font.normal" file="fonts/HOOG0553.TTF" gammagroup="overall" />
+
+<!-- Start Background/Other Images -->
+<bitmap id="player.background" file="images/main/background.png" gammagroup="overall" />
+<bitmap id="info.background" file="images/main/info-background.png" gammagroup="overall" />
+
+<!-- Start Vis Images -->
+<bitmap id="player.vis" file="images/main/vis.png" gammagroup="overall" />
+<bitmap id="player.vis.mask" file="images/main/vis-mask.png" gammagroup="overall" />
+<bitmap id="player.flash.ani" file="images/main/flash-ani.png" gammagroup="overall" />
+
+<!-- Start Control Button Images -->
+<bitmap id="cbuttons.prev" file="images/main/cbuttons.png" x="0" y="0" w="17" h="17" gammagroup="overall" />
+<bitmap id="cbuttons.play" file="images/main/cbuttons.png" x="17" y="0" w="17" h="17" gammagroup="overall" />
+<bitmap id="cbuttons.pause" file="images/main/cbuttons.png" x="34" y="0" w="17" h="17" gammagroup="overall" />
+<bitmap id="cbuttons.stop" file="images/main/cbuttons.png" x="51" y="0" w="17" h="17" gammagroup="overall" />
+<bitmap id="cbuttons.next" file="images/main/cbuttons.png" x="68" y="0" w="17" h="17" gammagroup="overall" />
+<bitmap id="cbuttons.open" file="images/main/cbuttons.png" x="85" y="0" w="17" h="17" gammagroup="overall" />
+<bitmap id="cbuttons.prev.down" file="images/main/cbuttons.png" x="0" y="17" w="17" h="17" gammagroup="overall" />
+<bitmap id="cbuttons.play.down" file="images/main/cbuttons.png" x="17" y="17" w="17" h="17" gammagroup="overall" />
+<bitmap id="cbuttons.pause.down" file="images/main/cbuttons.png" x="34" y="17" w="17" h="17" gammagroup="overall" />
+<bitmap id="cbuttons.stop.down" file="images/main/cbuttons.png" x="51" y="17" w="17" h="17" gammagroup="overall" />
+<bitmap id="cbuttons.next.down" file="images/main/cbuttons.png" x="68" y="17" w="17" h="17" gammagroup="overall" />
+<bitmap id="cbuttons.open.down" file="images/main/cbuttons.png" x="85" y="17" w="17" h="17" gammagroup="overall" />
+<bitmap id="cbuttons.background" file="images/main/cbutton-background.png" gammagroup="overall" />
+
+<!-- Start Volume Images -->
+<bitmap id="volume.background" file="images/main/volume-background.png" gammagroup="overall" />
+<bitmap id="volume.brick" file="images/main/volume-brick.png" gammagroup="overall" />
+<bitmap id="volume.thumb" file="images/main/volume-brick.png" x="3" y="0" w="1" h="1" gammagroup="overall" />
+
+<!-- Start Titlebar Images -->
+<bitmap id="titlebar.logo" file="images/main/logo.png" gammagroup="overall" />
+<bitmap id="titlebar.background" file="images/main/titlebar-background.png" gammagroup="overall" />
+<bitmap id="titlebar.min" file="images/main/titlebar-buttons.png" x="0" y="0" w="10" h="10" gammagroup="overall" />
+<bitmap id="titlebar.shade" file="images/main/titlebar-buttons.png" x="10" y="0" w="10" h="10" gammagroup="overall" />
+<bitmap id="titlebar.close" file="images/main/titlebar-buttons.png" x="20" y="0" w="10" h="10" gammagroup="overall" />
+<bitmap id="titlebar.min.down" file="images/main/titlebar-buttons.png" x="0" y="10" w="10" h="10" gammagroup="overall" />
+<bitmap id="titlebar.shade.down" file="images/main/titlebar-buttons.png" x="10" y="10" w="10" h="10" gammagroup="overall" />
+<bitmap id="titlebar.close.down" file="images/main/titlebar-buttons.png" x="20" y="10" w="10" h="10" gammagroup="overall" />
+
+<!-- Start Seek Images -->
+<bitmap id="seek.background" file="images/main/seek-background.png" gammagroup="overall" />
+<bitmap id="seek.brick" file="images/main/seek-brick.png" gammagroup="overall" />
+
+<!-- Start Shuf/Rep/Fade Images -->
+<bitmap id="system.shuf" file="images/main/shufrepfade.png" x="0" y="0" w="28" h="14" gammagroup="overall" />
+<bitmap id="system.rep" file="images/main/shufrepfade.png" x="28" y="0" w="28" h="14" gammagroup="overall" />
+<bitmap id="system.fade" file="images/main/shufrepfade.png" x="56" y="0" w="27" h="14" gammagroup="overall" />
+<bitmap id="system.shuf.down" file="images/main/shufrepfade.png" x="0" y="14" w="28" h="14" gammagroup="overall" />
+<bitmap id="system.rep.down" file="images/main/shufrepfade.png" x="28" y="14" w="28" h="14" gammagroup="overall" />
+<bitmap id="system.fade.down" file="images/main/shufrepfade.png" x="56" y="14" w="27" h="14" gammagroup="overall" />
+<bitmap id="system.shuf.active" file="images/main/shufrepfade.png" x="0" y="28" w="28" h="14" gammagroup="overall" />
+<bitmap id="system.rep.active" file="images/main/shufrepfade.png" x="28" y="28" w="28" h="14" gammagroup="overall" />
+<bitmap id="system.fade.active" file="images/main/shufrepfade.png" x="56" y="28" w="27" h="14" gammagroup="overall" />
+
+<!-- Start Component Control Images -->
+<bitmap id="component.button" file="images/main/component-button.png" x="0" y="0" w="22" h="12" gammagroup="overall" />
+<bitmap id="component.button.down" file="images/main/component-button.png" x="22" y="0" w="22" h="12" gammagroup="overall" />
+<bitmap id="component.label.pl" file="images/main/component-button-labels.png" x="0" y="0" w="87" h="11" gammagroup="overall" />
+<bitmap id="component.label.ml" file="images/main/component-button-labels.png" x="0" y="11" w="87" h="11" gammagroup="overall" />
+<bitmap id="component.label.eq" file="images/main/component-button-labels.png" x="0" y="22" w="87" h="11" gammagroup="overall" />

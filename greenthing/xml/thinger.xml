@@ -1,0 +1,27 @@
+<elements>
+ <bitmap id="thinger.bg.left" file="images/thinger/thinger-background.png" x="0" y="0" w="2" h="46" gammagroup="overall" />
+ <bitmap id="thinger.bg.middle" file="images/thinger/thinger-background.png" x="2" y="0" w="251" h="46" gammagroup="overall" />
+ <bitmap id="thinger.bg.right" file="images/thinger/thinger-background.png" x="253" y="0" w="22" h="46" gammagroup="overall" />
+ 
+ <bitmap id="thinger.button.left" file="images/thinger/thinger-buttons.png" x="0" y="0" w="13" h="38" gammagroup="overall" />
+ <bitmap id="thinger.button.right" file="images/thinger/thinger-buttons.png" x="13" y="0" w="13" h="38" gammagroup="overall" />
+ <bitmap id="thinger.button.left.hover" file="images/thinger/thinger-buttons.png" x="0" y="38" w="13" h="38" gammagroup="overall" />
+ <bitmap id="thinger.button.right.hover" file="images/thinger/thinger-buttons.png" x="13" y="38" w="13" h="38" gammagroup="overall" />
+</elements>
+
+<container id="thinger" name="Thinger" default_w="275" default_h="46" default_visible="0">
+ <layout id="normal" background="thinger.bg.middle" w="275" h="46" maximum_h="46" minimum_w="90" minimum_h="46" >
+  <snappoint id="mainbot" x="0" y="0" />
+  <snappoint id="mainright" x="0" y="0" />
+  <layer image="thinger.bg.middle" x="0" y="0" w="0" h="46" relatw="1" />
+  <layer image="thinger.bg.left" x="0" y="0" w="2" h="46" />
+  <layer image="thinger.bg.right" x="-22" y="0" w="22" h="46" relatx="1" />
+  <layer x="-3" y="0" w="3" h="0" relatx="1" relath="1" resize="right" />
+  
+  <button x="-17" y="25" w="10" h="10" relatx="1" image="titlebar.close" downimage="titlebar.close.down" hoverimage="titlebar.close.down" action="close" tooltip="Close Thinger" />
+  
+  <button id="thinger.scroll.left" action="CB_PREV" x="4" y="4" w="13" h="38" image="thinger.button.left" downimage="thinger.button.left.hover" />
+  <button id="thinger.scroll.right" action="CB_NEXT" x="-37" y="4" w="13" h="38" relatx="1" image="thinger.button.right" downimage="thinger.button.right.hover" />
+  <componentbucket id="cblist" x="20" y="7" w="-60" h="32" relatw="1" leftmargin="0" rightmargin="0" spacing="0" />  
+ </layout>
+</container>

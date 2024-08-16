@@ -1,0 +1,366 @@
+<elements>
+
+  <!-- Fonts -->
+
+  <!-- Bitmaps -->
+  
+   <bitmap id="studio.BaseTexture" file="images/components/background.png" gammagroup="overall"/>
+  
+   <!-- Frame windows -->
+   <bitmap id="studio.framewnd.verticaldivider" file="images/components/window-elements.png" x="124" y="53" h="65" w="8" gammagroup="overall"/>
+   <bitmap id="studio.framewnd.verticalgrabber" file="images/components/window-elements.png" x="115" y="53" h="65" w="8" gammagroup="overall"/>
+   <bitmap id="studio.framewnd.horizontaldivider" file="images/components/window-elements.png" x="40" y="97" h="8" w="65" gammagroup="overall"/>
+   <bitmap id="studio.framewnd.horizontalgrabber" file="images/components/window-elements.png" x="40" y="106" h="8" w="65" gammagroup="overall"/>
+<!--
+   <bitmap id="studio.framewnd.windowshade" file="images/components/framewnd-windowshade.png" gammagroup="overall"/>
+-->
+
+   <bitmap id="wasabi.frame.divider.arrow.left" file="images/components/window-elements.png" x="56" y="124" h="7" w="4" gammagroup="overall"/>
+   <bitmap id="wasabi.frame.divider.arrow.right" file="images/components/window-elements.png" x="60" y="124" h="7" w="4" gammagroup="overall"/>
+   <bitmap id="wasabi.frame.divider.arrow.up" file="images/components/window-elements.png" x="64" y="124" h="4" w="7" gammagroup="overall"/>
+   <bitmap id="wasabi.frame.divider.arrow.down" file="images/components/window-elements.png" x="64" y="128" h="4" w="7" gammagroup="overall"/>
+
+   <bitmap id="wasabi.frame.divider.top.left" file="images/components/window-elements.png" x="115" y="31" h="3" w="3" gammagroup="overall"/>
+   <bitmap id="wasabi.frame.divider.top" file="images/components/window-elements.png" x="118" y="31" h="3" w="10" gammagroup="overall"/>
+   <bitmap id="wasabi.frame.divider.top.right" file="images/components/window-elements.png" x="128" y="31" h="3" w="3" gammagroup="overall"/>
+   <bitmap id="wasabi.frame.divider.left" file="images/components/window-elements.png" x="115" y="34" h="10" w="3" gammagroup="overall"/>
+   <bitmap id="wasabi.frame.divider.center" file="images/components/window-elements.png" x="118" y="34" h="10" w="10" gammagroup="overall"/>
+   <bitmap id="wasabi.frame.divider.right" file="images/components/window-elements.png" x="128" y="34" h="10" w="3" gammagroup="overall"/>
+   <bitmap id="wasabi.frame.divider.bottom.left" file="images/components/window-elements.png" x="115" y="44" h="3" w="3" gammagroup="overall"/>
+   <bitmap id="wasabi.frame.divider.bottom" file="images/components/window-elements.png" x="118" y="44" h="3" w="10" gammagroup="overall"/>
+   <bitmap id="wasabi.frame.divider.bottom.right" file="images/components/window-elements.png" x="128" y="44" h="3" w="3" gammagroup="overall"/>
+
+   <!-- Generic Lists and Trees -->
+
+   <bitmap id="studio.list.background" file="images/components/window-elements.png" x="1" y="115" h="17" w="17" gammagroup="overall"/> <!-- List background bitmap (tile) -->
+   <bitmap id="studio.tree.background" file="images/components/window-elements.png" x="1" y="115" h="17" w="17" gammagroup="overall"/> <!-- Tree background bitmap (tile) -->
+
+   <bitmap id="studio.tree.tab.closed" file="images/components/window-elements.png" x="149" y="0" h="14" w="14" gammagroup="overall"/>
+   <bitmap id="studio.tree.tab.open" file="images/components/window-elements.png" x="135" y="0" h="14" w="14" gammagroup="overall"/>
+   <bitmap id="studio.tree.link.top.bottom" file="images/components/window-elements.png" x="135" y="14" h="14" w="14" gammagroup="overall"/>
+   <bitmap id="studio.tree.link.top.right" file="images/components/window-elements.png" x="135" y="42" h="14" w="14" gammagroup="overall"/>
+   <bitmap id="studio.tree.link.top.rightBottom" file="images/components/window-elements.png" x="135" y="28" h="14" w="14" gammagroup="overall"/>
+   <bitmap id="studio.tree.link.tab.top.bottom" file="images/components/window-elements.png" x="149" y="14" h="14" w="14" gammagroup="overall"/>
+   <bitmap id="studio.tree.link.tab.top.right" file="images/components/window-elements.png" x="149" y="42" h="14" w="14" gammagroup="overall"/>
+   <bitmap id="studio.tree.link.tab.top.rightBottom" file="images/components/window-elements.png" x="149" y="28" h="14" w="14" gammagroup="overall"/>
+
+   <!-- Old List & Tree scrollbars -->
+   <bitmap id="studio.scrollbar.horizontal.background" file="images/components/window-elements.png" x="58" y="52" h="13" w="41" gammagroup="overall"/>
+   <bitmap id="studio.scrollbar.horizontal.left" file="images/components/window-elements.png" x="40" y="13" h="13" w="17" gammagroup="overall"/>
+   <bitmap id="studio.scrollbar.horizontal.left.hilite" file="images/components/window-elements.png" x="40" y="26" h="13" w="17" gammagroup="overall"/>
+   <bitmap id="studio.scrollbar.horizontal.left.pressed" file="images/components/window-elements.png" x="40" y="39" h="13" w="17" gammagroup="overall"/>
+   <bitmap id="studio.scrollbar.horizontal.right" file="images/components/window-elements.png" x="98" y="13" h="13" w="17" gammagroup="overall"/>
+   <bitmap id="studio.scrollbar.horizontal.right.hilite" file="images/components/window-elements.png" x="98" y="26" h="13" w="17" gammagroup="overall"/>
+   <bitmap id="studio.scrollbar.horizontal.right.pressed" file="images/components/window-elements.png" x="98" y="39" h="13" w="17" gammagroup="overall"/>
+   <bitmap id="studio.scrollbar.horizontal.button" file="images/components/window-elements.png" x="57" y="13" h="13" w="41" gammagroup="overall"/>
+   <bitmap id="studio.scrollbar.horizontal.button.hilite" file="images/components/window-elements.png" x="57" y="26" h="13" w="41" gammagroup="overall"/>
+   <bitmap id="studio.scrollbar.horizontal.button.pressed" file="images/components/window-elements.png" x="57" y="39" h="13" w="41" gammagroup="overall"/>
+
+   <bitmap id="studio.scrollbar.vertical.background" file="images/components/window-elements.png" x="39" y="55" h="41" w="13" gammagroup="overall"/>
+   <bitmap id="studio.scrollbar.vertical.left" file="images/components/window-elements.png" x="0" y="38" h="17" w="13" gammagroup="overall"/>
+   <bitmap id="studio.scrollbar.vertical.left.hilite" file="images/components/window-elements.png" x="13" y="38" h="17" w="13" gammagroup="overall"/>
+   <bitmap id="studio.scrollbar.vertical.left.pressed" file="images/components/window-elements.png" x="26" y="38" h="17" w="13" gammagroup="overall"/>
+   <bitmap id="studio.scrollbar.vertical.right" file="images/components/window-elements.png" x="0" y="96" h="17" w="13" gammagroup="overall"/>
+   <bitmap id="studio.scrollbar.vertical.right.hilite" file="images/components/window-elements.png" x="13" y="96" h="17" w="13" gammagroup="overall"/>
+   <bitmap id="studio.scrollbar.vertical.right.pressed" file="images/components/window-elements.png" x="26" y="96" h="17" w="13" gammagroup="overall"/>
+   <bitmap id="studio.scrollbar.vertical.button" file="images/components/window-elements.png" x="0" y="55" h="41" w="13" gammagroup="overall"/>
+   <bitmap id="studio.scrollbar.vertical.button.hilite" file="images/components/window-elements.png" x="13" y="55" h="41" w="13" gammagroup="overall"/>
+   <bitmap id="studio.scrollbar.vertical.button.pressed" file="images/components/window-elements.png" x="26" y="55" h="41" w="13" gammagroup="overall"/>
+
+   <!-- NewList & Tree scrollbars -->
+   <bitmap id="wasabi.scrollbar.horizontal.background" file="images/components/window-elements.png" x="58" y="52" h="13" w="41" gammagroup="overall"/>
+
+   <bitmap id="wasabi.scrollbar.horizontal.left" file="images/components/window-elements.png" x="40" y="13" h="13" w="17" gammagroup="overall"/>
+   <bitmap id="wasabi.scrollbar.horizontal.left.hover" file="images/components/window-elements.png" x="40" y="26" h="13" w="17" gammagroup="overall"/>
+   <bitmap id="wasabi.scrollbar.horizontal.left.pressed" file="images/components/window-elements.png" x="40" y="39" h="13" w="17" gammagroup="overall"/>
+   <bitmap id="wasabi.scrollbar.horizontal.right" file="images/components/window-elements.png" x="98" y="13" h="13" w="17" gammagroup="overall"/>
+   <bitmap id="wasabi.scrollbar.horizontal.right.hover" file="images/components/window-elements.png" x="98" y="26" h="13" w="17" gammagroup="overall"/>
+   <bitmap id="wasabi.scrollbar.horizontal.right.pressed" file="images/components/window-elements.png" x="98" y="39" h="13" w="17" gammagroup="overall"/>
+
+   <bitmap id="wasabi.scrollbar.horizontal.button.left" file="images/components/window-elements.png" x="57" y="13" h="13" w="3" gammagroup="overall"/>
+   <bitmap id="wasabi.scrollbar.horizontal.button.middle" file="images/components/window-elements.png" x="60" y="13" h="13" w="35" gammagroup="overall"/>
+   <bitmap id="wasabi.scrollbar.horizontal.button.right" file="images/components/window-elements.png" x="95" y="13" h="13" w="3" gammagroup="overall"/>
+
+   <bitmap id="wasabi.scrollbar.horizontal.button.left.hover" file="images/components/window-elements.png" x="57" y="26" h="13" w="3" gammagroup="overall"/>
+   <bitmap id="wasabi.scrollbar.horizontal.button.middle.hover" file="images/components/window-elements.png" x="60" y="26" h="13" w="35" gammagroup="overall"/>
+   <bitmap id="wasabi.scrollbar.horizontal.button.right.hover" file="images/components/window-elements.png" x="95" y="26" h="13" w="3" gammagroup="overall"/>
+
+   <bitmap id="wasabi.scrollbar.horizontal.button.left.pressed" file="images/components/window-elements.png" x="57" y="39" h="13" w="3" gammagroup="overall"/>
+   <bitmap id="wasabi.scrollbar.horizontal.button.middle.pressed" file="images/components/window-elements.png" x="60" y="39" h="13" w="35" gammagroup="overall"/>
+   <bitmap id="wasabi.scrollbar.horizontal.button.right.pressed" file="images/components/window-elements.png" x="95" y="39" h="13" w="3" gammagroup="overall"/>
+
+
+   <bitmap id="wasabi.scrollbar.vertical.background" file="images/components/window-elements.png" x="39" y="55" h="41" w="13" gammagroup="overall"/>
+
+   <bitmap id="wasabi.scrollbar.vertical.left" file="images/components/window-elements.png" x="0" y="38" h="17" w="13" gammagroup="overall"/>
+   <bitmap id="wasabi.scrollbar.vertical.left.hover" file="images/components/window-elements.png" x="13" y="38" h="17" w="13" gammagroup="overall"/>
+   <bitmap id="wasabi.scrollbar.vertical.left.pressed" file="images/components/window-elements.png" x="26" y="38" h="17" w="13" gammagroup="overall"/>
+
+   <bitmap id="wasabi.scrollbar.vertical.right" file="images/components/window-elements.png" x="0" y="96" h="17" w="13" gammagroup="overall"/>
+   <bitmap id="wasabi.scrollbar.vertical.right.hover" file="images/components/window-elements.png" x="13" y="96" h="17" w="13" gammagroup="overall"/>
+   <bitmap id="wasabi.scrollbar.vertical.right.pressed" file="images/components/window-elements.png" x="26" y="96" h="17" w="13" gammagroup="overall"/>
+
+   <bitmap id="wasabi.scrollbar.vertical.button.top" file="images/components/window-elements.png" x="0" y="55" h="3" w="13" gammagroup="overall"/>
+   <bitmap id="wasabi.scrollbar.vertical.button.middle" file="images/components/window-elements.png" x="0" y="58" h="35" w="13" gammagroup="overall"/>
+   <bitmap id="wasabi.scrollbar.vertical.button.bottom" file="images/components/window-elements.png" x="0" y="93" h="3" w="13" gammagroup="overall"/>
+
+   <bitmap id="wasabi.scrollbar.vertical.button.top.hover" file="images/components/window-elements.png" x="13" y="55" h="3" w="13" gammagroup="overall"/>
+   <bitmap id="wasabi.scrollbar.vertical.button.middle.hover" file="images/components/window-elements.png" x="13" y="58" h="35" w="13" gammagroup="overall"/>
+   <bitmap id="wasabi.scrollbar.vertical.button.bottom.hover" file="images/components/window-elements.png" x="13" y="93" h="3" w="13" gammagroup="overall"/>
+
+   <bitmap id="wasabi.scrollbar.vertical.button.top.pressed" file="images/components/window-elements.png" x="26" y="55" h="3" w="13" gammagroup="overall"/>
+   <bitmap id="wasabi.scrollbar.vertical.button.middle.pressed" file="images/components/window-elements.png" x="26" y="58" h="35" w="13" gammagroup="overall"/>
+   <bitmap id="wasabi.scrollbar.vertical.button.bottom.pressed" file="images/components/window-elements.png" x="26" y="93" h="3" w="13" gammagroup="overall"/>
+
+   <!-- labelwnd titles -->
+   <bitmap id="studio.label.upperLeft" file="images/components/window-elements.png" x="0" y="170" w="2" h="2" gammagroup="overall"/>
+   <bitmap id="studio.label.top" file="images/components/window-elements.png" x="2" y="170" w="101" h="2" gammagroup="overall"/>
+   <bitmap id="studio.label.upperRight" file="images/components/window-elements.png" x="103" y="170" w="2" h="2" gammagroup="overall"/>
+   <bitmap id="studio.label.left" file="images/components/window-elements.png" x="0" y="172" w="2" h="7" gammagroup="overall"/>
+   <bitmap id="studio.label.middle" file="images/components/window-elements.png" x="2" y="172" w="101" h="7" gammagroup="overall"/>
+   <bitmap id="studio.label.right" file="images/components/window-elements.png" x="103" y="172" w="2" h="7" gammagroup="overall"/>
+   <bitmap id="studio.label.lowerLeft" file="images/components/window-elements.png" x="0" y="179" w="2" h="2" gammagroup="overall"/>
+   <bitmap id="studio.label.bottom" file="images/components/window-elements.png" x="2" y="179" w="101" h="2" gammagroup="overall"/>
+   <bitmap id="studio.label.lowerRight" file="images/components/window-elements.png" x="103" y="179" w="2" h="2" gammagroup="overall"/>
+
+   <bitmap id="wasabi.label.top.left" file="images/components/window-elements.png" x="0" y="170" w="2" h="2" gammagroup="overall"/>
+   <bitmap id="wasabi.label.top" file="images/components/window-elements.png" x="2" y="170" w="101" h="2" gammagroup="overall"/>
+   <bitmap id="wasabi.label.top.right" file="images/components/window-elements.png" x="103" y="170" w="2" h="2" gammagroup="overall"/>
+   <bitmap id="wasabi.label.left" file="images/components/window-elements.png" x="0" y="172" w="2" h="7" gammagroup="overall"/>
+   <bitmap id="wasabi.label.middle" file="images/components/window-elements.png" x="2" y="172" w="101" h="7" gammagroup="overall"/>
+   <bitmap id="wasabi.label.right" file="images/components/window-elements.png" x="103" y="172" w="2" h="7" gammagroup="overall"/>
+   <bitmap id="wasabi.label.bottom.left" file="images/components/window-elements.png" x="0" y="179" w="2" h="2" gammagroup="overall"/>
+   <bitmap id="wasabi.label.bottom" file="images/components/window-elements.png" x="2" y="179" w="101" h="2" gammagroup="overall"/>
+   <bitmap id="wasabi.label.bottom.right" file="images/components/window-elements.png" x="103" y="179" w="2" h="2" gammagroup="overall"/>
+   
+   <!-- default button -->
+   <bitmap id="studio.button.upperLeft" file="images/components/buttons.png" x="0" y="0" w="2" h="2" gammagroup="overall"/>
+   <bitmap id="studio.button.top" file="images/components/buttons.png" x="2" y="0" w="23" h="2" gammagroup="overall"/>
+   <bitmap id="studio.button.upperRight" file="images/components/buttons.png" x="25" y="0" w="2" h="2" gammagroup="overall"/>
+   <bitmap id="studio.button.left" file="images/components/buttons.png" x="0" y="2" w="2" h="11" gammagroup="overall"/>
+   <bitmap id="studio.button.middle" file="images/components/buttons.png" x="2" y="2" w="23" h="11" gammagroup="overall"/>
+   <bitmap id="studio.button.right" file="images/components/buttons.png" x="25" y="2" w="2" h="11" gammagroup="overall"/>
+   <bitmap id="studio.button.lowerLeft" file="images/components/buttons.png" x="0" y="13" w="2" h="2" gammagroup="overall"/>
+   <bitmap id="studio.button.bottom" file="images/components/buttons.png" x="2" y="13" w="23" h="2" gammagroup="overall"/>
+   <bitmap id="studio.button.lowerRight" file="images/components/buttons.png" x="25" y="13" w="2" h="2" gammagroup="overall"/>
+
+   <bitmap id="studio.button.pressed.upperLeft" file="images/components/buttons.png" x="27" y="0" w="2" h="2" gammagroup="overall"/>
+   <bitmap id="studio.button.pressed.top" file="images/components/buttons.png" x="29" y="0" w="23" h="2" gammagroup="overall"/>
+   <bitmap id="studio.button.pressed.upperRight" file="images/components/buttons.png" x="52" y="0" w="2" h="2" gammagroup="overall"/>
+   <bitmap id="studio.button.pressed.left" file="images/components/buttons.png" x="27" y="2" w="2" h="11" gammagroup="overall"/>
+   <bitmap id="studio.button.pressed.middle" file="images/components/buttons.png" x="29" y="2" w="23" h="11" gammagroup="overall"/>
+   <bitmap id="studio.button.pressed.right" file="images/components/buttons.png" x="52" y="2" w="2" h="11" gammagroup="overall"/>
+   <bitmap id="studio.button.pressed.lowerLeft" file="images/components/buttons.png" x="27" y="13" w="2" h="2" gammagroup="overall"/>
+   <bitmap id="studio.button.pressed.bottom" file="images/components/buttons.png" x="29" y="13" w="23" h="2" gammagroup="overall"/>
+   <bitmap id="studio.button.pressed.lowerRight" file="images/components/buttons.png" x="52" y="13" w="2" h="2" gammagroup="overall"/>
+ 
+   <!-- Component status bar -->
+   <bitmap id="studio.statusbar.left" file="images/components/window-elements.png" x="94" y="0" h="12" w="12" gammagroup="overall"/>
+   <bitmap id="studio.statusbar.middle" file="images/components/window-elements.png" x="107" y="0" h="12" w="12" gammagroup="overall"/>
+   <bitmap id="studio.statusbar.right" file="images/components/window-elements.png" x="120" y="0" h="12" w="12" gammagroup="overall"/>
+
+   <!-- Checkboxes 
+   <bitmap id="studio.button.checkbox.checked" file="images/components/window-elements.png" x="58" y="77" h="11" w="11"/>
+   <bitmap id="studio.button.checkbox.unchecked" file="images/components/window-elements.png" x="58" y="66" h="11" w="11"/>
+   -->
+
+   <!-- Standard Configuration Widgets -->
+   <bitmap id="wasabi.button.checkbox" file="images/components/window-elements.png" x="79" y="77" h="7" w="7" gammagroup="overall"/>
+   <bitmap id="wasabi.button.checkbox.pressed" file="images/components/window-elements.png" x="58" y="77" h="7" w="7" gammagroup="overall"/>
+
+   <bitmap id="wasabi.button.checkbox.xbox" file="images/components/window-elements.png" x="79" y="77" h="7" w="7" gammagroup="overall"/>
+   <bitmap id="wasabi.button.checkbox.xbox.pressed" file="images/components/window-elements.png" x="65" y="77" h="7" w="7" gammagroup="overall"/>
+
+   <bitmap id="wasabi.button.radio.background" file="images/components/window-elements.png" x="58" y="66" h="11" w="11" gammagroup="overall"/>
+   <bitmap id="wasabi.button.radio.background.display" file="images/components/window-elements.png" x="69" y="66" h="9" w="9" gammagroup="overall"/>
+   <bitmap id="wasabi.button.radio" file="images/components/window-elements.png" x="79" y="77" h="7" w="7" gammagroup="overall"/>
+   <bitmap id="wasabi.button.radio.pressed" file="images/components/window-elements.png" x="72" y="77" h="7" w="7" gammagroup="overall"/>
+
+   <!-- Title objects -->
+   <bitmap id="wasabi.titlebar.left.active" file="images/components/window-elements.png" x="106" y="118" h="9" w="7" gammagroup="overall"/>
+   <bitmap id="wasabi.titlebar.center.active" file="images/components/window-elements.png" x="114" y="118" h="9" w="7" gammagroup="overall"/>
+   <bitmap id="wasabi.titlebar.right.active" file="images/components/window-elements.png" x="122" y="118" h="9" w="7" gammagroup="overall"/>
+   <bitmap id="wasabi.titlebar.left.inactive" file="images/components/window-elements.png" x="106" y="127" h="9" w="7" gammagroup="overall"/>
+   <bitmap id="wasabi.titlebar.center.inactive" file="images/components/window-elements.png" x="114" y="127" h="9" w="7" gammagroup="overall"/>
+   <bitmap id="wasabi.titlebar.right.inactive" file="images/components/window-elements.png" x="122" y="127" h="9" w="7" gammagroup="overall"/>
+
+   <!-- Window Controls -->
+
+   <bitmap id="wasabi.button.sysmenu" file="images/components/window-elements.png" x="170" y="56" h="9" w="14" gammagroup="overall"/>
+   <bitmap id="wasabi.button.sysmenu.pressed" file="images/components/window-elements.png" x="170" y="65" h="9" w="14" gammagroup="overall"/>
+   <bitmap id="wasabi.button.minimize" file="images/components/window-elements.png" x="146" y="56" h="9" w="14" gammagroup="overall"/>
+   <bitmap id="wasabi.button.minimize.pressed" file="images/components/window-elements.png" x="146" y="65" h="9" w="14" gammagroup="overall"/>
+   <bitmap id="wasabi.button.winshade" file="images/components/window-elements.png" x="132" y="56" h="9" w="14" gammagroup="overall"/>
+   <bitmap id="wasabi.button.winshade.pressed" file="images/components/window-elements.png" x="132" y="65" h="9" w="14" gammagroup="overall"/>
+   <bitmap id="wasabi.button.close" file="images/components/window-elements.png" x="184" y="56" h="9" w="14" gammagroup="overall"/>
+   <bitmap id="wasabi.button.close.pressed" file="images/components/window-elements.png" x="184" y="65" h="9" w="14" gammagroup="overall"/>
+   <bitmap id="wasabi.button.less" file="images/components/window-elements.png" x="184" y="74" h="9" w="14" gammagroup="overall"/>
+   <bitmap id="wasabi.button.less.pressed" file="images/components/window-elements.png" x="184" y="83" h="9" w="14" gammagroup="overall"/>
+   <bitmap id="wasabi.button.more" file="images/components/window-elements.png" x="170" y="74" h="9" w="14" gammagroup="overall"/>
+   <bitmap id="wasabi.button.more.pressed" file="images/components/window-elements.png" x="170" y="83" h="9" w="14" gammagroup="overall"/>
+   <bitmap id="wasabi.button.appmenu" file="images/components/window-elements.png" x="160" y="74" h="9" w="10" gammagroup="overall"/>
+   <bitmap id="wasabi.button.appmenu.pressed" file="images/components/window-elements.png" x="160" y="83" h="9" w="10" gammagroup="overall"/>
+   <bitmap id="wasabi.button.exit" file="images/components/window-elements.png" x="160" y="56" h="9" w="10" gammagroup="overall"/>
+   <bitmap id="wasabi.button.exit.pressed" file="images/components/window-elements.png" x="160" y="65" h="9" w="10" gammagroup="overall"/>
+
+   <bitmap id="wasabi.button.close.flat" file="images/components/window-elements.png" x="160" y="56" h="9" w="10" gammagroup="overall"/>
+   <bitmap id="wasabi.button.close.flat.pressed" file="images/components/window-elements.png" x="160" y="65" h="9" w="10" gammagroup="overall"/>
+
+   <!-- Panel Bevels -->
+   
+   <bitmap id="wasabi.panel.top.left" file="images/components/window-elements.png" x="19" y="114" h="2" w="2" gammagroup="overall"/>
+   <bitmap id="wasabi.panel.top" file="images/components/window-elements.png" x="21" y="114" h="2" w="16" gammagroup="overall"/>
+   <bitmap id="wasabi.panel.top.right" file="images/components/window-elements.png" x="37" y="114" h="2" w="2" gammagroup="overall"/>
+   <bitmap id="wasabi.panel.left" file="images/components/window-elements.png" x="19" y="116" h="16" w="2" gammagroup="overall"/>
+   <bitmap id="wasabi.panel.right" file="images/components/window-elements.png" x="37" y="116" h="16" w="2" gammagroup="overall"/>
+   <bitmap id="wasabi.panel.bottom.left" file="images/components/window-elements.png" x="19" y="132" h="2" w="2" gammagroup="overall"/>
+   <bitmap id="wasabi.panel.bottom" file="images/components/window-elements.png" x="21" y="132" h="2" w="16" gammagroup="overall"/>
+   <bitmap id="wasabi.panel.bottom.right" file="images/components/window-elements.png" x="37" y="132" h="2" w="2" gammagroup="overall"/>
+   <bitmap id="wasabi.panel.tint" file="images/components/window-elements.png" x="24" y="119" h="10" w="10" gammagroup="overall"/>
+
+   <!-- Object Frame-->
+   
+   <bitmap id="wasabi.objectframe.top.left" file="images/components/window-elements.png" x="0" y="114" h="1" w="1" gammagroup="overall"/>
+   <bitmap id="wasabi.objectframe.top" file="images/components/window-elements.png" x="1" y="114" h="1" w="17" gammagroup="overall"/>
+   <bitmap id="wasabi.objectframe.top.right" file="images/components/window-elements.png" x="18" y="114" h="1" w="1" gammagroup="overall"/>
+   <bitmap id="wasabi.objectframe.left" file="images/components/window-elements.png" x="0" y="115" h="17" w="1" gammagroup="overall"/>
+   <bitmap id="wasabi.objectframe.center" file="images/components/window-elements.png" x="1" y="115" h="17" w="17" gammagroup="overall"/>
+   <bitmap id="wasabi.objectframe.right" file="images/components/window-elements.png" x="18" y="115" h="17" w="1" gammagroup="overall"/>
+   <bitmap id="wasabi.objectframe.bottom.left" file="images/components/window-elements.png" x="0" y="132" h="1" w="1" gammagroup="overall"/>
+   <bitmap id="wasabi.objectframe.bottom" file="images/components/window-elements.png" x="1" y="132" h="1" w="17" gammagroup="overall"/>
+   <bitmap id="wasabi.objectframe.bottom.right" file="images/components/window-elements.png" x="18" y="132" h="1" w="1" gammagroup="overall"/>
+
+   <!-- Combo Box List-->
+   
+   <bitmap id="wasabi.dropdownlist.list.top.left" file="images/components/window-elements.png" x="40" y="124" h="1" w="1" gammagroup="overall"/>
+   <bitmap id="wasabi.dropdownlist.list.top" file="images/components/window-elements.png" x="41" y="124" h="1" w="10" gammagroup="overall"/>
+   <bitmap id="wasabi.dropdownlist.list.top.right" file="images/components/window-elements.png" x="51" y="124" h="1" w="1" gammagroup="overall"/>
+   <bitmap id="wasabi.dropdownlist.list.left" file="images/components/window-elements.png" x="40" y="125" h="8" w="1" gammagroup="overall"/>
+   <bitmap id="wasabi.dropdownlist.list.center" file="images/components/window-elements.png" x="41" y="125" h="8" w="10" gammagroup="overall"/>
+   <bitmap id="wasabi.dropdownlist.list.right" file="images/components/window-elements.png" x="51" y="125" h="8" w="1" gammagroup="overall"/>
+   <bitmap id="wasabi.dropdownlist.list.bottom.left" file="images/components/window-elements.png" x="40" y="133" h="1" w="1" gammagroup="overall"/>
+   <bitmap id="wasabi.dropdownlist.list.bottom" file="images/components/window-elements.png" x="41" y="133" h="1" w="10" gammagroup="overall"/>
+   <bitmap id="wasabi.dropdownlist.list.bottom.right" file="images/components/window-elements.png" x="51" y="133" h="1" w="1" gammagroup="overall"/>
+   
+   <!-- Embedded Window -->
+   
+   <bitmap id="wasabi.window.top.left" file="images/components/window-elements.png" x="0" y="114" h="1" w="1" gammagroup="overall"/>
+   <bitmap id="wasabi.window.top" file="images/components/window-elements.png" x="1" y="114" h="1" w="17" gammagroup="overall"/>
+   <bitmap id="wasabi.window.top.right" file="images/components/window-elements.png" x="18" y="114" h="1" w="1" gammagroup="overall"/>
+   <bitmap id="wasabi.window.left" file="images/components/window-elements.png" x="0" y="115" h="17" w="1" gammagroup="overall"/>
+   <bitmap id="wasabi.window.center" file="images/components/window-elements.png" x="1" y="115" h="17" w="17" gammagroup="overall"/>
+   <bitmap id="wasabi.window.right" file="images/components/window-elements.png" x="18" y="115" h="17" w="1" gammagroup="overall"/>
+   <bitmap id="wasabi.window.bottom.left" file="images/components/window-elements.png" x="0" y="132" h="1" w="1" gammagroup="overall"/>
+   <bitmap id="wasabi.window.bottom" file="images/components/window-elements.png" x="1" y="132" h="1" w="17" gammagroup="overall"/>
+   <bitmap id="wasabi.window.bottom.right" file="images/components/window-elements.png" x="18" y="132" h="1" w="1" gammagroup="overall"/>
+
+   <!-- Generic Button -->
+   
+   <bitmap id="wasabi.button.label.arrow.up" file="images/components/window-elements.png" x="137" y="75" h="4" w="7" gammagroup="overall"/>
+   <bitmap id="wasabi.button.label.arrow.down" file="images/components/window-elements.png" x="137" y="86" h="4" w="7" gammagroup="overall"/>
+   <bitmap id="wasabi.button.label.arrow.left" file="images/components/window-elements.png" x="133" y="79" h="7" w="4" gammagroup="overall"/>
+   <bitmap id="wasabi.button.label.arrow.right" file="images/components/window-elements.png" x="144" y="79" h="7" w="4" gammagroup="overall"/>
+   <bitmap id="wasabi.button.label.ellipses" file="images/components/window-elements.png" x="138" y="92" h="1" w="5" gammagroup="overall"/>
+
+   <bitmap id="wasabi.button.top.left" file="images/components/window-elements.png" x="0" y="134" h="4" w="4" gammagroup="overall"/>
+   <bitmap id="wasabi.button.top" file="images/components/window-elements.png" x="4" y="134" h="4" w="25" gammagroup="overall"/>
+   <bitmap id="wasabi.button.top.right" file="images/components/window-elements.png" x="29" y="134" h="4" w="4" gammagroup="overall"/>
+   <bitmap id="wasabi.button.left" file="images/components/window-elements.png" x="0" y="138" h="25" w="4" gammagroup="overall"/>
+   <bitmap id="wasabi.button.center" file="images/components/window-elements.png" x="4" y="138" h="25" w="25" gammagroup="overall"/>
+   <bitmap id="wasabi.button.right" file="images/components/window-elements.png" x="29" y="138" h="25" w="4" gammagroup="overall"/>
+   <bitmap id="wasabi.button.bottom.left" file="images/components/window-elements.png" x="0" y="163" h="4" w="4" gammagroup="overall"/>
+   <bitmap id="wasabi.button.bottom" file="images/components/window-elements.png" x="4" y="163" h="4" w="25" gammagroup="overall"/>
+   <bitmap id="wasabi.button.bottom.right" file="images/components/window-elements.png" x="29" y="163" h="4" w="4" gammagroup="overall"/>
+   
+   <bitmap id="wasabi.button.hover.top.left" file="images/components/window-elements.png" x="33" y="134" h="4" w="4" gammagroup="overall"/>
+   <bitmap id="wasabi.button.hover.top" file="images/components/window-elements.png" x="37" y="134" h="4" w="25" gammagroup="overall"/>
+   <bitmap id="wasabi.button.hover.top.right" file="images/components/window-elements.png" x="62" y="134" h="4" w="4" gammagroup="overall"/>
+   <bitmap id="wasabi.button.hover.left" file="images/components/window-elements.png" x="33" y="138" h="25" w="4" gammagroup="overall"/>
+   <bitmap id="wasabi.button.hover.center" file="images/components/window-elements.png" x="37" y="138" h="25" w="25" gammagroup="overall"/>
+   <bitmap id="wasabi.button.hover.right" file="images/components/window-elements.png" x="62" y="138" h="25" w="4" gammagroup="overall"/>
+   <bitmap id="wasabi.button.hover.bottom.left" file="images/components/window-elements.png" x="33" y="163" h="4" w="4" gammagroup="overall"/>
+   <bitmap id="wasabi.button.hover.bottom" file="images/components/window-elements.png" x="37" y="163" h="4" w="25" gammagroup="overall"/>
+   <bitmap id="wasabi.button.hover.bottom.right" file="images/components/window-elements.png" x="62" y="163" h="4" w="4" gammagroup="overall"/>
+
+   <bitmap id="wasabi.button.pressed.top.left" file="images/components/window-elements.png" x="66" y="134" h="4" w="4" gammagroup="overall"/>
+   <bitmap id="wasabi.button.pressed.top" file="images/components/window-elements.png" x="70" y="134" h="4" w="25" gammagroup="overall"/>
+   <bitmap id="wasabi.button.pressed.top.right" file="images/components/window-elements.png" x="95" y="134" h="4" w="4" gammagroup="overall"/>
+   <bitmap id="wasabi.button.pressed.left" file="images/components/window-elements.png" x="66" y="138" h="25" w="4" gammagroup="overall"/>
+   <bitmap id="wasabi.button.pressed.center" file="images/components/window-elements.png" x="70" y="138" h="25" w="25" gammagroup="overall"/>
+   <bitmap id="wasabi.button.pressed.right" file="images/components/window-elements.png" x="95" y="138" h="25" w="4" gammagroup="overall"/>
+   <bitmap id="wasabi.button.pressed.bottom.left" file="images/components/window-elements.png" x="66" y="163" h="4" w="4" gammagroup="overall"/>
+   <bitmap id="wasabi.button.pressed.bottom" file="images/components/window-elements.png" x="70" y="163" h="4" w="25" gammagroup="overall"/>
+   <bitmap id="wasabi.button.pressed.bottom.right" file="images/components/window-elements.png" x="95" y="163" h="4" w="4" gammagroup="overall"/>
+
+   <!-- Generic Sliders -->
+   
+   <bitmap id="wasabi.slider.horizontal.left" file="images/components/window-elements.png" x="106" y="149" h="8" w="8" gammagroup="overall"/>
+   <bitmap id="wasabi.slider.horizontal.middle" file="images/components/window-elements.png" x="115" y="149" h="8" w="10" gammagroup="overall"/>
+   <bitmap id="wasabi.slider.horizontal.right" file="images/components/window-elements.png" x="126" y="149" h="8" w="8" gammagroup="overall"/>
+   
+   <bitmap id="wasabi.slider.vertical.top" file="images/components/window-elements.png" x="138" y="136" h="8" w="8" gammagroup="overall"/>
+   <bitmap id="wasabi.slider.vertical.middle" file="images/components/window-elements.png" x="138" y="145" h="10" w="8" gammagroup="overall"/>
+   <bitmap id="wasabi.slider.vertical.bottom" file="images/components/window-elements.png" x="138" y="156" h="8" w="8" gammagroup="overall"/>
+   
+   <bitmap id="wasabi.slider.horizontal.button" file="images/components/window-elements.png" x="106" y="136" h="13" w="15" gammagroup="overall"/>
+   <bitmap id="wasabi.slider.horizontal.button.pressed" file="images/components/window-elements.png" x="121" y="136" h="13" w="15" gammagroup="overall"/>
+
+   <bitmap id="wasabi.slider.vertical.button" file="images/components/window-elements.png" x="106" y="157" h="12" w="16" gammagroup="overall"/>
+   <bitmap id="wasabi.slider.vertical.button.pressed" file="images/components/window-elements.png" x="122" y="157" h="12" w="16" gammagroup="overall"/>
+
+   <!-- Generic Group Box -->
+
+   <bitmap id="wasabi.groupbox.top.left" file="images/components/window-elements.png" x="116" y="13" h="3" w="3" gammagroup="overall"/>
+   <bitmap id="wasabi.groupbox.top" file="images/components/window-elements.png" x="120" y="13" h="3" w="8" gammagroup="overall"/>
+   <bitmap id="wasabi.groupbox.top.right" file="images/components/window-elements.png" x="129" y="13" h="3" w="3" gammagroup="overall"/>
+
+   <bitmap id="wasabi.groupbox.left" file="images/components/window-elements.png" x="116" y="17" h="8" w="3" gammagroup="overall"/>
+   <bitmap id="wasabi.groupbox.right" file="images/components/window-elements.png" x="129" y="17" h="8" w="3" gammagroup="overall"/>
+   
+   <bitmap id="wasabi.groupbox.bottom.left" file="images/components/window-elements.png" x="116" y="26" h="3" w="3" gammagroup="overall"/>
+   <bitmap id="wasabi.groupbox.bottom" file="images/components/window-elements.png" x="120" y="26" h="3" w="8" gammagroup="overall"/>
+   <bitmap id="wasabi.groupbox.bottom.right" file="images/components/window-elements.png" x="129" y="26" h="3" w="3" gammagroup="overall"/>
+
+ <!-- Tab Buttons -->
+ <bitmap id="wasabi.tabsheet.button.topleft" file="images/components/tab-buttons.png" x="0" y="0" w="10" h="10" gammagroup="overall"/>
+ <bitmap id="wasabi.tabsheet.button.top" file="images/components/tab-buttons.png" x="10" y="0" w="46" h="10"  gammagroup="overall"/>
+ <bitmap id="wasabi.tabsheet.button.topright" file="images/components/tab-buttons.png" x="56" y="0" w="10" h="10" gammagroup="overall"/>
+ <bitmap id="wasabi.tabsheet.button.left" file="images/components/tab-buttons.png" x="0" y="10" w="10" h="15" gammagroup="overall"/>
+ <bitmap id="wasabi.tabsheet.button.right" file="images/components/tab-buttons.png" x="56" y="10" w="10" h="15" gammagroup="overall"/>
+ <bitmap id="wasabi.tabsheet.button.bottom" file="images/components/tab-buttons.png" x="0" y="26" w="66" h="2" gammagroup="overall"/>
+ <bitmap id="wasabi.tabsheet.button.shade.topleft" file="images/components/tab-buttons.png" x="0" y="29" w="10" h="10" gammagroup="overall"/>
+ <bitmap id="wasabi.tabsheet.button.shade.top" file="images/components/tab-buttons.png" x="10" y="29" w="46" h="10" gammagroup="overall"/>
+ <bitmap id="wasabi.tabsheet.button.shade.topright" file="images/components/tab-buttons.png" x="56" y="29" w="10" h="10" gammagroup="overall"/>
+ <bitmap id="wasabi.tabsheet.button.shade.left" file="images/components/tab-buttons.png" x="0" y="39" w="10" h="11" gammagroup="overall"/>
+ <bitmap id="wasabi.tabsheet.button.shade.middle" file="images/components/tab-buttons.png" x="10" y="39" w="46" h="11" gammagroup="overall"/>
+ <bitmap id="wasabi.tabsheet.button.shade.right" file="images/components/tab-buttons.png" x="56" y="39" w="10" h="11" gammagroup="overall"/>
+
+</elements>
+
+<groupdef id="wasabi.panel">
+ <!--  Draw Nothing -->
+</groupdef> 
+
+<groupdef id="wasabi.text.group" inherit_content="1">
+ <sendparams target="wasabi.text" color="255,255,255" shadowcolor="255,255,255" shadowx="0" shadowy="0" fontsize="14" />
+</groupdef>
+
+<groupdef id="studio.configgroup.std" inherit_content="1">
+ <sendparams target="cfg.txt" color="90,120,90" shadowcolor="90,120,90" shadowx="0" shadowy="0" fontsize="14" />
+</groupdef>
+
+<groupdef id="wasabi.buttonbar.stack" inherit_content="1">
+ <sendparams target="buttonbar.text" color="255,255,255" shadowcolor="255,255,255" shadowx="0" shadowy="0" fontsize="14" />
+</groupdef>
+
+<groupdef id="wasabi.titlebox.center.group" inherit_content="1" >
+ <sendparams target="titlebox.text" color="255,255,255" shadowcolor="255,255,255" shadowx="0" shadowy="0" fontsize="14" />
+</groupdef>
+
+<groupdef id="wasabi.tabsheet.button.selected.group" inherit_content="1">
+ <sendparams target="text" color="255,255,255" shadowcolor="255,255,255" shadowx="0" shadowy="0" fontsize="14" />
+</groupdef>
+
+<groupdef id="wasabi.tabsheet.button.unselected.group" inherit_content="1">
+ <sendparams target="text" color="255,255,255" shadowcolor="255,255,255" shadowx="0" shadowy="0" fontsize="14" />
+</groupdef>

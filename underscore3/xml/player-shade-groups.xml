@@ -1,0 +1,41 @@
+  <groupdef id="group.player.shade.titlebar">
+   <layer id="titlebar" image="player.titlebar" x="0" y="0" w="275" h="19" move="1" dblClickAction="SWITCH;shade1" />
+   <layer id="titlebar.shine" image="player.titlebar.shine" x="1" y="1" w="62" h="15" move="1" dblClickAction="SWITCH;shade1" />
+  </groupdef>
+  
+  <groupdef id="group.player.shade1.titlebar">
+   <layer id="titlebar" image="player.titlebar" x="0" y="0" w="275" h="19" move="1" dblClickAction="SWITCH;normal" />
+   <layer id="titlebar.shine" image="player.titlebar.shine" x="1" y="1" w="62" h="15" move="1" dblClickAction="SWITCH;normal" />
+  </groupdef>
+
+  <groupdef id="group.player.shade.cbuttons">
+   <button id="shade.cbuttons.back" image="player.shade.cbuttons.back" downimage="player.shade.cbuttons.back.hover" hoverimage="player.shade.cbuttons.back.hover" action="PREV" x="0" y="0" h="10" w="10" tooltip="Previous" />
+   <button id="shade.cbuttons.play" image="player.shade.cbuttons.play" downimage="player.shade.cbuttons.play.hover" hoverimage="player.shade.cbuttons.play.hover" action="PLAY" x="10" y="0" h="10" w="12" tooltip="Play" />
+   <button id="shade.cbuttons.pause" image="player.shade.cbuttons.pause" downimage="player.shade.cbuttons.pause.hover" hoverimage="player.shade.cbuttons.pause.hover" action="PAUSE" x="22" y="0" h="10" w="13" tooltip="Pause" />
+   <button id="shade.cbuttons.stop" image="player.shade.cbuttons.stop" downimage="player.shade.cbuttons.stop.hover" hoverimage="player.shade.cbuttons.stop.hover" action="STOP" x="35" y="0" h="10" w="12" tooltip="Stop" />
+   <button id="shade.cbuttons.next" image="player.shade.cbuttons.next" downimage="player.shade.cbuttons.next.hover" hoverimage="player.shade.cbuttons.next.hover" action="NEXT" x="47" y="0" h="10" w="12" tooltip="Next" />
+   <button id="shade.cbuttons.eject" image="player.shade.cbuttons.eject" downimage="player.shade.cbuttons.eject.hover" hoverimage="player.shade.cbuttons.eject.hover" action="EJECT" x="59" y="0" h="10" w="11" tooltip="Open File" />
+  </groupdef>
+  
+  <groupdef id="group.player.shade.song">
+   <text id="shade.songticker" ticker="0" y="0" x="0" h="14" w="235" display="songname" default="" showlen="0" font="player.font.default" nograb="1" move="1" />
+   <text id="shade.song.length" x="237" w="32" h="14" align="right" y="0" display="songlength" default="" nograb="1" font="player.font.default" move="1" />
+  </groupdef>
+
+  <groupdef id="group.player.shade.displayarea">
+   <layer id="shade.displayarea" image="player.shade.displayarea" h="14" w="101" />
+   <vis id="shade.vis" x="3" y="3" w="60" h="10" colorband1="175,175,175" colorband2="175,175,175" colorband3="175,175,175" colorband4="175,175,175" colorband5="175,175,175" colorband6="175,175,175" colorband7="175,175,175" colorband8="175,175,175" colorband9="175,175,175" colorband10="175,175,175" colorband11="175,175,175" colorband12="175,175,175" colorband13="175,175,175" colorband14="204,204,204" colorband15="175,175,175" colorband16="196,196,196" colorbandpeak="200,200,200" />
+   <text id="display.time.ticker" display="time" x="63" y="3" h="10" w="35" font="player.font.default" timecolonwidth="5" align="right" />
+  </groupdef>
+ 
+  <groupdef id="group.player.shade.titlebar.buttons">
+   <button id="minimize" image="player.buttons.minimize" downimage="player.buttons.minimize.hover" hoverimage="player.buttons.minimize.hover" action="MINIMIZE" x="0" y="4" h="11" w="11" tooltip="Minimize" />
+   <button id="shade" image="player.buttons.shade" downimage="player.buttons.shade.hover" hoverimage="player.buttons.shade.hover" action="SWITCH" param="shade1" x="13" y="4" h="11" w="11" tooltip="Change Mode" />
+   <button id="close" image="player.buttons.close" downimage="player.buttons.close.hover" hoverimage="player.buttons.close.hover" action="CLOSE" x="26" y="4" h="11" w="11" tooltip="Close Winamp" />
+  </groupdef>
+  
+  <groupdef id="group.player.shade1.titlebar.buttons">
+   <button id="minimize" image="player.buttons.minimize" downimage="player.buttons.minimize.hover" hoverimage="player.buttons.minimize.hover" action="MINIMIZE" x="0" y="4" h="11" w="11" tooltip="Minimize" />
+   <button id="shade" image="player.buttons.shade" downimage="player.buttons.shade.hover" hoverimage="player.buttons.shade.hover" action="SWITCH" param="normal" x="13" y="4" h="11" w="11" tooltip="Change Mode" />
+   <button id="close" image="player.buttons.close" downimage="player.buttons.close.hover" hoverimage="player.buttons.close.hover" action="CLOSE" x="26" y="4" h="11" w="11" tooltip="Close Winamp" />
+  </groupdef>

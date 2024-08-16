@@ -1,0 +1,21 @@
+<elements>
+ <bitmap id="dmlogo" file="images/dmlogo.png" />
+</elements>
+
+ <container id="about" name="About" default_visible="0">
+  <layout id="normal" background="win.center" w="250" h="150" maximum_w="250" maximum_h="150" minimum_w="250" minimum_h="150" >
+  <group id="win.frame" x="0" y="0" w="0" h="0" relatw="1" relath="1" />
+  <layer image="dmlogo" x="130" y="3" h="200" w="200" alpha="128" />
+  <group id="win.frame.bar" x="0" y="-21" h="16" w="0" relaty="1" relatw="1" />
+  <text id="title" font="player.font.title" x="5" y="3" w="-25" h="15" relatw="1" default="About Underscore 3.0" move="1" />
+  <button id="close" image="player.buttons.close" downimage="player.buttons.close.hover" hoverimage="player.buttons.close.hover" action="CLOSE" x="-15" y="4" h="11" w="11" relatx="1" tooltip="Close Window" />
+  <text font="player.font.default" x="15" y="25" relatw="1" relath="1" default="Created By: David Serrano" />
+  <text font="player.font.default" x="15" y="40" relatw="1" relath="1" default="Special Thanks To:" />
+  <text font="player.font.default" x="20" y="50" relatw="1" relath="1" default="- Jeff Reynolds, Mike Sears, Kevin Brejnak" />
+  <text font="player.font.default" x="20" y="60" relatw="1" relath="1" default="- Michael Pacific, and David Gorman" />
+  <text font="player.font.default" x="15" y="80" relatw="1" relath="1" default="As per my normal disclammer; This skin was" />
+  <text font="player.font.default" x="15" y="90" relatw="1" relath="1" default="made for me. If you don't like it and can't" />
+  <text font="player.font.default" x="15" y="100" relatw="1" relath="1" default="say anything nice and or suggestive about" />
+  <text font="player.font.default" x="15" y="110" relatw="1" relath="1" default="it then I don't care to hear from you." />
+  </layout>  
+ </container>

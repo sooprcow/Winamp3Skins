@@ -1,0 +1,45 @@
+ <elements>
+  <include file="player-elements.xml" />
+  <include file="player-shade-elements.xml" />
+ </elements>
+
+ <container id="main" name="Main window">
+  <include file="player-groups.xml" />
+  <include file="player-shade-groups.xml" />
+  <include file="player-equalizer.xml" />
+
+  <layout id="normal" background="player.bg" droptarget="pldr">
+   <group id="group.player.titlebar" />
+   <group id="group.player.titlebar.buttons" x="-41" y="0" relatx="1" />
+   <group id="group.player.bottombar" x="0" y="-18" relaty="1" />
+   <group id="group.player.cbuttons" x="23" y="-30" relaty="1" />
+   <group id="group.player.song" x="110" y="24" />
+   <group id="group.player.song.info" x="110" y="40" />
+   <group id="group.player.seeker" x="110" y="76" />
+   <group id="group.player.volume" x="107" y="60" />
+   <group id="group.player.clutterbar" x="2" y="25" />
+   <layer id="display.time" image="player.display.time" x="28" y="24" />
+   <text id="display.time.ticker" display="time" x="32" y="28" h="19" w="70" font="player.font.big" timecolonwidth="7" align="right" />
+   <layer id="display.vis" image="player.display.vis" x="29" y="47" />
+   <vis id="vis" x="33" y="49" w="63" h="15" colorband1="205,205,205" colorband2="205,205,205" colorband3="205,205,205" colorband4="205,205,205" colorband5="205,205,205" colorband6="205,205,205" colorband7="205,205,205" colorband8="205,205,205" colorband9="205,205,205" colorband10="205,205,205" colorband11="205,205,205" colorband12="205,205,205" colorband13="205,205,205" colorband14="204,204,204" colorband15="205,205,205" colorband16="196,196,196" colorbandpeak="228,228,228" />
+   <group id="group.player.shufrep" x="142" y="90" />
+   <group id="group.player.buttons.windows" x="-84" y="59" relatx="1"/>
+   <group id="group.equalizer" x="107" y="20" w="0" h="67" />
+  </layout>  
+  
+  <layout id="shade" background="player.shade.bg" droptarget="pldr">
+   <group id="group.player.shade.titlebar" />
+   <group id="group.player.shade.titlebar.buttons" x="-41" y="0" relatx="1" />	
+   <group id="group.player.shade.displayarea" x="28" y="4" />
+   <group id="group.player.shade.cbuttons" x="135" y="6" />
+   <group id="group.player.shade.song" x="3" y="18" w="272" />
+  </layout>
+  
+  <layout id="shade1" background="player.shade1.bg" droptarget="pldr">
+   <group id="group.player.shade1.titlebar" />
+   <group id="group.player.shade1.titlebar.buttons" x="-41" y="0" relatx="1" />	
+   <group id="group.player.shade.displayarea" x="28" y="4" />
+   <group id="group.player.shade.cbuttons" x="135" y="6" />
+   <!-- <group id="group.player.shade.song" x="3" y="18" w="272" /> -->
+  </layout>
+ </container>

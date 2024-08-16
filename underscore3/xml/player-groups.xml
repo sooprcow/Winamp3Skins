@@ -1,0 +1,72 @@
+  <groupdef id="group.player.clutterbar">
+   <layer id="clutter.shade1" alpha="127" x="0" y="0" h="9" w="10" image="player.clutterbar.shade" />
+   <togglebutton id="clutterbar.atop" x="10" y="0" image="player.clutterbar.button" downimage="player.clutterbar.button.down" activeimage="player.clutterbar.button.active" />
+   <layer id="clutter.shade2" alpha="127" x="0" y="12" h="9" w="10" image="player.clutterbar.shade" />
+   <togglebutton id="clutterbar.songname" x="10" y="12" image="player.clutterbar.button" downimage="player.clutterbar.button.down" activeimage="player.clutterbar.button.active" />
+   <layer id="clutter.shade3" alpha="127" x="0" y="24" h="9" w="10" image="player.clutterbar.shade" />
+   <togglebutton id="clutterbar.quiet" x="10" y="24" image="player.clutterbar.button" downimage="player.clutterbar.button.down" activeimage="player.clutterbar.button.active" />
+  </groupdef>
+
+  <groupdef id="group.player.buttons.windows">
+   <button id="buttons.eq" x="0" y="0" w="24" h="13" image="player.buttons.eq" downimage="player.buttons.eq.down" activeimage="player.buttons.eq.active" tooltip="Equalizer" /> 
+   <button id="buttons.pl" x="24" y="0" w="24" h="13" image="player.buttons.pl" downimage="player.buttons.pl.down" activeimage="player.buttons.pl.active" action="TOGGLE" param="guid:pl" tooltip="Playlist" />
+   <button id="buttons.ml" x="48" y="0" w="25" h="13" image="player.buttons.ml" downimage="player.buttons.ml.down" activeimage="player.buttons.ml.active" action="TOGGLE" param="guid:ml" tooltip="Media Library" />
+  </groupdef>
+
+  <groupdef id="group.player.seeker">
+   <layer id="seeker" image="player.seeker" x="0" y="0" w="161" h="10" />
+   <slider id="seeker.thumb" action="SEEK" x="3" y="3" h="3" w="155" thumb="player.seeker.thumb" downthumb="player.seeker.thumb" />
+  </groupdef>
+
+  <groupdef id="group.player.volume">
+   <animatedlayer id="volume.ani" x="0" y="0" w="68" h="13" image="player.volume.ani" autoplay="0" autoreplay="0" />
+   <slider id="volume.ani.thumb" action="VOLUME" orientation="H" x="5" y="0" h="13" w="62" thumb="player.volume.ani.button" downthumb="player.volume.ani.button" tooltip="Volume"/>
+   <script id="playervolume" file="scripts/playervolume.maki" />
+  </groupdef>
+
+  <groupdef id="group.player.shufrep">
+   <togglebutton id="shufrep.shuffle" x="0" y="0" image="player.shufrep.shuffle.normal" downimage="player.shufrep.shuffle.active" activeimage="player.shufrep.shuffle.pressed" cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Shuffle" tooltip="Toggle Playlist Shuffling" />
+   <togglebutton id="shufrep.shuffle" x="37" y="0" image="player.shufrep.repeat.normal" downimage="player.shufrep.repeat.active" activeimage="player.shufrep.repeat.pressed" cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Repeat" tooltip="Toggle Playlist Repeating" />
+   <togglebutton id="shufrep.shuffle" x="74" y="0" image="player.shufrep.crossfade.normal" downimage="player.shufrep.crossfade.active" activeimage="player.shufrep.crossfade.pressed" cfgattrib="{FC3EAF78-C66E-4ED2-A0AA-1494DFCC13FF};Enable crossfading" tooltip="Toggle Crossfading Between Tracks" />
+  </groupdef>
+
+  <groupdef id="group.player.cbuttons">
+   <button id="cbuttons.back" image="player.cbuttons.back" downimage="player.cbuttons.back.hover" hoverimage="player.cbuttons.back.hover" action="PREV" x="0" y="0" h="14" w="17" tooltip="Previous" />
+   <button id="cbuttons.play" image="player.cbuttons.play" downimage="player.cbuttons.play.hover" hoverimage="player.cbuttons.play.hover" action="PLAY" x="17" y="0" h="14" w="17" tooltip="Play" />
+   <button id="cbuttons.pause" image="player.cbuttons.pause" downimage="player.cbuttons.pause.hover" hoverimage="player.cbuttons.pause.hover" action="PAUSE" x="34" y="0" h="14" w="17" tooltip="Pause" />
+   <button id="cbuttons.stop" image="player.cbuttons.stop" downimage="player.cbuttons.stop.hover" hoverimage="player.cbuttons.stop.hover" action="STOP" x="51" y="0" h="14" w="17" tooltip="Stop" />
+   <button id="cbuttons.next" image="player.cbuttons.next" downimage="player.cbuttons.next.hover" hoverimage="player.cbuttons.next.hover" action="NEXT" x="68" y="0" h="14" w="16" tooltip="Next" />
+  </groupdef> 
+
+  <groupdef id="group.player.titlebar.buttons">
+   <button id="minimize" image="player.buttons.minimize" downimage="player.buttons.minimize.hover" hoverimage="player.buttons.minimize.hover" action="MINIMIZE" x="0" y="4" h="11" w="11" tooltip="Minimize" />
+   <button id="shade" image="player.buttons.shade" downimage="player.buttons.shade.hover" hoverimage="player.buttons.shade.hover" action="SWITCH" param="shade" x="13" y="4" h="11" w="11" tooltip="Change Mode" />
+   <button id="close" image="player.buttons.close" downimage="player.buttons.close.hover" hoverimage="player.buttons.close.hover" action="CLOSE" x="26" y="4" h="11" w="11" tooltip="Close Winamp" />
+  </groupdef>
+
+  <groupdef id="group.player.titlebar">
+   <layer id="titlebar" image="player.titlebar" x="0" y="0" w="275" h="19" move="1" dblClickAction="SWITCH;shade" />
+   <layer id="titlebar.shine" image="player.titlebar.shine" x="1" y="1" w="62" h="15" move="1" dblClickAction="SWITCH;shade" />
+  </groupdef>
+  
+  <groupdef id="group.player.bottombar">
+   <layer id="bgbottom" image="player.bottombar" x="0" y="0" w="275" h="17" />
+  </groupdef>
+
+  <groupdef id="group.player.song" >
+   <layer id="display.song.left" image="player.display.song.left" x="0" y="0" w="2" h="15" />
+   <layer id="display.song.center" image="player.display.song.center" tile="1" x="2" y="0" w="144" h="15" />
+   <layer id="display.song.right" image="player.display.song.right" x="146" y="0" w="3" h="15" />
+   <text id="display.song.ticker" ticker="0" display="songname" default="" showlen="1" x="3" y="4" h="6" w="142" font="player.font.default" /> 
+   <button id="cbuttons.eject" image="player.cbuttons.eject" downimage="player.cbuttons.eject.hover" hoverimage="player.cbuttons.eject.hover" action="EJECT" x="150" y="2" h="11" w="11" tooltip="Open File"/>
+  </groupdef>
+  
+  <groupdef id="group.player.song.info">
+   <layer id="display.info.left" image="player.display.song.left" x="0" y="0" w="2" h="15" />
+   <layer id="display.info.center" image="player.display.song.center" tile="1" x="2" y="0" w="156" h="15" />
+   <layer id="display.info.right" image="player.display.song.right" x="158" y="0" w="3" h="15" />
+   <text id="display.song.bitrate" ticker="0" ghost="1" display="songbitrate" align="right" showlen="0" x="3" y="4" h="6" w="23" font="player.font.default" /> 
+   <text id="display.song.kbps" ticker="0" ghost="1" default="kbps" showlen="0" x="26" y="4" h="6" w="25" font="player.font.default" />
+   <text id="display.song.samplerate" ticker="0" ghost="1" display="songsamplerate" align="right" showlen="0" x="50" y="4" h="6" w="15" font="player.font.default" /> 
+   <text id="display.song.khz" ticker="0" ghost="1" default="khz" showlen="0" x="65" y="4" h="6" w="20" font="player.font.default" />
+  </groupdef>

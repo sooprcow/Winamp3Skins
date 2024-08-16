@@ -1,0 +1,19 @@
+<elements>
+ <bitmap id="thinger.button.left" file="images/thinger/buttons.png" x="0" y="0" w="10" h="29" />
+ <bitmap id="thinger.button.right" file="images/thinger/buttons.png" x="10" y="0" w="10" h="29" />
+ <bitmap id="thinger.button.left.hover" file="images/thinger/buttons.png" x="0" y="29" w="10" h="29" />
+ <bitmap id="thinger.button.right.hover" file="images/thinger/buttons.png" x="10" y="29" w="10" h="29" />
+</elements>
+
+<container id="thinger" name="Thinger" default_w="202" default_h="70" default_visible="1">
+ <layout id="normal" background="win.center" w="202" h="70" maximum_h="70" minimum_w="90" minimum_h="70" >
+  <group id="win.frame" x="0" y="0" w="0" h="0" relatw="1" relath="1"/>
+  <group id="win.frame.bar" x="0" y="-17" h="12" w="0" relaty="1" relatw="1" />>
+  <text id="title" font="player.font.title" x="5" y="3" w="-25" h="15" relatw="1" default="Thinger:" move="1" />
+  <text id="title" font="player.font.title" x="48" y="3" w="0" h="15" relatw="1" display="COMPONENTBUCKET" cbsource="cblist" move="1" />
+  <button id="close" image="player.buttons.close" downimage="player.buttons.close.hover" hoverimage="player.buttons.close.hover" action="CLOSE" x="-15" y="4" h="11" w="11" relatx="1" tooltip="Close Window" />
+  <button id="thinger.scroll.left" action="CB_PREV" x="12" y="22" w="10" h="29" image="thinger.button.left" downimage="thinger.button.left.hover" hoverimage="thinger.button.left.hover" />
+  <button id="thinger.scroll.right" action="CB_NEXT" x="-21" y="22" w="10" h="29" relatx="1" image="thinger.button.right" downimage="thinger.button.right.hover" hoverimage="thinger.button.right.hover" />
+  <componentbucket id="cblist" x="24" y="20" w="-48" h="32" relatw="1" leftmargin="1" rightmargin="1" spacing="2" />  
+ </layout>
+</container>

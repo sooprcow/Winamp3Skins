@@ -1,0 +1,43 @@
+<elements>
+ <bitmap id="win.left" file="images/components/window.png" x="0" y="19" w="11" h="45" />
+ <bitmap id="win.center" file="images/components/window.png" x="11" y="19" w="74" h="45" />
+ <bitmap id="win.right" file="images/components/window.png" x="85" y="19" w="11" h="45" />
+ <bitmap id="win.bot.left" file="images/components/window.png" x="0" y="77" w="2" h="5" />
+ <bitmap id="win.bot.center" file="images/components/window.png" x="2" y="77" w="92" h="5" />
+ <bitmap id="win.bot.right" file="images/components/window.png" x="94" y="77" w="2" h="5" />
+ 
+ <bitmap id="bar.top.left" file="images/components/window.png" x="0" y="0" w="2" h="2" />
+ <bitmap id="bar.top.center" file="images/components/window.png" x="2" y="0" w="92" h="2" />
+ <bitmap id="bar.top.right" file="images/components/window.png" x="94" y="0" w="2" h="2" />
+ <bitmap id="bar.left" file="images/components/window.png" x="0" y="2" w="2" h="15" />
+ <bitmap id="bar.center" file="images/components/window.png" x="2" y="2" w="92" h="15" />
+ <bitmap id="bar.right" file="images/components/window.png" x="94" y="2" w="2" h="15" />
+ <bitmap id="bar.bot.left" file="images/components/window.png" x="0" y="17" w="2" h="2" />
+ <bitmap id="bar.bot.center" file="images/components/window.png" x="2" y="17" w="92" h="2" />
+ <bitmap id="bar.bot.right" file="images/components/window.png" x="94" y="17" w="2" h="2" /> 
+</elements>
+
+<groupdef id="win.frame.bar">
+ <layer id="top.left" image="bar.top.left" x="0" y="0" w="2" h="2" />
+ <layer id="top.center" image="bar.top.center" x="2" y="0" w="-2" h="2" relatw="1" />
+ <layer id="top.right" image="bar.top.right" x="-2" y="0" w="2" h="2" relatx="1" />
+ <layer id="left" image="bar.left" x="0" y="2" w="2" h="-2" relath="1" />
+ <layer id="center" image="bar.center" x="2" y="2" w="-2" h="-2" relatw="1" relath="1" />
+ <layer id="right" image="bar.right" x="-2" y="2" w="2" h="-2" relath="1" relatx="1"/>
+ <layer id="bot.left" image="bar.bot.left" x="0" y="-2" w="2" h="2" relaty="1" />
+ <layer id="bot.center" image="bar.bot.center" x="2" y="-2" w="-2" h="2" relatw="1" relaty="1" />
+ <layer id="bot.right" image="bar.bot.right" x="-2" y="-2" w="2" h="2" relatx="1" relaty="1" /> 
+</groupdef>
+
+<groupdef id="win.frame">
+ <layer id="frame.background" image="win.center" x="0" y="0" w="0" h="0" relatw="1" relath="1" tile="1" />
+ <group id="win.frame.bar" x="0" y="0" h="19" w="0" relatw="1" />
+ <layer id="win.frame.shine" image="player.titlebar.shine" x="1" y="1" w="62" h="15" move="1" />
+ <layer id="frame.left" image="win.left" x="0" y="19" w="11" h="0" relath="1" tile="1" resize="left" />
+ <layer id="frame.right" image="win.right" x="-11" y="19" w="11" h="0" relatx="1" relath="1" tile="1" resize="right" />
+ <layer id="frame.bot.left" image="win.bot.left" x="0" y="-5" w="2" h="5" relaty="1" resize="bottomleft"/>
+ <layer id="frame.bot.center" image="win.bot.center" x="2" y="-5" w="-2" h="5" relaty="1" relatw="1" resize="bottom" />
+ <layer id="frame.bot.right" image="win.bot.right" x="-2" y="-5" w="2" h="5" relatx="1" relaty="1" resize="bottomright" />
+</groupdef>
+
+<include file="components.xml" />

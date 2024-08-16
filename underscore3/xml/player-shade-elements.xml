@@ -1,0 +1,16 @@
+  <bitmap id="player.shade.bg" file="images/main-shade/background-main-shade.png" />
+  <bitmap id="player.shade1.bg" file="images/main-shade/background-main-shade.png" x="0" y="0" h="19" w="275" />
+  <bitmap id="player.shade.displayarea" file="images/main-shade/display-area.png" />
+  <!-- Shade Control Buttons -->
+  <bitmap id="player.shade.cbuttons.back" file="images/main-shade/shade-cbuttons.png" x="0" y="0" h="10" w="10" />
+  <bitmap id="player.shade.cbuttons.play" file="images/main-shade/shade-cbuttons.png" x="10" y="0" h="10" w="12" />
+  <bitmap id="player.shade.cbuttons.pause" file="images/main-shade/shade-cbuttons.png" x="22" y="0" h="10" w="13" />
+  <bitmap id="player.shade.cbuttons.stop" file="images/main-shade/shade-cbuttons.png" x="35" y="0" h="10" w="12" />
+  <bitmap id="player.shade.cbuttons.next" file="images/main-shade/shade-cbuttons.png" x="47" y="0" h="10" w="12" />
+  <bitmap id="player.shade.cbuttons.eject" file="images/main-shade/shade-cbuttons.png" x="59" y="0" h="10" w="11" />
+  <bitmap id="player.shade.cbuttons.back.hover" file="images/main-shade/shade-cbuttons.png" x="0" y="10" h="10" w="10" />
+  <bitmap id="player.shade.cbuttons.play.hover" file="images/main-shade/shade-cbuttons.png" x="10" y="10" h="10" w="12" />
+  <bitmap id="player.shade.cbuttons.pause.hover" file="images/main-shade/shade-cbuttons.png" x="22" y="10" h="10" w="13" />
+  <bitmap id="player.shade.cbuttons.stop.hover" file="images/main-shade/shade-cbuttons.png" x="35" y="10" h="10" w="12" />
+  <bitmap id="player.shade.cbuttons.next.hover" file="images/main-shade/shade-cbuttons.png" x="47" y="10" h="10" w="12" />
+  <bitmap id="player.shade.cbuttons.eject.hover" file="images/main-shade/shade-cbuttons.png" x="59" y="10" h="10" w="11" />

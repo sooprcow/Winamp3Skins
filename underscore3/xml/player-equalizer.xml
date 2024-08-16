@@ -1,0 +1,41 @@
+<groupdef id="group.equalizer" background="player.eq.bg" >
+<!-- PREAMP -->
+ <animatedlayer id="eq.preamp.ani" x="5" y="13" w="11" h="53" image="player.eq.bar" autoplay="0" autoreplay="0" />
+ <slider id="eq.preamp.ani" action="EQ_PREAMP" orientation="V" x="5" y="15" w="11" h="48" thumb="player.volume.ani.button" downthumb="player.volume.ani.button" />
+<!-- BAR 1 -->
+ <animatedlayer id="eq.bar1.ani" x="26" y="13" w="11" h="53" image="player.eq.bar" autoplay="0" autoreplay="0" />
+ <slider id="eq.bar1.ani" action="EQ_BAND" param="1" orientation="V" x="26" y="15" w="11" h="48" thumb="player.volume.ani.button" downthumb="player.volume.ani.button" />
+<!-- BAR 2 -->
+ <animatedlayer id="eq.bar2.ani" x="40" y="13" w="11" h="53" image="player.eq.bar" autoplay="0" autoreplay="0" />
+ <slider id="eq.bar2.ani" action="EQ_BAND" param="2" orientation="V" x="40" y="15" w="11" h="48" thumb="player.volume.ani.button" downthumb="player.volume.ani.button" />
+<!-- BAR 3 -->
+ <animatedlayer id="eq.bar3.ani" x="54" y="13" w="11" h="53" image="player.eq.bar" autoplay="0" autoreplay="0" />
+ <slider id="eq.bar3.ani" action="EQ_BAND" param="3" orientation="V" x="54" y="15" w="11" h="48" thumb="player.volume.ani.button" downthumb="player.volume.ani.button" />
+<!-- BAR 4 -->
+ <animatedlayer id="eq.bar4.ani" x="68" y="13" w="11" h="53" image="player.eq.bar" autoplay="0" autoreplay="0" />
+ <slider id="eq.bar4.ani" action="EQ_BAND" param="4" orientation="V" x="68" y="15" w="11" h="48" thumb="player.volume.ani.button" downthumb="player.volume.ani.button" />
+<!-- BAR 5 -->
+ <animatedlayer id="eq.bar5.ani" x="82" y="13" w="11" h="53" image="player.eq.bar" autoplay="0" autoreplay="0" />
+ <slider id="eq.bar5.ani" action="EQ_BAND" param="5" orientation="V" x="82" y="15" w="11" h="48" thumb="player.volume.ani.button" downthumb="player.volume.ani.button" />
+<!-- BAR 6 -->
+ <animatedlayer id="eq.bar6.ani" x="96" y="13" w="11" h="53" image="player.eq.bar" autoplay="0" autoreplay="0" />
+ <slider id="eq.bar6.ani" action="EQ_BAND" param="6" orientation="V" x="96" y="15" w="11" h="48" thumb="player.volume.ani.button" downthumb="player.volume.ani.button" />
+<!-- BAR 7 -->
+ <animatedlayer id="eq.bar7.ani" x="110" y="13" w="11" h="53" image="player.eq.bar" autoplay="0" autoreplay="0" />
+ <slider id="eq.bar7.ani" action="EQ_BAND" param="7" orientation="V" x="110" y="15" w="11" h="48" thumb="player.volume.ani.button" downthumb="player.volume.ani.button" />
+<!-- BAR 8 -->
+ <animatedlayer id="eq.bar8.ani" x="124" y="13" w="11" h="53" image="player.eq.bar" autoplay="0" autoreplay="0" />
+ <slider id="eq.bar8.ani" action="EQ_BAND" param="8" orientation="V" x="124" y="15" w="11" h="48" thumb="player.volume.ani.button" downthumb="player.volume.ani.button" />
+<!-- BAR 9 -->
+ <animatedlayer id="eq.bar9.ani" x="138" y="13" w="11" h="53" image="player.eq.bar" autoplay="0" autoreplay="0" />
+ <slider id="eq.bar9.ani" action="EQ_BAND" param="9" orientation="V" x="138" y="15" w="11" h="48" thumb="player.volume.ani.button" downthumb="player.volume.ani.button" />
+<!-- BAR 10 -->
+ <animatedlayer id="eq.bar10.ani" x="152" y="13" w="11" h="53" image="player.eq.bar" autoplay="0" autoreplay="0" />
+ <slider id="eq.bar10.ani" action="EQ_BAND" param="10" orientation="V" x="152" y="15" w="11" h="48" thumb="player.volume.ani.button" downthumb="player.volume.ani.button" />
+<!-- Eq Options -->
+ <button x="7" y="4" w="9" h="5" action="EQ_TOGGLE" image="player.eq.on.off" downimage="player.eq.on.down" activeimage="player.eq.on" tooltip="Toggle Equalizer On/Off" />
+ <button x="25" y="4" w="20" h="5" action="EQ_AUTO" image="player.eq.auto.off" downimage="player.eq.auto.down" activeimage="player.eq.auto" tooltip="Toggle Equalizer Automatic Processing" />
+ <button x="54" y="4" w="14" h="5" action="MENU" param="presets" image="player.eq.pre.off" downimage="player.eq.pre" activeimage="player.eq.pre" tooltip="Manage Equalizer Presets" />
+<!-- Close -->
+ <button id="eq.close" image="player.eq.close" downimage="player.eq.close.hover" hoverimage="player.eq.close.hover" x="157" y="5" h="5" w="5" tooltip="Close Equalizer" />
+</groupdef>

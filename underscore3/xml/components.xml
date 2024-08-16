@@ -1,0 +1,24 @@
+
+<groupdef id="wasabi.standardframe.statusbar" background="win.center" sysregion="1" xuitag="Wasabi:StandardFrame:Status">
+ <group id="win.frame" x="0" y="0" w="0" h="0" relatw="1" relath="1"/>
+ <group id="win.frame.bar" x="0" y="-27" h="22" w="0" relaty="1" relatw="1" />
+ <text id="title" font="player.font.title" x="5" y="3" w="-25" h="15" relatw="1" default=":componentname" move="1" />
+ <button id="close" image="player.buttons.close" downimage="player.buttons.close.hover" hoverimage="player.buttons.close.hover" action="CLOSE" x="-15" y="4" h="11" w="11" relatx="1" tooltip="Close Window" />
+ <LayoutStatus id="standardframe.layoutstatus" x="11" y="-23" w="-22" h="15" relaty="1" relatw="1" exclude="{system}" />
+ <script id="standardframe.script" file="scripts/standardframe.maki" param="11,20,-22,-48,0,0,1,1" />
+</groupdef>
+
+<groupdef id="wasabi.standardframe.nostatusbar" background="win.center" sysregion="1" xuitag="Wasabi:StandardFrame:NoStatus">
+ <group id="win.frame" x="0" y="0" w="0" h="0" relatw="1" relath="1"/>
+ <group id="win.frame.bar" x="0" y="-20" h="15" w="0" relaty="1" relatw="1" />
+ <text id="title" font="player.font.title" x="5" y="3" w="-25" h="15" relatw="1" default=":componentname" move="1" />
+ <button id="close" image="player.buttons.close" downimage="player.buttons.close.hover" hoverimage="player.buttons.close.hover" action="CLOSE" x="-15" y="4" h="11" w="11" relatx="1" tooltip="Close Window" />
+ <script id="standardframe.script" file="scripts/standardframe.maki" param="11,20,-22,-42,0,0,1,1" />
+</groupdef>
+
+<groupdef id="wasabi.edit" inherit_group="win.frame.bar" xuitag="Wasabi:EditBox" embed_xui="wasabi.edit.box" h="20">
+ <edit id="wasabi.edit.box" x="0" y="0" w="0" h="0" relatw="1" relath="1" />
+</groupdef>
+
+<include file="playlist.xml" />
+<include file="video.xml" />

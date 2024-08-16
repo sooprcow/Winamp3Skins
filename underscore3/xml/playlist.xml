@@ -1,0 +1,24 @@
+
+
+<container id="playlist" name="Playlist Editor" default_w="300" default_h="300" component="guid:pl" default_visible="0">
+ <layout id="normal" background="win.center" minimum_h="116" minimum_w="275" linkwidth="shade">
+  <group id="win.frame" x="0" y="0" w="0" h="0" relatw="1" relath="1" />
+  <group id="win.frame.bar" x="0" y="-27" h="22" w="0" relaty="1" relatw="1" />
+  <text id="title" font="player.font.title" x="5" y="3" w="-25" h="15" relatw="1" default="Playlist Editor" move="1" />
+  <button id="close" image="player.buttons.close" downimage="player.buttons.close.hover" hoverimage="player.buttons.close.hover" action="CLOSE" x="-15" y="4" h="11" w="11" relatx="1" tooltip="Close Window" />
+  <button id="shade" image="player.buttons.shade" downimage="player.buttons.shade.hover" hoverimage="player.buttons.shade.hover" action="SWITCH" param="shade" x="-28" y="4" h="11" w="11" relatx="1" tooltip="Change Mode" />
+  <component id="pledit" x="11" y="20" w="-22" h="-48" relatw="1" relath="1" noshowcmdbar="0" autoopen="1" autoclose="1" param="guid:pl" />
+  <layoutstatus id="sysmenu.status" bg="0" x="11" y="-23" w="-22" h="15" relaty="1" relatw="1" />
+ </layout>
+ 
+ <layout id="shade" background="win.center" minimum_h="19" maximum_h="19" minimum_w="275" linkwidth="normal">
+  <group id="win.frame.bar" x="0" y="0" h="0" w="0" relath="1" relatw="1" />
+  <layer id="titlebar.shine" resize="right" image="player.titlebar.shine" x="-2" y="1" w="1" h="15" relatx="1" move="1" />
+  <layer id="display.song.center" image="player.display.song.center" tile="1" x="2" y="1" w="-35" h="15" relatw="1" />
+  <layer id="display.song.right" image="player.display.song.right" x="-35" y="1" w="3" h="15" relatx="1" />
+  <text id="display.song.ticker" ticker="0" display="songname" default="" showlen="0" x="2" y="6" h="6" w="-70" relatw="1" font="player.font.default" move="1" />  
+  <text id="shade.song.length" x="-70" y="6" w="35" h="6" relatx="1" align="right" display="songlength" default="" nograb="1" font="player.font.default" move="1" />
+  <button id="close" image="player.buttons.close" downimage="player.buttons.close.hover" hoverimage="player.buttons.close.hover" action="CLOSE" x="-15" y="4" h="11" w="11" relatx="1" tooltip="Close Window" />
+  <button id="shade" image="player.buttons.shade" downimage="player.buttons.shade.hover" hoverimage="player.buttons.shade.hover" action="SWITCH" param="normal" x="-28" y="4" h="11" w="11" relatx="1" tooltip="Change Mode" />
+ </layout>
+</container>

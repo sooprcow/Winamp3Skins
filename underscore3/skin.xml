@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<WinampAbstractionLayer version="0.8">
+
+  <skininfo>
+    <version>3.0</version>
+    <name>Underscore 3.0</name>
+    <comment>Thanks to everyone who tested this thing. Check the About Box for More.</comment>
+    <author>David Serrano</author>
+    <email>sooprcow@deskmid.com</email>
+    <homepage>http://sooprcow.deskmod.com</homepage>
+    <screenshot>preview.png</screenshot>
+  </skininfo>
+  
+  <include file="xml/system-elements.xml" />
+  <include file="xml/player.xml" />
+  <include file="xml/components-groups.xml" />
+  <include file="xml/about.xml" />
+  <scripts>
+   <script id="player" file="scripts/player.maki" />
+   <script id="clutterbar" file="scripts/clutterbar.maki" />
+   <script id="eqbands" file="scripts/eqbands.maki" />
+  </scripts>   
+</WinampAbstractionLayer>

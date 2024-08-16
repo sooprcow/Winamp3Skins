@@ -1,0 +1,79 @@
+  <!-- Start Bitmap Fonts -->
+  <bitmapfont id="player.font.default" file="images/main/display-smfont.png" charwidth="5" charheight="6" hspacing="0" vspacing="0" />
+  <bitmapfont id="player.font.title" file="images/main/display-titlefont.png" charwidth="5" charheight="6" hspacing="0" vspacing="0" />
+  <bitmapfont id="player.font.big" file="images/main/display-bgfont.png" charwidth="9" charheight="16" hspacing="4" vspacing="1" />
+  <!-- Start Non-Group Images -->
+  <bitmap id="player.bg" file="images/main/background-main.png" />
+  <bitmap id="player.titlebar" file="images/main/topbotbars.png" x="0" y="0" h="19" width="275" gammagroup="TitleBar"/>
+  <bitmap id="player.bottombar" file="images/main/topbotbars.png" x="0" y="19" h="17" width="275" gammagroup="TitleBar"/>
+  <bitmap id="player.titlebar.shine" file="images/main/titlebar-shine.png" />
+  <bitmap id="player.display.time" file="images/main/display-time.png" />
+  <bitmap id="player.display.vis" file="images/main/display-vis.png" />
+  <bitmap id="player.display.song.left" file="images/main/display-song.png" x="0" y="0" h="15" w="2" />
+  <bitmap id="player.display.song.center" file="images/main/display-song.png" x="3" y="0" h="15" w="2" />
+  <bitmap id="player.display.song.right" file="images/main/display-song.png" x="6" y="0" h="15" w="3" />
+  <!-- Start Title Bar Buttons -->
+  <bitmap id="player.buttons.minimize" file="images/main/titlebar-buttons.png" x="0" y="0" h="11" w="11" />
+  <bitmap id="player.buttons.shade" file="images/main/titlebar-buttons.png" x="11" y="0" h="11" w="11" />
+  <bitmap id="player.buttons.close" file="images/main/titlebar-buttons.png" x="22" y="0" h="11" w="11" />
+  <bitmap id="player.buttons.minimize.hover" file="images/main/titlebar-buttons.png" x="0" y="11" h="11" w="11" />
+  <bitmap id="player.buttons.shade.hover" file="images/main/titlebar-buttons.png" x="11" y="11" h="11" w="11" />
+  <bitmap id="player.buttons.close.hover" file="images/main/titlebar-buttons.png" x="22" y="11" h="11" w="11" />
+  <!-- Start Control Buttons -->
+  <bitmap id="player.cbuttons.back" file="images/main/cbuttons.png" x="0" y="0" h="14" w="17" />
+  <bitmap id="player.cbuttons.play" file="images/main/cbuttons.png" x="17" y="0" h="14" w="17" />
+  <bitmap id="player.cbuttons.pause" file="images/main/cbuttons.png" x="34" y="0" h="14" w="17" />
+  <bitmap id="player.cbuttons.stop" file="images/main/cbuttons.png" x="51" y="0" h="14" w="17" />
+  <bitmap id="player.cbuttons.next" file="images/main/cbuttons.png" x="68" y="0" h="14" w="16" />
+  <bitmap id="player.cbuttons.eject" file="images/main/cbuttons-eject.png" x="0" y="0" h="11" w="11" />
+  <bitmap id="player.cbuttons.back.hover" file="images/main/cbuttons.png" x="0" y="14" h="14" w="17" />
+  <bitmap id="player.cbuttons.play.hover" file="images/main/cbuttons.png" x="17" y="14" h="14" w="17" />
+  <bitmap id="player.cbuttons.pause.hover" file="images/main/cbuttons.png" x="34" y="14" h="14" w="17" />
+  <bitmap id="player.cbuttons.stop.hover" file="images/main/cbuttons.png" x="51" y="14" h="14" w="17" />
+  <bitmap id="player.cbuttons.next.hover" file="images/main/cbuttons.png" x="68" y="14" h="14" w="16" />
+  <bitmap id="player.cbuttons.eject.hover" file="images/main/cbuttons-eject.png" x="0" y="11" h="11" w="11" />
+  <!-- Start Shuffle Repeat Crossfade Buttons -->
+  <bitmap id="player.shufrep.shuffle.normal" file="images/main/buttons-shufrep.png" x="0" y="0" h="13" w="35" />
+  <bitmap id="player.shufrep.repeat.normal" file="images/main/buttons-shufrep.png" x="35" y="0" h="13" w="35" />
+  <bitmap id="player.shufrep.crossfade.normal" file="images/main/buttons-shufrep.png" x="70" y="0" h="13" w="35" />
+  <bitmap id="player.shufrep.shuffle.active" file="images/main/buttons-shufrep.png" x="0" y="13" h="13" w="35" />
+  <bitmap id="player.shufrep.repeat.active" file="images/main/buttons-shufrep.png" x="35" y="13" h="13" w="35" />
+  <bitmap id="player.shufrep.crossfade.active" file="images/main/buttons-shufrep.png" x="70" y="13" h="13" w="35" />
+  <bitmap id="player.shufrep.shuffle.pressed" file="images/main/buttons-shufrep.png" x="0" y="26" h="13" w="35" />
+  <bitmap id="player.shufrep.repeat.pressed" file="images/main/buttons-shufrep.png" x="35" y="26" h="13" w="35" />
+  <bitmap id="player.shufrep.crossfade.pressed" file="images/main/buttons-shufrep.png" x="70" y="26" h="13" w="35" />
+  <!-- Start Seeker -->
+  <bitmap id="player.seeker" file="images/main/seeker.png" x="0" y="0" w="161" h="10" />
+  <bitmap id="player.seeker.thumb" file="images/main/seeker.png" x="161" y="0" w="13" h="3" />
+  <!-- Start Volume -->
+  <bitmap id="player.volume.ani.button" file="images/main/blank.png" h="1" w="1" />
+  <bitmap id="player.volume.ani" file="images/main/ani-volume.png" />
+  <!-- Start Window Buttons -->
+  <bitmap id="player.buttons.eq" file="images/main/buttons-windows.png" x="0" y="0" w="24" h="13" />
+  <bitmap id="player.buttons.pl" file="images/main/buttons-windows.png" x="24" y="0" w="24" h="13" />
+  <bitmap id="player.buttons.ml" file="images/main/buttons-windows.png" x="48" y="0" w="25" h="13" />
+  <bitmap id="player.buttons.eq.down" file="images/main/buttons-windows.png" x="0" y="13" w="24" h="13" />
+  <bitmap id="player.buttons.pl.down" file="images/main/buttons-windows.png" x="24" y="13" w="24" h="13" />
+  <bitmap id="player.buttons.ml.down" file="images/main/buttons-windows.png" x="48" y="13" w="25" h="13" />
+  <bitmap id="player.buttons.eq.active" file="images/main/buttons-windows.png" x="0" y="26" w="24" h="13" />
+  <bitmap id="player.buttons.pl.active" file="images/main/buttons-windows.png" x="24" y="26" w="24" h="13" />
+  <bitmap id="player.buttons.ml.active" file="images/main/buttons-windows.png" x="48" y="26" w="25" h="13" />
+  <!-- Start Clutter Bar -->
+  <bitmap id="player.clutterbar.button" file="images/main/clutterbar.png" x="0" y="0" h="9" w="9" />
+  <bitmap id="player.clutterbar.button.down" file="images/main/clutterbar.png" x="9" y="0" h="9" w="9" />
+  <bitmap id="player.clutterbar.button.active" file="images/main/clutterbar.png" x="18" y="0" h="9" w="9" />
+  <bitmap id="player.clutterbar.shade" file="images/main/clutterbar.png" x="27" y="0" h="9" w="10" />
+  <!-- EQ Stuff -->
+  <bitmap id="player.eq.bg" file="images/main/eq/eq-background.png" />
+  <bitmap id="player.eq.bar" file="images/main/eq/ani-eqbar.png" />
+  <bitmap id="player.eq.close" file="images/main/eq/close-eq.png" x="0" y="0" w="5" h="5" />
+  <bitmap id="player.eq.close.hover" file="images/main/eq/close-eq.png" x="5" y="0" w="5" h="5" />
+  <bitmap id="player.eq.on.off" file="images/main/eq/eq-buttons.png" x="0" y="0" w="9" h="5" />
+  <bitmap id="player.eq.on.down" file="images/main/eq/eq-buttons.png" x="0" y="5" w="9" h="5" />
+  <bitmap id="player.eq.on" file="images/main/eq/eq-buttons.png" x="0" y="10" w="9" h="5" />
+  <bitmap id="player.eq.auto.off" file="images/main/eq/eq-buttons.png" x="9" y="0" w="20" h="5" />
+  <bitmap id="player.eq.auto.down" file="images/main/eq/eq-buttons.png" x="9" y="5" w="20" h="5" />
+  <bitmap id="player.eq.auto" file="images/main/eq/eq-buttons.png" x="9" y="10" w="20" h="5" />
+  <bitmap id="player.eq.pre.off" file="images/main/eq/eq-buttons.png" x="29" y="0" w="14" h="5" />
+  <!-- <bitmap id="player.eq.pre.down" file="images/main/eq/eq-buttons.png" x="29" y="5" w="14" h="5" /> -->
+  <bitmap id="player.eq.pre" file="images/main/eq/eq-buttons.png" x="29" y="10" w="14" h="5" />

@@ -1,0 +1,45 @@
+ <elements>
+  <!-- Start Non-Group Images -->
+  <bitmap id="visopt.bg" file="images/visoptions/background.png" gammagroup="background" />
+  <bitmap id="visopt.bg.border" file="images/visoptions/background-border.png" gammagroup="border" />
+  <!-- Start Frame Stuff -->
+  <bitmap id="frame.bg" file="images/visoptions/frame.png" gammagroup="background" />
+  <bitmap id="frame.bg.border" file="images/visoptions/frame-border.png" gammagroup="border" />
+  <!-- Toggle Vis -->
+  <bitmap id="frame.vis.toggle.off" file="images/visoptions/togglevis.png" x="0" y="0" h="9" w="62" gammagroup="border" />
+  <bitmap id="frame.vis.toggle.on" file="images/visoptions/togglevis.png" x="0" y="9" h="9" w="62" gammagroup="border" />
+  <bitmap id="frame.vis.toggle.txt" file="images/visoptions/togglevis-text.png" gammagroup="font" />
+  <!-- Toggle Type -->
+  <bitmap id="frame.type.toggle.off" file="images/visoptions/toggletype.png" x="0" y="0" h="9" w="55" gammagroup="border" />
+  <bitmap id="frame.type.toggle.on" file="images/visoptions/toggletype.png" x="0" y="9" h="9" w="55" gammagroup="border" />
+  <bitmap id="frame.type.toggle.txt" file="images/visoptions/toggletype-text.png" gammagroup="font" />
+  <!-- Vis Alpha Slider -->
+  <bitmap id="frame.alpha.slider.bg" file="images/visoptions/alphaslider.png" gammgroup="border" />  
+  <bitmap id="frame.alpha.slider.txt" file="images/visoptions/alphaslider-text.png" gammagroup="font" />
+ </elements>
+
+ <container id="visoptions" name="Custom Vis Options" default_visible="0" >
+  <groupdef id="visop.frame">
+   <layer image="frame.bg" x="0" y="0" w="0" h="0" relatw="1" relath="1" />
+   <layer image="frame.bg.border" x="0" y="0" w="0" h="0" relatw="1" relath="1" />
+   <!-- Toggle Vis -->
+   <togglebutton id="vis.toggle" x="6" y="0" w="62" h="9" image="frame.vis.toggle.off" activeimage="frame.vis.toggle.on" />
+   <layer image="frame.vis.toggle.txt" x="20" y="1" w="48" h="6" ghost="1" />
+   <!-- Toggle Type -->
+   <togglebutton id="type.toggle" x="11" y="16" w="55" h="9" image="frame.type.toggle.off" activeimage="frame.type.toggle.on" />
+   <layer image="frame.type.toggle.txt" x="24" y="18" w="41" h="5" ghost="1" />
+   <!-- Vis Alpha Slider -->
+   <layer image="frame.alpha.slider.txt" x="12" y="30" w="44" h="5" ghost="1" />
+   <layer image="frame.alpha.slider.bg" x="11" y="38" w="81" h="8" ghost="1" />
+   <layer id="slide.alpha.ghost" image="player.volseek.ghost" x="13" y="40" h="4" w="77" />
+   <slider id="slide.alpha" action="" orientation="H" x="13" y="40" h="3" w="77" thumb="player.volseek" downthumb="player.volseek" />
+   <text id="cur.alpha" default="100%" x="45" y="30" w="35" h="6" font="player.font.default" align="right" ghost="1" />
+   <script id="visoptions" file="visoptions.maki" />
+  </groupdef>
+
+  <layout id="normal" background="visopt.bg" >
+   <layer image="visopt.bg.border" x="0" y="0" w="128" h="74" />
+   <button id="close" image="player.titlebar.close" downimage="player.titlebar.close.hover" hoverimage="player.titlebar.close.hover" action="CLOSE" x="118" y="5" w="6" h="4" />
+   <group id="visop.frame" x="9" y="9" w="110" h="54" />
+  </layout>
+ </container>

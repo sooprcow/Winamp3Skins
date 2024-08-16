@@ -1,0 +1,81 @@
+
+ <!-- Gamma sets -->
+ <gammaset id="Default">
+  <gammagroup id="background" value="0,0,0"/>
+  <gammagroup id="border" value="0,0,0"/>
+  <gammagroup id="visbar" value="0,0,0" />
+  <gammagroup id="buttonoff" value="0,0,0" />
+  <gammagroup id="buttonon" value="0,0,0" />
+  <gammagroup id="volumeseek" value="0,0,0" />
+  <gammagroup id="font" value="0,0,0" />
+ </gammaset>
+
+ <gammaset id="Purple">
+  <gammagroup id="background" value="10000,0,0"/>
+  <gammagroup id="border" value="0,0,0"/>
+  <gammagroup id="visbar" value="0,0,0" />
+  <gammagroup id="buttonoff" value="0,0,0" />
+  <gammagroup id="buttonon" value="0,0,0" />
+  <gammagroup id="volumeseek" value="0,0,0" />
+  <gammagroup id="font" value="0,0,0" />
+ </gammaset>
+
+ <gammaset id="Teal">
+  <gammagroup id="background" value="0,1500,0"/>
+  <gammagroup id="border" value="0,0,0"/>
+  <gammagroup id="visbar" value="0,0,0" />
+  <gammagroup id="buttonoff" value="0,0,0" />
+  <gammagroup id="buttonon" value="0,0,0" />
+  <gammagroup id="volumeseek" value="0,0,0" />
+  <gammagroup id="font" value="0,0,0" />
+ </gammaset>
+
+ <gammaset id="More Blue">
+  <gammagroup id="background" value="0,0,2500"/>
+  <gammagroup id="border" value="0,0,0"/>
+  <gammagroup id="visbar" value="0,0,0" />
+  <gammagroup id="buttonoff" value="0,0,0" />
+  <gammagroup id="buttonon" value="0,0,0" />
+  <gammagroup id="volumeseek" value="0,0,0" />
+  <gammagroup id="font" value="0,0,0" />
+ </gammaset>
+
+ <gammaset id="Army">
+  <gammagroup id="background" value="0,0,-1500" />
+  <gammagroup id="border" value="0,0,-1000"/>
+  <gammagroup id="visbar" value="0,0,-1000" />
+  <gammagroup id="buttonoff" value="0,0,-1500" />
+  <gammagroup id="buttonon" value="0,0,-1500" />
+  <gammagroup id="volumeseek" value="0,0,-1500" />
+  <gammagroup id="font" value="0,0,0" />
+ </gammaset>
+
+ <gammaset id="Underscore">
+  <gammagroup id="background" value="300,300,300" gray="1" />
+  <gammagroup id="border" value="0,0,0"/>
+  <gammagroup id="visbar" value="-4095,-4095,-4095" />
+  <gammagroup id="buttonoff" value="0,0,0" />
+  <gammagroup id="buttonon" value="0,0,0" />
+  <gammagroup id="volumeseek" value="0,0,0" />
+  <gammagroup id="font" value="0,0,0" />
+ </gammaset>
+
+ <gammaset id="Deskmod">
+  <gammagroup id="background" value="-1024,150,-1024" gray="1" />
+  <gammagroup id="border" value="0,0,0"/>
+  <gammagroup id="visbar" value="-4095,-4095,-4095" />
+  <gammagroup id="buttonoff" value="0,0,0" />
+  <gammagroup id="buttonon" value="0,0,0" />
+  <gammagroup id="volumeseek" value="0,0,0" />
+  <gammagroup id="font" value="0,0,0" />
+ </gammaset>
+
+ <gammaset id="Orange">
+  <gammagroup id="background" value="2496,-96,-2784" gray="1" />
+  <gammagroup id="border" value="0,0,0"/>
+  <gammagroup id="visbar" value="-4095,-4095,-4095" />
+  <gammagroup id="buttonoff" value="0,0,0" />
+  <gammagroup id="buttonon" value="0,0,0" />
+  <gammagroup id="volumeseek" value="0,0,0" />
+  <gammagroup id="font" value="0,0,0" />
+ </gammaset>

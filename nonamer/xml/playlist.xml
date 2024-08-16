@@ -1,0 +1,72 @@
+ <elements>
+  <!-- Start Non-Group Images -->
+  <bitmap id="playlist.bg" file="images/playlist/background.png" />
+  <!-- Tile Images -->
+  <bitmap id="playlist.top.left" file="images/playlist/top-left.png" gammagroup="background" />
+  <bitmap id="playlist.top.left.border" file="images/playlist/top-left-border.png" gammagroup="border" />
+  <bitmap id="playlist.top" file="images/playlist/top.png" gammagroup="background" />
+  <bitmap id="playlist.top.border" file="images/playlist/top-border.png" gammagroup="border" />
+  <bitmap id="playlist.top.right" file="images/playlist/top-right.png" gammagroup="background" />
+  <bitmap id="playlist.top.right.border" file="images/playlist/top-right-border.png" gammagroup="border" />
+  <bitmap id="playlist.left-right" file="images/playlist/left-right.png" gammagroup="border" />
+  <bitmap id="playlist.bot.left" file="images/playlist/bot-left.png" gammagroup="background" />
+  <bitmap id="playlist.bot.left.border" file="images/playlist/bot-left-border.png" gammagroup="border" />
+  <bitmap id="playlist.bot" file="images/playlist/bot.png" gammagroup="background" />
+  <bitmap id="playlist.bot.border" file="images/playlist/bot-border.png" gammagroup="border" />
+  <bitmap id="playlist.bot.right" file="images/playlist/bot-right.png" gammagroup="background" />
+  <bitmap id="playlist.bot.right.border" file="images/playlist/bot-right-border.png" gammagroup="border" />
+ </elements>
+
+ <container id="playlist" name="Playlist Editor" default_w="300" default_h="300" component="guid:pl" default_visible="0">
+  <!-- top left -->
+  <groupdef id="playlist.top.left" w="15" h="20" >
+   <layer image="playlist.top.left" x="0" y="0" w="15" h="20" />
+   <layer image="playlist.top.left.border" x="0" y="0" w="15" h="20" resize="topleft" />
+  </groupdef>
+  <!-- top center -->
+  <groupdef id="playlist.top">
+   <layer image="playlist.top" x="0" y="0" h="20" w="0" relatw="1" tile="1" />
+   <layer image="playlist.top.border" x="0" y="0" h="20" w="0" relatw="1" />
+  </groupdef>
+  <!-- top right -->
+  <groupdef id="playlist.top.right" w="24" h="20" >
+   <layer image="playlist.top.right" x="0" y="0" w="24" h="20" />
+   <layer image="playlist.top.right.border" x="0" y="0" w="24" h="20" />
+   <button id="close" image="eq.close" downimage="eq.close.active" hoverimage="eq.close.active" action="CLOSE" x="-10" y="5" w="5" h="4" relatx="1" />
+  </groupdef>
+  <!-- Left/Right -->
+  <groupdef id="playlist.left-right">
+   <layer image="playlist.left-right" x="0" y="0" w="3" h="0" relath="1" tile="1" />
+  </groupdef>
+  <!-- bottom left -->
+  <groupdef id="playlist.bot.left" w="15" h="20" >
+   <layer image="playlist.bot.left" x="0" y="0" w="15" h="20" />
+   <layer image="playlist.bot.left.border" x="0" y="0" w="15" h="20" resize="bottomleft" />
+  </groupdef>
+  <!-- bottom center -->
+  <groupdef id="playlist.bot">
+   <layer image="playlist.bot" x="0" y="0" h="20" w="0" relatw="1" tile="1" />
+   <layer image="playlist.bot.border" x="0" y="0" h="20" w="0" relatw="1" />
+  </groupdef>
+  <!-- bottom right -->
+  <groupdef id="playlist.bot.right" w="24" h="20" >
+   <layer image="playlist.bot.right" x="0" y="0" w="24" h="20" />
+   <layer image="playlist.bot.right.border" x="0" y="0" w="24" h="20" resize="bottomright" />
+  </groupdef>
+
+  <layout id="normal" background="playlist.bg" minimum_h="150" minimum_w="275" >
+   <group id="playlist.top.left" x="0" y="0" w="15" h="20" />
+   <group id="playlist.top" x="15" y="0" w="-39" h="20" relatw="1" />
+   <group id="playlist.top.right" x="-24" y="0" w="24" h="20" relatx="1" />
+   <group id="playlist.left-right" x="0" y="20" w="3" h="0" relath="1" />
+
+   <component id="pledit" x="4" y="21" w="-6" h="-58" relatw="1" relath="1" noshowcmdbar="0" autoopen="1" autoclose="1" param="guid:pl" />
+   <layoutstatus id="sysmenu.status" bg="0" x="3" y="-36" w="-5" h="15" relaty="1" relatw="1" rincludeonly="{system}" />
+   
+   <group id="playlist.left-right" x="-3" y="20" w="3" h="0" relath="1" relatx="1" />
+   <group id="playlist.bot.left" x="0" y="-20" w="15" h="20" relaty="1" />
+   <group id="playlist.bot" x="15" y="-20" w="-39" h="20" relaty="1" relatw="1" />
+   <group id="playlist.bot.right" x="-24" y="-20" w="24" h="20" relaty="1" relatx="1" />
+   <text x="4" y="5" w="-24" h="12" relatw="1" default=":componentname" font="player.font.default" move="1" />
+  </layout>
+ </container>

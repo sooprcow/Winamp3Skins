@@ -1,0 +1,18 @@
+ <elements>
+  <!-- Start Non-Group Images -->
+  <bitmap id="thinger.bg" file="images/thinger/background.png" gammagroup="background" />
+  <bitmap id="thinger.bg.border" file="images/thinger/background-border.png" gammagroup="border" />
+  <!-- Start Buttons -->
+  <bitmap id="thinger.button.left" file="images/thinger/buttons.png" x="0" y="0" w="7" h="31" gammagroup="buttonon" />
+  <bitmap id="thinger.button.right" file="images/thinger/buttons.png" x="7" y="0" w="7" h="31" gammagroup="buttonon" />
+ </elements>
+
+ <container id="thinger" name="Thinger" default_visible="0" >
+ 
+  <layout id="normal" background="thinger.bg" >
+   <layer image="thinger.bg.border" x="0" y="0" w="185" h="37" ghost="1" />
+   <button id="thinger.scroll.left" action="CB_PREV" x="3" y="3" w="7" h="31" image="thinger.button.left" />
+   <button id="thinger.scroll.right" action="CB_NEXT" x="175" y="3" w="7" h="31" image="thinger.button.right" />
+   <componentbucket id="Component list" x="12" y="3" w="162" h="31" leftmargin="3" rightmargin="3" spacing="4" />  
+  </layout>
+ </container>

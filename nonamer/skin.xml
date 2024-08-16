@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<WinampAbstractionLayer version="0.8">
+
+  <skininfo>
+    <version>0.63</version>
+    <name>Nonamer</name>
+    <comment>There is currently no name for this skin. Right now I'm just calling it nonamer. This is a Beta Version so you may find bugs. If you do find a bug e-mail me a quick report. Thanks</comment>
+    <author>David Serrano</author>
+    <email>sooprcow@deskmid.com</email>
+    <homepage>http://sooprcow.deskmod.com</homepage>
+    <screenshot>images/preview.png</screenshot>
+  </skininfo>
+
+  <include file="xml/system-elements.xml" />
+  <include file="xml/player.xml" />
+  <include file="xml/equalizer.xml" />
+  <include file="xml/thinger.xml" />
+  <include file="xml/playlist.xml" />
+  <include file="xml/standardframe.xml" />
+  <include file="xml/vis-options.xml" />
+  <include file="xml/color-presets.xml" />
+  <!--  <include file="../default/xml/pledit.xml" /> -->
+  <scripts>
+   <script id="namervis" file="namervis.maki"/>
+   <script id="namerdrawer" file="namerdrawer.maki"/>
+  <!-- <script id="guistuff" file="guistuff.maki"/> -->
+   <script id="volseek" file="volseek.maki"/>
+  </scripts>   
+</WinampAbstractionLayer>

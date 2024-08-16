@@ -1,0 +1,132 @@
+ <elements>
+  <bitmapfont id="player.font.default" file="images/player/font-small.png" charwidth="5" charheight="6" hspacing="0" vspacing="0" gammagroup="font" />
+  <bitmapfont id="player.font.big" file="images/player/font-time.png" charwidth="9" charheight="10" hspacing="1" vspacing="1" gammagroup="font" />
+  <!-- Start Non-Group Images -->
+  <bitmap id="player.bg" file="images/player/background.png" gammagroup="background" />
+  <bitmap id="player.bg.alpha" file="images/player/background-alpha.png" gammagroup="background" />
+  <bitmap id="player.leftbg" file="images/player/left-background.png" gammagroup="background" />
+  <bitmap id="player.drawer.leftbg" file="images/player/drawer-left-background.png" gammagroup="background" />
+  <bitmap id="player.rightbg" file="images/player/right-background.png" gammagroup="background" />
+  <bitmap id="player.rightbg.kbpskhz" file="images/player/kbpskhz.png" gammagroup="font" />
+  <bitmap id="player.drawer.rightbg" file="images/player/drawer-right-background.png" gammagroup="background" />
+  <bitmap id="player.drawer.rightbg.dots" file="images/player/rightbgdots.png" gammagroup="font" />
+  <bitmap id="player.drawer.blank" file="images/player/blank.png" />
+  <bitmap id="player.drawer.force" file="images/player/forcedrawers.png" gammagroup="background" />
+  <bitmap id="player.border.left" file="images/player/border-left.png" gammagroup="border" />
+  <bitmap id="player.border.right" file="images/player/border-right.png" gammagroup="border" />
+  <bitmap id="player.border.drawer.left" file="images/player/border-drawer-left.png" gammagroup="border" />
+  <bitmap id="player.border.drawer.right" file="images/player/border-drawer-right.png" gammagroup="border" />
+  <!-- Start Vis Images -->
+  <bitmap id="player.visbar" file="images/player/visbars.png" gammagroup="visbar" />
+  <!-- Start Control Buttons -->
+  <bitmap id="player.cbuttons.back" file="images/player/cbuttons.png" x="0" y="0" w="10" h="5" gammagroup="buttonoff" />
+  <bitmap id="player.cbuttons.play" file="images/player/cbuttons.png" x="10" y="0" w="12" h="5" gammagroup="buttonoff" />
+  <bitmap id="player.cbuttons.pause" file="images/player/cbuttons.png" x="22" y="0" w="14" h="5" gammagroup="buttonoff" />
+  <bitmap id="player.cbuttons.stop" file="images/player/cbuttons.png" x="36" y="0" w="12" h="5" gammagroup="buttonoff" />
+  <bitmap id="player.cbuttons.next" file="images/player/cbuttons.png" x="48" y="0" w="11" h="5" gammagroup="buttonoff" />
+  <bitmap id="player.cbuttons.back.hover" file="images/player/cbuttons.png" x="0" y="5" w="10" h="5" gammagroup="buttonon" />
+  <bitmap id="player.cbuttons.play.hover" file="images/player/cbuttons.png" x="10" y="5" w="12" h="5" gammagroup="buttonon" />
+  <bitmap id="player.cbuttons.pause.hover" file="images/player/cbuttons.png" x="22" y="5" w="14" h="5" gammagroup="buttonon" />
+  <bitmap id="player.cbuttons.stop.hover" file="images/player/cbuttons.png" x="36" y="5" w="12" h="5" gammagroup="buttonon" />
+  <bitmap id="player.cbuttons.next.hover" file="images/player/cbuttons.png" x="48" y="5" w="11" h="5" gammagroup="buttonon" />
+  <!-- Start Titlebar Buttons -->
+  <bitmap id="player.titlebar.minimize" file="images/player/minclose.png" x="0" y="0" w="5" h="4" />
+  <bitmap id="player.titlebar.close" file="images/player/minclose.png" x="5" y="0" w="6" h="4" />
+  <bitmap id="player.titlebar.minimize.hover" file="images/player/minclose.png" x="0" y="4" w="5" h="4" gammagroup="buttonon" />
+  <bitmap id="player.titlebar.close.hover" file="images/player/minclose.png" x="5" y="4" w="6" h="4" gammagroup="buttonon" />
+  <!-- Start Shuffle/Repeat/Crossfade -->
+  <bitmap id="player.button.shuffle" file="images/player/shufflerep.png" x="0" y="0" w="10" h="6" gammagroup="buttonoff" />
+  <bitmap id="player.button.repeat" file="images/player/shufflerep.png" x="10" y="0" w="11" h="6" gammagroup="buttonoff" />
+  <bitmap id="player.button.fade" file="images/player/shufflerep.png" x="21" y="0" w="10" h="6" gammagroup="buttonoff" />
+  <bitmap id="player.button.shuffle.hover" file="images/player/shufflerep.png" x="0" y="6" w="10" h="6" gammagroup="buttonon" />
+  <bitmap id="player.button.repeat.hover" file="images/player/shufflerep.png" x="10" y="6" w="11" h="6" gammagroup="buttonon" />
+  <bitmap id="player.button.fade.hover" file="images/player/shufflerep.png" x="21" y="6" w="10" h="6" gammagroup="buttonon" />
+  <!-- Start Volume/Seek -->
+  <bitmap id="player.volseek" file="images/player/volseek.png" x="0" y="0" w="1" h="3" />
+  <bitmap id="player.volseek.ghost"  file="images/player/volseek.png" x="0" y="3" w="1" h="3" gammagroup="volumeseek" />
+  <!-- Start EQ/PL/ML -->
+  <bitmap id="player.button.eq" file="images/player/eqplml.png" x="0" y="0" w="9" h="7" gammagroup="buttonoff" />
+  <bitmap id="player.button.pl" file="images/player/eqplml.png" x="9" y="0" w="13" h="7" gammagroup="buttonoff" />
+  <bitmap id="player.button.ml" file="images/player/eqplml.png" x="22" y="0" w="10" h="7" gammagroup="buttonoff" />
+  <bitmap id="player.button.eq.active" file="images/player/eqplml.png" x="0" y="7" w="9" h="7" gammagroup="buttonon" />
+  <bitmap id="player.button.pl.active" file="images/player/eqplml.png" x="9" y="7" w="13" h="7" gammagroup="buttonon" />
+  <bitmap id="player.button.ml.active" file="images/player/eqplml.png" x="22" y="7" w="10" h="7" gammagroup="buttonon" />
+ </elements>
+
+ <container id="main" name="Main window">
+  <groupdef id="group.right.panel" background="player.rightbg">
+   <layer image="player.rightbg" w="165" h="36" x="0" y="0" ghost="0" />
+   <layer image="player.border.right" x="1" y="1" w="163" h="34" ghost="1" />
+   <layer image="player.rightbg.kbpskhz" x="30" y="24" w="53" h="5" ghost="1" />
+   <!-- Start Minimize/Close -->
+   <button id="minimize" image="player.titlebar.minimize" downimage="player.titlebar.minimize.hover" hoverimage="player.titlebar.minimize.hover" action="MINIMIZE" x="151" y="4" w="5" h="4" />
+   <button id="close" image="player.titlebar.close" downimage="player.titlebar.close.hover" hoverimage="player.titlebar.close.hover" action="CLOSE" x="155" y="4" w="6" h="4" />
+   <!-- Start Song Info -->
+   <text id="song.ticker" ticker="0" display="songname" default="" showlen="1" x="9" y="9" h="6" w="145" font="player.font.default" /> 
+   <text id="song.bitrate" ticker="0" display="SONGBITRATE" align="right" default="" x="9" y="24" h="6" w="19" font="player.font.default" />
+   <text id="song.samplerate" ticker="0" display="SONGSAMPLERATE" align="right" default="" x="55" y="24" h="6" w="12" font="player.font.default" />
+   <!-- Start Shuffle/Repeat/Crossfade -->
+   <togglebutton id="button.shuffle" image="player.button.shuffle" activeimage="player.button.shuffle.hover" x="128" y="24" w="10" h="6" cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Shuffle" />
+   <togglebutton id="button.shuffle" image="player.button.repeat" activeimage="player.button.repeat.hover" x="138" y="24" w="11" h="6" cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Repeat" />
+   <togglebutton id="button.shuffle" image="player.button.fade" activeimage="player.button.fade.hover" x="149" y="24" w="10" h="6" cfgattrib="{FC3EAF78-C66E-4ED2-A0AA-1494DFCC13FF};Enable crossfading" />
+   <layer id="forcerightdrawer" image="player.drawer.force" x="77" y="34" w="10" h="1" move="0" />
+  </groupdef>
+
+  <groupdef id="group.left.panel" background="player.leftbg">
+   <layer image="player.leftbg" w="93" h="36" x="0" y="0" ghost="0" />
+   <layer image="player.border.left" x="1" y="1" w="91" h="34" ghost="1" />
+   <animatedlayer id="visbar1" x="5" y="4" w="3" h="28" image="player.visbar" autoplay="0" autoreplay="0" alpha="25" ghost="1" />
+   <animatedlayer id="visbar2" x="10" y="4" w="3" h="28" image="player.visbar" autoplay="0" autoreplay="0" alpha="25" ghost="1" />
+   <animatedlayer id="visbar3" x="15" y="4" w="3" h="28" image="player.visbar" autoplay="0" autoreplay="0" alpha="25" ghost="1" />
+   <animatedlayer id="visbar4" x="20" y="4" w="3" h="28" image="player.visbar" autoplay="0" autoreplay="0" alpha="25" ghost="1" />
+   <animatedlayer id="visbar5" x="25" y="4" w="3" h="28" image="player.visbar" autoplay="0" autoreplay="0" alpha="25" ghost="1" />
+   <animatedlayer id="visbar6" x="30" y="4" w="3" h="28" image="player.visbar" autoplay="0" autoreplay="0" alpha="25" ghost="1" />
+   <animatedlayer id="visbar7" x="35" y="4" w="3" h="28" image="player.visbar" autoplay="0" autoreplay="0" alpha="25" ghost="1" />
+   <animatedlayer id="visbar8" x="40" y="4" w="3" h="28" image="player.visbar" autoplay="0" autoreplay="0" alpha="25" ghost="1" />
+   <animatedlayer id="visbar9" x="45" y="4" w="3" h="28" image="player.visbar" autoplay="0" autoreplay="0" alpha="25" ghost="1" />
+   <animatedlayer id="visbar10" x="50" y="4" w="3" h="28" image="player.visbar" autoplay="0" autoreplay="0" alpha="25" ghost="1" />
+   <animatedlayer id="visbar11" x="55" y="4" w="3" h="28" image="player.visbar" autoplay="0" autoreplay="0" alpha="25" ghost="1" />
+   <animatedlayer id="visbar12" x="60" y="4" w="3" h="28" image="player.visbar" autoplay="0" autoreplay="0" alpha="25" ghost="1" />
+   <animatedlayer id="visbar13" x="65" y="4" w="3" h="28" image="player.visbar" autoplay="0" autoreplay="0" alpha="25" ghost="1" />
+   <animatedlayer id="visbar14" x="70" y="4" w="3" h="28" image="player.visbar" autoplay="0" autoreplay="0" alpha="25" ghost="1" />
+   <animatedlayer id="visbar15" x="75" y="4" w="3" h="28" image="player.visbar" autoplay="0" autoreplay="0" alpha="25" ghost="1" />
+   <animatedlayer id="visbar16" x="80" y="4" w="3" h="28" image="player.visbar" autoplay="0" autoreplay="0" alpha="25" ghost="1" />
+   <animatedlayer id="visbar17" x="85" y="4" w="3" h="28" image="player.visbar" autoplay="0" autoreplay="0" alpha="25" ghost="1" />
+   <text id="display.time.ticker" display="time" x="32" y="4" h="15" w="52" font="player.font.big" timecolonwidth="7" align="right" />
+   <layer id="forceleftdrawer" image="player.drawer.force" x="41" y="34" w="10" h="1" move="0" />
+  </groupdef>
+  
+  <groupdef id="group.drawer.left" background="player.drawer.leftbg">
+   <layer id="left.drawer.bg" image="player.drawer.leftbg" x="0" y="0" w="72" h="18" sysregion="1" ghost="1" />
+   <layer image="player.border.drawer.left" x="1" y="0" w="70" h="17" ghost="1" />
+   <button id="cbuttons.back" image="player.cbuttons.back" downimage="player.cbuttons.back.hover" hoverimage="player.cbuttons.back.hover" action="PREV" x="6" y="6" h="5" w="10" tooltip="Previous" />
+   <button id="cbuttons.play" image="player.cbuttons.play" downimage="player.cbuttons.play.hover" hoverimage="player.cbuttons.play.hover" action="PLAY" x="16" y="6" h="5" w="12" tooltip="Play" />
+   <button id="cbuttons.pause" image="player.cbuttons.pause" downimage="player.cbuttons.pause.hover" hoverimage="player.cbuttons.pause.hover" action="PAUSE" x="28" y="6" h="5" w="14" tooltip="Pause" />
+   <button id="cbuttons.stop" image="player.cbuttons.stop" downimage="player.cbuttons.stop.hover" hoverimage="player.cbuttons.stop.hover" action="STOP" x="42" y="6" h="5" w="12" tooltip="Stop" />
+   <button id="cbuttons.next" image="player.cbuttons.next" downimage="player.cbuttons.next.hover" hoverimage="player.cbuttons.next.hover" action="NEXT" x="54" y="6" h="5" w="11" tooltip="Next" />
+  </groupdef>
+
+  <groupdef id="group.drawer.right" background="player.drawer.rightbg">
+   <layer id="right.drawer.bg" image="player.drawer.rightbg" x="0" y="0" w="144" h="18" sysregion="1" ghost="1" />
+   <layer image="player.border.drawer.right" x="1" y="0" w="142" h="17" ghost="1" />
+   <layer image="player.drawer.rightbg.dots" x="7" y="8" w="17" h="3" ghost="1" />
+   <!-- Volume/Seek Start -->
+   <layer id="volseek.ghost" image="player.volseek.ghost" x="7" y="3" h="3" w="75" />
+   <slider id="volseek" action="" orientation="H" x="7" y="3" h="3" w="75" thumb="player.volseek" downthumb="player.volseek" />
+   <slider id="seek.ghost" action="SEEK" orientation="H" x="-33" y="-33" h="3" w="75" thumb="" downthumb="" ghost="1" />
+   <layer id="volseek.switch" image="player.drawer.blank" x="24" y="8" w="35" h="6" />
+   <text id="volseek.label" default="volume:" x="24" y="8" w="35" h="6" font="player.font.default" align="right" ghost="1" />
+   <text id="volseek.percent" default="100%" x="47" y="8" w="35" h="6" font="player.font.default" align="right" ghost="1" />
+   <!-- EQ/PL/ML -->
+   <button id="button.eq" x="105" y="4" w="9" h="7" image="player.button.eq" downimage="player.button.eq.active" activeimage="player.button.eq.active" action="TOGGLE" param="eq" />
+   <button id="button.pl" x="114" y="4" w="13" h="7" image="player.button.pl" downimage="player.button.pl.active" activeimage="player.button.pl.active" action="TOGGLE" param="guid:pl" /> 
+   <button id="button.ml" x="127" y="4" w="10" h="7" image="player.button.ml" downimage="player.button.ml.active" activeimage="player.button.ml.active" action="TOGGLE" param="guid:ml" /> 
+  </groupdef>
+
+  <layout id="normal" background="player.bg" alphabackground="player.bg.alpha" desktopalpha="1" droptarget="pldr">
+   <group id="group.drawer.left" x="11" y="21" />
+   <group id="group.left.panel" x="0" y="0" />
+   <group id="group.drawer.right" x="108" y="21" />
+   <group id="group.right.panel" x="98" y="0" />
+  </layout>
+ </container>

@@ -1,0 +1,46 @@
+ <elements>
+  <!-- Start Non-Group Images -->
+  <bitmap id="eq.bg" file="images/equalizer/background.png" gammagroup="background" />
+  <bitmap id="eq.bg.border" file="images/equalizer/background-border.png" gammagroup="border" />
+  <bitmap id="eq.bar.values" file="images/equalizer/bandvalues.png" gammagroup="font" />
+  <!-- Start Bar Images -->
+  <bitmap id="eq.bar.bg" file="images/equalizer/bar-background.png" gammagroup="border" />
+  <bitmap id="eq.bar.highlight" file="images/equalizer/bar-highlight.png" gammagroup="volumeseek" />
+  <bitmap id="eq.bar.ghost" file="images/equalizer/bar-background.png" x="3" y="3" w="1" h="1" />
+  <!-- Start Buttons -->
+  <bitmap id="eq.button.text" file="images/equalizer/button-text.png" gammagroup="font" />
+  <bitmap id="eq.button.on" file="images/equalizer/button.png" x="0" y="0" w="17" h="6" gammagroup="buttonoff" />
+  <bitmap id="eq.button.on.active" file="images/equalizer/button.png" x="0" y="6" w="17" h="6" gammagroup="buttonon" />
+  <bitmap id="eq.button.auto" file="images/equalizer/button.png" x="0" y="0" w="26" h="6" gammagroup="buttonoff" />
+  <bitmap id="eq.button.auto.active" file="images/equalizer/button.png" x="0" y="6" w="26" h="6" gammagroup="buttonon" />
+  <bitmap id="eq.button.presets" file="images/equalizer/button.png" x="5" y="0" w="34" h="6" />
+  <bitmap id="eq.close" file="images/equalizer/closebutton.png" x="0" y="0" w="5" h="4" gammagroup="buttonoff" />
+  <bitmap id="eq.close.active" file="images/equalizer/closebutton.png" x="0" y="4" w="5" h="4" gammagroup="buttonon" />
+ </elements>
+
+ <container id="eq" name="Equalizer" default_visible="0" >
+  <groupdef id="group.eqbands">
+   <slider id="pre" x="2" y="1" w="6" h="69" thumb="eq.bar.highlight" downthumb="eq.bar.highlight" orientation="V" action="EQ_PREAMP" />
+   <slider id="pre" x="23" y="1" w="6" h="69" thumb="eq.bar.highlight" downthumb="eq.bar.highlight" orientation="V" action="EQ_BAND" param="0" />
+   <slider id="pre" x="41" y="1" w="6" h="69" thumb="eq.bar.highlight" downthumb="eq.bar.highlight" orientation="V" action="EQ_BAND" param="1" />
+   <slider id="pre" x="59" y="1" w="6" h="69" thumb="eq.bar.highlight" downthumb="eq.bar.highlight" orientation="V" action="EQ_BAND" param="2" />
+   <slider id="pre" x="77" y="1" w="6" h="69" thumb="eq.bar.highlight" downthumb="eq.bar.highlight" orientation="V" action="EQ_BAND" param="3" />
+   <slider id="pre" x="95" y="1" w="6" h="69" thumb="eq.bar.highlight" downthumb="eq.bar.highlight" orientation="V" action="EQ_BAND" param="4" />
+   <slider id="pre" x="113" y="1" w="6" h="69" thumb="eq.bar.highlight" downthumb="eq.bar.highlight" orientation="V" action="EQ_BAND" param="5" />
+   <slider id="pre" x="131" y="1" w="6" h="69" thumb="eq.bar.highlight" downthumb="eq.bar.highlight" orientation="V" action="EQ_BAND" param="6" />
+   <slider id="pre" x="149" y="1" w="6" h="69" thumb="eq.bar.highlight" downthumb="eq.bar.highlight" orientation="V" action="EQ_BAND" param="7" />
+   <slider id="pre" x="167" y="1" w="6" h="69" thumb="eq.bar.highlight" downthumb="eq.bar.highlight" orientation="V" action="EQ_BAND" param="8" />
+   <slider id="pre" x="185" y="1" w="6" h="69" thumb="eq.bar.highlight" downthumb="eq.bar.highlight" orientation="V" action="EQ_BAND" param="9" />
+  </groupdef>
+
+  <layout id="normal" background="eq.bg" >
+   <layer image="eq.bg.border" x="0" y="0" w="212" h="104" ghost="1" />
+   <layer image="eq.bar.values" x="9" y="94" w="195" h="6" ghost="1" />
+   <layer image="eq.button.text" x="12" y="10" w="92" h="6" />
+   <button x="12" y="10" w="17" h="6" action="EQ_TOGGLE" image="eq.button.on" activeimage="eq.button.on.active" />
+   <button x="36" y="10" w="26" h="6" action="EQ_AUTO" image="eq.button.auto" activeimage="eq.button.auto.active" />
+   <button x="70" y="10" w="34" h="6" action="MENU" param="presets" image="eq.button.presets" activeimage="eq.button.presets" />
+   <button id="close" image="eq.close" downimage="eq.close.active" hoverimage="eq.close.active" action="CLOSE" x="202" y="5" w="5" h="4" />
+   <group id="group.eqbands" x="10" y="20" w="191" h="71" />
+  </layout>
+ </container>

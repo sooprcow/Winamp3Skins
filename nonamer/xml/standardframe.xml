@@ -1,0 +1,52 @@
+<groupdef id="wasabi.frame.layout">
+ <layer image="playlist.bg" x="0" y="0" w="0" h="0" relatw="1" relath="1" />
+ <group id="playlist.top.left" x="0" y="0" w="15" h="20" />
+ <group id="playlist.top" x="15" y="0" w="-39" h="20" relatw="1" />
+ <group id="playlist.top.right" x="-24" y="0" w="24" h="20" relatx="1" />
+ <layer id="window.left" x="0" y="20" h="0" relath="1" image="playlist.left-right" resize="left" />
+ <layer id="window.right" x="-3" y="20" h="0" relatx="1" relath="1" image="playlist.left-right" resize="right" />
+ <LayoutStatus id="sysmenu.status" bg="0" x="3" y="-36" w="-5" h="15" relaty="1" relatw="1" includeonly="{system}" />
+ <hideobject target="sysmenu.status"/>
+ <group id="playlist.bot.left" x="0" y="-20" w="15" h="20" relaty="1" />
+ <group id="playlist.bot" x="15" y="-20" w="-39" h="20" relaty="1" relatw="1" />
+ <group id="playlist.bot.right" x="-24" y="-20" w="24" h="20" relaty="1" relatx="1" />
+ <button id="controlmenu.inactive" action="controlmenu" x="-400" y="-400" image="wasabi.button.sysmenu.pressed" downImage="wasabi.button.sysmenu" tooltip="Control Menu" activeAlpha="0" />
+ <button id="controlmenu" action="controlmenu" x="-400" y="-400" image="wasabi.button.sysmenu.pressed" downImage="wasabi.button.sysmenu" tooltip="Control Menu" activeAlpha="0" />
+ <button id="Close.inactive" action="CLOSE" x="-400" y="-400" w="5" h="4" image="eq.close" hoverimage="eq.close.active" downImage="eq.close.active" tooltip="Close Window" activeAlpha="0" />
+ <button id="Close" action="CLOSE" x="-400" y="-400" w="5" h="4" image="eq.close" hoverimage="eq.close.active" downImage="eq.close.active" tooltip="Close Window" activeAlpha="0" />
+ <button id="closething" image="eq.close" downimage="eq.close.active" hoverimage="eq.close.active" action="CLOSE" x="-10" y="5" w="5" h="4" relatx="1" />
+ <Wasabi:TitleBar id="wasabi.titlebar" x="-400" y="-400" w="1" h="1" relatw="1" />
+ <text x="4" y="5" w="-24" h="12" relatw="1" default=":componentname" font="player.font.default" move="1" />
+</groupdef>
+
+<!-- Wasabi:StandardFrame:Status -->
+<groupdef id="wasabi.standardframe.statusbar" background="playlist.bg" sysregion="1" xuitag="Wasabi:StandardFrame:Status">
+ <group id="wasabi.frame.layout" x="0" y="0" w="0" relatw="1" h="0" relath="1"/>
+ <LayoutStatus id="standardframe.layoutstatus" x="3" y="-36" w="-5" h="15" relaty="1" relatw="1" exclude="{system}" />
+ <script id="standardframe.script" file="standardframe.maki" param="3,21,-6,-58,0,0,1,1" />
+</groupdef>
+
+<!-- Wasabi:StandardFrame:NoStatus -->
+<groupdef id="wasabi.standardframe.nostatusbar" background="playlist.bg" sysregion="1" xuitag="Wasabi:StandardFrame:NoStatus">
+  <group id="wasabi.frame.layout" x="0" y="0" w="0" relatw="1" h="0" relath="1"/>
+  <script id="standardframe.script" file="standardframe.maki" param="5,22,-10,-48,0,0,1,1" />
+</groupdef>
+
+<!-- Wasabi:StandardFrame:Modal -->
+<groupdef id="wasabi.standardframe.modal" inherit_group="wasabi.standardframe.nostatusbar" sysregion="1" xuitag="Wasabi:StandardFrame:Modal">
+
+</groupdef>
+
+<!-- Wasabi:StandardFrame:Static -->
+<groupdef id="wasabi.standardframe.static" inherit_group="wasabi.standardframe.nostatusbar" sysregion="1" xuitag="Wasabi:StandardFrame:Static">
+
+</groupdef>
+
+<groupdef id="wasabi.preferences.group" inherit_content="1">
+ <sendparams target="wasabi.preferences.tree.embedded" h="4" y="0" />
+ <sendparams target="wasabi.preferences.configpane" h="4" y="0" />
+</groupdef>
+
+<groupdef id="wasabi.panel">
+ <!-- Draw Nothing -->
+</groupdef>

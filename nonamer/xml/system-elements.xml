@@ -1,0 +1,85 @@
+<elements>
+ <!-- Edit Box Colors -->
+ <color id="wasabi.edit.selection" value="127,127,127" gammagroup="background"/>
+ <color id="wasabi.edit.text" value="255,255,255" gammagroup="font" />
+ <color id="wasabi.edit.background" value="0,0,0" gammagroup="background"/>
+ 
+ <!-- playlist editor -->
+ <color id="pledit.text" value="255,255,255"/>	<!-- text color in editor -->
+ <color id="pledit.text.readonly" value="200,200,200"/>	<!-- text color in editor -->
+ <color id="pledit.text.current" value="255,255,255"/> <!-- current playback file foreground -->
+ <color id="pledit.currentoutline" value="255,255,255"/> <!-- current playback file outline color -->
+ <color id="pledit.dir.plitem" value="255,255,255" /> <!-- playlist directory item foreground color -->
+ <color id="pledit.dir.working" value="255,255,255" /> <!-- playlist directory working playlist item foreground color -->
+ <color id="pledit.dir.workingbg" value="0,0,0" /> <!-- playlist directory working playlist item background color -->
+
+ <!-- Generic Trees -->
+ <color id="studio.tree.text" value="255,255,255"/> <!-- Item text color -->
+ <color id="studio.tree.selected" value="32,63,100"/> <!-- Select item text background color -->
+ <color id="studio.tree.hilited" value="255,255,255"/> <!-- Hilited item text background color -->
+ <color id="studio.tree.hiliteddrop" value="255,255,255"/> <!--235,155 Drop marker color -->
+
+ <!-- Generic Lists -->
+ <color id="studio.list.text" value="255,255,255"/> <!-- List item text color -->
+ <color id="studio.list.item.selected" value="32,63,100"/> <!-- Selected item text background color -->
+ <color id="studio.list.item.focused" value="32,63,100"/> <!-- Focused item text background color -->
+ <color id="studio.list.column.background" value="32,63,100"/> <!-- Columns background color -->
+ <color id="studio.list.column.text" value="255,255,255"/> <!-- Columns text color -->
+ <color id="studio.list.column.separator" value="0,0,0"/> <!-- Columns separator color -->
+ <color id="studio.list.item.selected.fg" value="255,255,255" /><!-- Selected item text foreground color -->
+
+ <!-- Item Lists -->
+ <color id="common.itemlist.outline.current" value="45,90,145"/> <!-- Currently playing outline color -->
+ <color id="common.itemlist.outline.focus" value="45,90,145"/> <!-- Focused item dashed outline color -->
+   
+ <!-- Buttons -->
+ <color id="studio.button.text" value="255,255,255"/> <!-- Buttons text color -->
+ <color id="studio.button.hiliteText" value="255,255,255"/> <!-- Buttons hilite text color, used by tab windows-->
+ <color id="studio.button.dimmedText" value="128,128,128"/> <!-- Buttons dimmed text color, when disabled -->
+</elements>
+
+<elements>
+ <!-- Old List & Tree scrollbars -->
+ <bitmap id="studio.scrollbar.vertical.background" file="images/standardframe/window-elements.png" x="27" y="0" h="1" w="1" gammagroup="background"/>
+ <bitmap id="studio.scrollbar.vertical.left" file="images/standardframe/window-elements.png" x="0" y="0" h="13" w="13" gammagroup="background"/>
+ <bitmap id="studio.scrollbar.vertical.left.hilite" file="images/standardframe/window-elements.png" x="13" y="0" h="13" w="13" gammagroup="background"/>
+ <bitmap id="studio.scrollbar.vertical.left.pressed" file="images/standardframe/window-elements.png" x="13" y="0" h="13" w="13" gammagroup="background"/>
+ <bitmap id="studio.scrollbar.vertical.right" file="images/standardframe/window-elements.png" x="0" y="16" h="13" w="13" gammagroup="background"/>
+ <bitmap id="studio.scrollbar.vertical.right.hilite" file="images/standardframe/window-elements.png" x="13" y="16" h="13" w="13" gammagroup="background"/>
+ <bitmap id="studio.scrollbar.vertical.right.pressed" file="images/standardframe/window-elements.png" x="13" y="16" h="13" w="13" gammagroup="background"/>
+ <bitmap id="studio.scrollbar.vertical.button" file="images/standardframe/window-elements.png" x="30" y="0" h="33" w="13" gammagroup="background"/>
+ <bitmap id="studio.scrollbar.vertical.button.hilite" file="images/standardframe/window-elements.png" x="43" y="0" h="33" w="13" gammagroup="background"/>
+ <bitmap id="studio.scrollbar.vertical.button.pressed" file="images/standardframe/window-elements.png" x="43" y="0" h="33" w="13" gammagroup="background"/>
+ 
+ <bitmap id="studio.scrollbar.horizontal.background" file="images/standardframe/window-elements.png" x="27" y="0" h="1" w="1" gammagroup="background"/>
+ <bitmap id="studio.scrollbar.horizontal.left" file="images/standardframe/window-elements.png" x="0" y="34" h="13" w="13" gammagroup="background"/>
+ <bitmap id="studio.scrollbar.horizontal.left.hilite" file="images/standardframe/window-elements.png" x="13" y="34" h="13" w="13" gammagroup="background"/>
+ <bitmap id="studio.scrollbar.horizontal.left.pressed" file="images/standardframe/window-elements.png" x="13" y="34" h="13" w="13" gammagroup="background"/>
+ <bitmap id="studio.scrollbar.horizontal.right" file="images/standardframe/window-elements.png" x="0" y="47" h="13" w="13" gammagroup="background"/>
+ <bitmap id="studio.scrollbar.horizontal.right.hilite" file="images/standardframe/window-elements.png" x="13" y="47" h="13" w="13" gammagroup="background"/>
+ <bitmap id="studio.scrollbar.horizontal.right.pressed" file="images/standardframe/window-elements.png" x="13" y="47" h="13" w="13" gammagroup="background"/>
+ <bitmap id="studio.scrollbar.horizontal.button" file="images/standardframe/window-elements.png" x="27" y="34" h="13" w="33" gammagroup="background"/>
+ <bitmap id="studio.scrollbar.horizontal.button.hilite" file="images/standardframe/window-elements.png" x="27" y="47" h="13" w="33" gammagroup="background"/>
+ <bitmap id="studio.scrollbar.horizontal.button.pressed" file="images/standardframe/window-elements.png" x="27" y="47" h="13" w="33" gammagroup="background"/>
+   
+ <!-- Button -->
+ <bitmap id="studio.button.upperLeft" file="images/standardframe/window-elements.png" x="0" y="62" h="2" w="2" gammagroup="border"/>
+ <bitmap id="studio.button.top" file="images/standardframe/window-elements.png" x="2" y="62" h="2" w="15" gammagroup="border"/>
+ <bitmap id="studio.button.upperRight" file="images/standardframe/window-elements.png" x="22" y="62" h="2" w="3" gammagroup="border"/>
+ <bitmap id="studio.button.left" file="images/standardframe/window-elements.png" x="0" y="64" h="4" w="2" gammagroup="border"/>
+ <bitmap id="studio.button.middle" file="images/standardframe/window-elements.png" x="2" y="64" h="9" w="10" gammagroup="background" />
+ <bitmap id="studio.button.right" file="images/standardframe/window-elements.png" x="22" y="64" h="4" w="3" gammagroup="border"/>
+ <bitmap id="studio.button.lowerLeft" file="images/standardframe/window-elements.png" x="0" y="73" h="2" w="2" gammagroup="border"/>
+ <bitmap id="studio.button.bottom" file="images/standardframe/window-elements.png" x="2" y="73" h="2" w="15" gammagroup="border"/>
+ <bitmap id="studio.button.lowerRight" file="images/standardframe/window-elements.png" x="22" y="73 " h="2" w="3" gammagroup="border"/>
+
+ <bitmap id="studio.button.pressed.upperLeft" file="images/standardframe/window-elements.png" x="0" y="62" h="2" w="2" gammagroup="border" />
+ <bitmap id="studio.button.pressed.top" file="images/standardframe/window-elements.png" x="2" y="62" h="2" w="15" gammagroup="border"/>
+ <bitmap id="studio.button.pressed.upperRight" file="images/standardframe/window-elements.png" x="22" y="62" h="2" w="3" gammagroup="border"/>
+ <bitmap id="studio.button.pressed.left" file="images/standardframe/window-elements.png" x="0" y="64" h="4" w="2" gammagroup="border"/>
+ <bitmap id="studio.button.pressed.middle" file="images/standardframe/window-elements.png" x="12" y="64" h="9" w="10" gammagroup="background" />
+ <bitmap id="studio.button.pressed.right" file="images/standardframe/window-elements.png" x="22" y="64" h="4" w="3" gammagroup="border"/>
+ <bitmap id="studio.button.pressed.lowerLeft" file="images/standardframe/window-elements.png" x="0" y="73" h="2" w="2" gammagroup="border"/>
+ <bitmap id="studio.button.pressed.bottom" file="images/standardframe/window-elements.png" x="2" y="73" h="2" w="15" gammagroup="border"/>
+ <bitmap id="studio.button.pressed.lowerRight" file="images/standardframe/window-elements.png" x="22" y="73 " h="2" w="3" gammagroup="border"/>
+</elements>
